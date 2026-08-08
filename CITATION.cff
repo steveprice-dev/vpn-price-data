@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Cite the exact tagged release or dated snapshot used."
+title: "VPN Price Transparency Index"
+abstract: "A versioned dataset of consumer VPN introductory costs, renewal terms, tax disclosure, refund periods, and cancellation evidence."
+type: dataset
+version: 0.1.0
+date-released: "2026-08-08"
+license: CC-BY-4.0
+authors:
+  - family-names: "Price"
+    given-names: "Steve"
+    alias: "steveprice-dev"
+    orcid: "https://orcid.org/0009-0009-6603-6878"
+    website: "https://github.com/steveprice-dev"
+repository-code: "https://github.com/steveprice-dev/vpn-price-data"
+url: "https://github.com/steveprice-dev/vpn-price-data"
+keywords:
+  - VPN
+  - pricing
+  - subscriptions
+  - renewal
+  - consumer protection
+  - Black Friday
+

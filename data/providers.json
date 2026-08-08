@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "as_of": "2026-08-08",
+  "selection_method": "All 10 providers represented in DoVPN's consumer comparison data, then additional major, privacy-focused, security-suite, and pricing-model-diverse services, up to a prespecified 20-provider initial population.",
+  "providers": [
+    {"id":"nordvpn","name":"NordVPN","pricing_url":"https://nordvpn.com/pricing/","inclusion":["dovpn_featured","market_prominence"],"collection_priority":"daily"},
+    {"id":"surfshark","name":"Surfshark","pricing_url":"https://surfshark.com/pricing","inclusion":["dovpn_featured","market_prominence"],"collection_priority":"daily"},
+    {"id":"privadovpn","name":"PrivadoVPN","pricing_url":"https://privadovpn.com/pricing/","inclusion":["dovpn_featured"],"collection_priority":"daily"},
+    {"id":"expressvpn","name":"ExpressVPN","pricing_url":"https://www.expressvpn.com/order","inclusion":["dovpn_featured","market_prominence"],"collection_priority":"daily"},
+    {"id":"purevpn","name":"PureVPN","pricing_url":"https://www.purevpn.com/order","inclusion":["dovpn_featured"],"collection_priority":"daily"},
+    {"id":"cyberghost","name":"CyberGhost","pricing_url":"https://www.cyberghostvpn.com/en_US/buy/cyberghost-vpn-3","inclusion":["dovpn_featured","market_prominence"],"collection_priority":"daily"},
+    {"id":"protonvpn","name":"Proton VPN","pricing_url":"https://protonvpn.com/pricing","inclusion":["dovpn_featured","privacy_focused","market_prominence"],"collection_priority":"daily"},
+    {"id":"pia","name":"Private Internet Access","pricing_url":"https://www.privateinternetaccess.com/buy-vpn-online","inclusion":["dovpn_featured","market_prominence"],"collection_priority":"daily"},
+    {"id":"ipvanish","name":"IPVanish","pricing_url":"https://www.ipvanish.com/pricing/","inclusion":["dovpn_featured","market_prominence"],"collection_priority":"daily"},
+    {"id":"tunnelbear","name":"TunnelBear","pricing_url":"https://www.tunnelbear.com/pricing","inclusion":["dovpn_featured"],"collection_priority":"daily"},
+    {"id":"mullvad","name":"Mullvad VPN","pricing_url":"https://mullvad.net/en/pricing","inclusion":["privacy_focused","pricing_model_diversity","market_prominence"],"collection_priority":"daily"},
+    {"id":"ivpn","name":"IVPN","pricing_url":"https://www.ivpn.net/pricing/","inclusion":["privacy_focused","pricing_model_diversity"],"collection_priority":"daily"},
+    {"id":"windscribe","name":"Windscribe","pricing_url":"https://windscribe.com/upgrade","inclusion":["privacy_focused","pricing_model_diversity"],"collection_priority":"daily"},
+    {"id":"hideme","name":"hide.me","pricing_url":"https://hide.me/en/pricing","inclusion":["market_prominence"],"collection_priority":"daily"},
+    {"id":"hotspotshield","name":"Hotspot Shield","pricing_url":"https://www.hotspotshield.com/pricing/","inclusion":["market_prominence"],"collection_priority":"daily"},
+    {"id":"nortonvpn","name":"Norton VPN","pricing_url":"https://us.norton.com/products/norton-vpn","inclusion":["security_suite","market_prominence"],"collection_priority":"daily"},
+    {"id":"bitdefendervpn","name":"Bitdefender Premium VPN","pricing_url":"https://www.bitdefender.com/en-us/consumer/vpn","inclusion":["security_suite"],"collection_priority":"daily"},
+    {"id":"adguardvpn","name":"AdGuard VPN","pricing_url":"https://adguard-vpn.com/en/license.html","inclusion":["pricing_model_diversity"],"collection_priority":"daily"},
+    {"id":"airvpn","name":"AirVPN","pricing_url":"https://airvpn.org/buy/","inclusion":["privacy_focused","pricing_model_diversity"],"collection_priority":"daily"},
+    {"id":"vyprvpn","name":"VyprVPN","pricing_url":"https://www.vyprvpn.com/pricing","inclusion":["market_prominence","pricing_model_diversity"],"collection_priority":"daily"}
+  ],
+  "watchlist": [
+    {"id":"mozillavpn","name":"Mozilla VPN","reason":"Confirm current standalone-product availability and stable country-specific pricing route before inclusion."},
+    {"id":"astrill","name":"Astrill VPN","reason":"High-price niche comparator; add after core checkout workflow is stable."},
+    {"id":"strongvpn","name":"StrongVPN","reason":"Add if provider-level market evidence supports expanding beyond 20."},
+    {"id":"malwarebytesprivacy","name":"Malwarebytes Privacy VPN","reason":"Potential security-suite comparator after the initial panel is stable."}
+  ]
+}
+

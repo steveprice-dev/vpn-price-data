@@ -1,0 +1,24 @@
+name: Data correction
+description: Report a reproducible issue in a published observation.
+title: "Correction: "
+labels: [correction]
+body:
+  - type: input
+    id: observation
+    attributes:
+      label: Observation ID
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is incorrect?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Primary evidence and reproduction details
+    validations:
+      required: true
+

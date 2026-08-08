@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/steveprice-dev/vpn-price-data/blob/main/schemas/observation.schema.json",
+  "title": "VPN Price Transparency Index snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version","dataset_version","generated_at","observation_date","status","observations"],
+  "properties": {
+    "schema_version": {"const":"1.0.0"},
+    "dataset_version": {"type":"string","pattern":"^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "generated_at": {"type":"string","format":"date-time"},
+    "observation_date": {"type":["string","null"],"format":"date"},
+    "status": {"enum":["reviewed","no_reviewed_observations"]},
+    "observations": {"type":"array","items":{"$ref":"#/$defs/observation"}}
+  },
+  "$defs": {
+    "state": {"enum":["observed","not_visible","not_applicable","blocked","ambiguous","not_collected"]},
+    "decimalValue": {
+      "type":"object","additionalProperties":false,"required":["value","state"],
+      "properties":{"value":{"type":["string","null"],"pattern":"^[0-9]+(?:\\.[0-9]{1,4})?$"},"state":{"$ref":"#/$defs/state"}}
+    },
+    "integerValue": {
+      "type":"object","additionalProperties":false,"required":["value","state"],
+      "properties":{"value":{"type":["integer","null"],"minimum":0},"state":{"$ref":"#/$defs/state"}}
+    },
+    "observation": {
+      "type":"object","additionalProperties":false,
+      "required":["observation_id","provider_id","provider_name","plan_id","plan_name","market","captured_at","pricing","renewal","terms","cancellation","evidence","quality"],
+      "properties": {
+        "observation_id":{"type":"string","pattern":"^[a-z0-9-]+__[a-z0-9-]+__[A-Z]{2}__[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{6}Z$"},
+        "provider_id":{"type":"string","pattern":"^[a-z0-9-]+$"},
+        "provider_name":{"type":"string","minLength":1},
+        "plan_id":{"type":"string","pattern":"^[a-z0-9-]+$"},
+        "plan_name":{"type":"string","minLength":1},
+        "market": {
+          "type":"object","additionalProperties":false,"required":["country_code","currency","language","network_basis"],
+          "properties": {
+            "country_code":{"type":"string","pattern":"^[A-Z]{2}$"},
+            "currency":{"type":"string","pattern":"^[A-Z]{3}$"},
+            "language":{"type":"string","pattern":"^[a-z]{2}(?:-[A-Z]{2})?$"},
+            "network_basis":{"enum":["runner_ip","manual_local_ip","verified_proxy_country","locale_only"]}
+          }
+        },
+        "captured_at":{"type":"string","format":"date-time"},
+        "pricing": {
+          "type":"object","additionalProperties":false,
+          "required":["advertised_monthly","upfront_total","paid_months","free_months","service_months","effective_intro_monthly","advertised_discount_pct","reference_price_total"],
+          "properties": {
+            "advertised_monthly":{"$ref":"#/$defs/decimalValue"},
+            "upfront_total":{"$ref":"#/$defs/decimalValue"},
+            "paid_months":{"$ref":"#/$defs/integerValue"},
+            "free_months":{"$ref":"#/$defs/integerValue"},
+            "service_months":{"$ref":"#/$defs/integerValue"},
+            "effective_intro_monthly":{"$ref":"#/$defs/decimalValue"},
+            "advertised_discount_pct":{"$ref":"#/$defs/decimalValue"},
+            "reference_price_total":{"$ref":"#/$defs/decimalValue"}
+          }
+        },
+        "renewal": {
+          "type":"object","additionalProperties":false,
+          "required":["total","period_months","normalized_monthly","increase_pct","disclosure_stage"],
+          "properties": {
+            "total":{"$ref":"#/$defs/decimalValue"},
+            "period_months":{"$ref":"#/$defs/integerValue"},
+            "normalized_monthly":{"$ref":"#/$defs/decimalValue"},
+            "increase_pct":{"$ref":"#/$defs/decimalValue"},
+            "disclosure_stage":{"enum":["pricing_page","offer_terms","cart","checkout","after_purchase","not_visible","not_collected"]}
+          }
+        },
+        "terms": {
+          "type":"object","additionalProperties":false,"required":["refund_days","vat_treatment"],
+          "properties": {
+            "refund_days":{"$ref":"#/$defs/integerValue"},
+            "vat_treatment":{"enum":["included","excluded","sales_tax_may_apply","not_disclosed","not_collected","not_applicable"]}
+          }
+        },
+        "cancellation": {
+          "type":"object","additionalProperties":false,"required":["steps","method","tested_at"],
+          "properties": {
+            "steps":{"$ref":"#/$defs/integerValue"},
+            "method":{"enum":["self_service_web","app_store","support_chat","email","mixed","not_collected","not_applicable"]},
+            "tested_at":{"type":["string","null"],"format":"date-time"}
+          }
+        },
+        "evidence": {
+          "type":"object","additionalProperties":false,"required":["primary_url","checked_at","content_sha256","public_capture_url"],
+          "properties": {
+            "primary_url":{"type":"string","format":"uri","pattern":"^https://[^?#]+$"},
+            "checked_at":{"type":"string","format":"date-time"},
+            "content_sha256":{"type":"string","pattern":"^[a-f0-9]{64}$"},
+            "public_capture_url":{"type":["string","null"],"format":"uri"}
+          }
+        },
+        "quality": {
+          "type":"object","additionalProperties":false,"required":["collection_method","capture_result","validation_state","parser_version","reviewer_orcid"],
+          "properties": {
+            "collection_method":{"enum":["automated_direct","automated_proxy","manual_browser","manual_account","hybrid"]},
+            "capture_result":{"enum":["ok","blocked","error","ambiguous"]},
+            "validation_state":{"enum":["manually_verified","correction_pending"]},
+            "parser_version":{"type":"string","minLength":1},
+            "reviewer_orcid":{"type":["string","null"],"pattern":"^https://orcid.org/[0-9X-]+$"}
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,18 @@
+{
+  "datasetVersion": {
+    "metadataBlocks": {
+      "citation": {
+        "displayName": "Citation Metadata",
+        "fields": [
+          {"typeName":"title","multiple":false,"typeClass":"primitive","value":"VPN Price Transparency Index"},
+          {"typeName":"author","multiple":true,"typeClass":"compound","value":[{"authorName":{"typeName":"authorName","multiple":false,"typeClass":"primitive","value":"Price, Steve"},"authorIdentifierScheme":{"typeName":"authorIdentifierScheme","multiple":false,"typeClass":"controlledVocabulary","value":"ORCID"},"authorIdentifier":{"typeName":"authorIdentifier","multiple":false,"typeClass":"primitive","value":"0009-0009-6603-6878"}}]},
+          {"typeName":"datasetContact","multiple":true,"typeClass":"compound","value":[{"datasetContactName":{"typeName":"datasetContactName","multiple":false,"typeClass":"primitive","value":"Steve Price"}}]},
+          {"typeName":"dsDescription","multiple":true,"typeClass":"compound","value":[{"dsDescriptionValue":{"typeName":"dsDescriptionValue","multiple":false,"typeClass":"primitive","value":"Versioned observations of consumer VPN introductory prices, upfront totals, renewal terms, tax disclosure, refund periods, and cancellation evidence."}}]},
+          {"typeName":"subject","multiple":true,"typeClass":"controlledVocabulary","value":["Social Sciences","Computer and Information Science"]},
+          {"typeName":"depositor","multiple":false,"typeClass":"primitive","value":"Steve Price"}
+        ]
+      }
+    }
+  }
+}
+
