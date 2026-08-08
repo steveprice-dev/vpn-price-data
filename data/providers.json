@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
-  "as_of": "2026-08-08",
-  "selection_method": "All 10 providers represented in DoVPN's consumer comparison data, then additional major, privacy-focused, security-suite, and pricing-model-diverse services, up to a prespecified 20-provider initial population.",
+  "as_of": "2026-08-09",
+  "selection_method": "Major providers represented in DoVPN's consumer comparison data, then additional privacy-focused, security-suite, protocol-diverse, and pricing-model-diverse services. During pre-observation development the panel was fixed at 25 providers after excluding sites whose published terms expressly prohibit unattended collection without permission.",
   "providers": [
     {"id":"nordvpn","name":"NordVPN","pricing_url":"https://nordvpn.com/pricing/","inclusion":["dovpn_featured","market_prominence"],"collection_priority":"daily"},
     {"id":"surfshark","name":"Surfshark","pricing_url":"https://surfshark.com/pricing","inclusion":["dovpn_featured","market_prominence"],"collection_priority":"daily"},
-    {"id":"privadovpn","name":"PrivadoVPN","pricing_url":"https://privadovpn.com/pricing/","inclusion":["dovpn_featured"],"collection_priority":"daily"},
+    {"id":"ovpn","name":"OVPN","pricing_url":"https://www.ovpn.com/en/pricing","inclusion":["privacy_focused","pricing_model_diversity"],"collection_priority":"daily"},
     {"id":"expressvpn","name":"ExpressVPN","pricing_url":"https://www.expressvpn.com/order","inclusion":["dovpn_featured","market_prominence"],"collection_priority":"daily"},
     {"id":"purevpn","name":"PureVPN","pricing_url":"https://www.purevpn.com/order","inclusion":["dovpn_featured"],"collection_priority":"daily"},
     {"id":"cyberghost","name":"CyberGhost","pricing_url":"https://www.cyberghostvpn.com/en_US/buy/cyberghost-vpn-3","inclusion":["dovpn_featured","market_prominence"],"collection_priority":"daily"},
@@ -22,9 +22,18 @@
     {"id":"bitdefendervpn","name":"Bitdefender Premium VPN","pricing_url":"https://www.bitdefender.com/en-us/consumer/vpn","inclusion":["security_suite"],"collection_priority":"daily"},
     {"id":"adguardvpn","name":"AdGuard VPN","pricing_url":"https://adguard-vpn.com/en/license.html","inclusion":["pricing_model_diversity"],"collection_priority":"daily"},
     {"id":"airvpn","name":"AirVPN","pricing_url":"https://airvpn.org/buy/","inclusion":["privacy_focused","pricing_model_diversity"],"collection_priority":"daily"},
-    {"id":"vyprvpn","name":"VyprVPN","pricing_url":"https://www.vyprvpn.com/pricing","inclusion":["market_prominence","pricing_model_diversity"],"collection_priority":"daily"}
+    {"id":"vyprvpn","name":"VyprVPN","pricing_url":"https://www.vyprvpn.com/pricing","inclusion":["market_prominence","pricing_model_diversity"],"collection_priority":"daily"},
+    {"id":"amnezia-premium","name":"Amnezia Premium","pricing_url":"https://pay.amnezia.org/","inclusion":["privacy_focused","pricing_model_diversity"],"collection_priority":"daily"},
+    {"id":"mysteriumvpn","name":"Mysterium VPN","pricing_url":"https://www.mysteriumvpn.com/vpn-pricing","inclusion":["protocol_diversity","pricing_model_diversity","decentralized_network"],"collection_priority":"daily"},
+    {"id":"azirevpn","name":"AzireVPN","pricing_url":"https://www.azirevpn.com/pricing","inclusion":["privacy_focused","infrastructure_transparency","pricing_model_diversity"],"collection_priority":"daily"},
+    {"id":"privatevpn","name":"PrivateVPN","pricing_url":"https://privatevpn.com/prices/","inclusion":["privacy_focused","pricing_model_diversity"],"collection_priority":"daily"},
+    {"id":"vpn-unlimited","name":"VPN Unlimited","pricing_url":"https://www.vpnunlimited.com/order/pickup","inclusion":["pricing_model_diversity"],"collection_priority":"daily"}
   ],
   "watchlist": [
+    {"id":"privadovpn","name":"PrivadoVPN","reason":"DoVPN-featured provider; published website terms prohibit automated bots, scripts, and scrapers except through expressly available APIs. Add only after written permission or an official data feed."},
+    {"id":"x-vpn","name":"X-VPN","reason":"Strong protocol-diversity candidate because of Everest and its privacy positioning, but published terms require prior permission for automated website access."},
+    {"id":"fastestvpn","name":"FastestVPN","reason":"Pricing-model comparator whose published terms prohibit automated crawling, data mining, and scraping unless expressly permitted."},
+    {"id":"torguard","name":"TorGuard","reason":"Published terms prohibit automated or manual monitoring and copying without prior written permission."},
     {"id":"mozillavpn","name":"Mozilla VPN","reason":"Confirm current standalone-product availability and stable country-specific pricing route before inclusion."},
     {"id":"astrill","name":"Astrill VPN","reason":"High-price niche comparator; add after core checkout workflow is stable."},
     {"id":"strongvpn","name":"StrongVPN","reason":"Add if provider-level market evidence supports expanding beyond 20."},

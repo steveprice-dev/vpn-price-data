@@ -6,7 +6,7 @@ terms of consumer VPN subscriptions. The project is maintained by Steve Price
 
 ## Status
 
-Version `0.1.0` establishes the research contract, 20-provider population,
+Version `0.2.0` establishes the research contract, 25-provider population,
 validation tools, and publication format. Automated collection runs in a
 separate private repository so raw pages, screenshots, network details,
 cookies, and collection credentials cannot leak into this public dataset.

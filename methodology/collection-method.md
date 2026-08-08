@@ -12,6 +12,12 @@ One observation represents one provider, one named plan, one country market,
 and one UTC capture time. The initial panel is prespecified in
 `data/providers.json`; inclusion does not imply endorsement or ranking.
 
+The 25-provider development panel is fixed before the first reviewed price
+observation. Providers whose published terms prohibit automated monitoring are
+excluded from the panel rather than placed in a daily manual queue. The dated
+decision record and permission path are published in
+`methodology/automation-eligibility.md`.
+
 The first automated GitHub-hosted runner is a discovery and change-detection
 stream. Its country is not assumed from the runner label. A public US or
 Netherlands observation requires a verified country vantage point or a manual

@@ -11,9 +11,8 @@
   },
   "$defs": {
     "provider":{"type":"object","additionalProperties":false,"required":["id","name","pricing_url","inclusion","collection_priority"],"properties":{
-      "id":{"type":"string","pattern":"^[a-z0-9-]+$"},"name":{"type":"string","minLength":1},"pricing_url":{"type":"string","format":"uri","pattern":"^https://"},"inclusion":{"type":"array","minItems":1,"uniqueItems":true,"items":{"enum":["dovpn_featured","market_prominence","privacy_focused","security_suite","pricing_model_diversity"]}},"collection_priority":{"enum":["daily","weekly","manual"]}
+      "id":{"type":"string","pattern":"^[a-z0-9-]+$"},"name":{"type":"string","minLength":1},"pricing_url":{"type":"string","format":"uri","pattern":"^https://"},"inclusion":{"type":"array","minItems":1,"uniqueItems":true,"items":{"enum":["dovpn_featured","market_prominence","privacy_focused","security_suite","pricing_model_diversity","protocol_diversity","decentralized_network","infrastructure_transparency"]}},"collection_priority":{"enum":["daily","weekly","manual"]}
     }},
     "watch":{"type":"object","additionalProperties":false,"required":["id","name","reason"],"properties":{"id":{"type":"string","pattern":"^[a-z0-9-]+$"},"name":{"type":"string"},"reason":{"type":"string","minLength":10}}}
   }
 }
-
