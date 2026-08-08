@@ -3,6 +3,7 @@ name: Validate dataset
 on:
   push:
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -20,4 +21,3 @@ jobs:
       - run: python scripts/build_exports.py --check
       - run: python scripts/validate.py
       - run: python -m unittest discover -s tests
-
