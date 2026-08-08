@@ -14,10 +14,10 @@
     {"id":"ipvanish","name":"IPVanish","pricing_url":"https://www.ipvanish.com/pricing/","inclusion":["dovpn_featured","market_prominence"],"collection_priority":"daily"},
     {"id":"tunnelbear","name":"TunnelBear","pricing_url":"https://www.tunnelbear.com/pricing","inclusion":["dovpn_featured"],"collection_priority":"daily"},
     {"id":"mullvad","name":"Mullvad VPN","pricing_url":"https://mullvad.net/en/pricing","inclusion":["privacy_focused","pricing_model_diversity","market_prominence"],"collection_priority":"daily"},
-    {"id":"ivpn","name":"IVPN","pricing_url":"https://www.ivpn.net/pricing/","inclusion":["privacy_focused","pricing_model_diversity"],"collection_priority":"daily"},
+    {"id":"ivpn","name":"IVPN","pricing_url":"https://www.ivpn.net/en/pricing/","inclusion":["privacy_focused","pricing_model_diversity"],"collection_priority":"daily"},
     {"id":"windscribe","name":"Windscribe","pricing_url":"https://windscribe.com/upgrade","inclusion":["privacy_focused","pricing_model_diversity"],"collection_priority":"daily"},
     {"id":"hideme","name":"hide.me","pricing_url":"https://hide.me/en/pricing","inclusion":["market_prominence"],"collection_priority":"daily"},
-    {"id":"hotspotshield","name":"Hotspot Shield","pricing_url":"https://www.hotspotshield.com/pricing/","inclusion":["market_prominence"],"collection_priority":"daily"},
+    {"id":"hotspotshield","name":"Hotspot Shield","pricing_url":"https://www.hotspotshield.com/select-plan/","inclusion":["market_prominence"],"collection_priority":"daily"},
     {"id":"nortonvpn","name":"Norton VPN","pricing_url":"https://us.norton.com/products/norton-vpn","inclusion":["security_suite","market_prominence"],"collection_priority":"daily"},
     {"id":"bitdefendervpn","name":"Bitdefender Premium VPN","pricing_url":"https://www.bitdefender.com/en-us/consumer/vpn","inclusion":["security_suite"],"collection_priority":"daily"},
     {"id":"adguardvpn","name":"AdGuard VPN","pricing_url":"https://adguard-vpn.com/en/license.html","inclusion":["pricing_model_diversity"],"collection_priority":"daily"},
@@ -31,4 +31,3 @@
     {"id":"malwarebytesprivacy","name":"Malwarebytes Privacy VPN","reason":"Potential security-suite comparator after the initial panel is stable."}
   ]
 }
-
