@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OBSERVATIONS = ROOT / "data" / "observations"
 LATEST_JSON = ROOT / "data" / "latest.json"
 LATEST_CSV = ROOT / "data" / "latest.csv"
+LATEST_MD = ROOT / "data" / "latest.md"
 CHECKSUMS = ROOT / "metadata" / "SHA256SUMS"
 
 COLUMNS = [
@@ -77,11 +78,42 @@ def csv_text(snapshot: dict) -> str:
     return output.getvalue()
 
 
+def markdown_text(snapshot: dict) -> str:
+    lines = ["# Latest reviewed VPN price observations", ""]
+    if not snapshot["observations"]:
+        lines.extend([
+            "No manually reviewed observations have been published yet.",
+            "",
+            "Automated captures remain private until their pricing and terms are verified.",
+            "",
+        ])
+        return "\n".join(lines)
+    lines.extend([
+        f"Observation date: **{snapshot['observation_date']}**", "",
+        "| Provider | Plan | Market | Upfront total | Effective intro/month | Renewal/month | Renewal increase |",
+        "|---|---|---:|---:|---:|---:|---:|",
+    ])
+    for item in snapshot["observations"]:
+        pricing = item["pricing"]
+        renewal = item["renewal"]
+        currency = item["market"]["currency"]
+        shown = lambda field: "—" if field["value"] is None else f"{field['value']} {currency}"
+        increase = "—" if renewal["increase_pct"]["value"] is None else f"{renewal['increase_pct']['value']}%"
+        lines.append(
+            f"| {item['provider_name']} | {item['plan_name']} | {item['market']['country_code']} | "
+            f"{shown(pricing['upfront_total'])} | {shown(pricing['effective_intro_monthly'])} | "
+            f"{shown(renewal['normalized_monthly'])} | {increase} |"
+        )
+    lines.append("")
+    return "\n".join(lines)
+
+
 def checksum_text() -> str:
     targets = [
         ROOT / "data" / "providers.json",
         LATEST_JSON,
         LATEST_CSV,
+        LATEST_MD,
         ROOT / "schemas" / "observation.schema.json",
         ROOT / "schemas" / "providers.schema.json",
     ] + sorted(OBSERVATIONS.glob("*.json"))
@@ -99,12 +131,15 @@ def main() -> int:
     snapshot = load_latest()
     expected_json = json.dumps(snapshot, indent=2, ensure_ascii=False) + "\n"
     expected_csv = csv_text(snapshot)
+    expected_md = markdown_text(snapshot)
     if args.check:
         errors = []
         if LATEST_JSON.read_text() != expected_json:
             errors.append("data/latest.json is not the newest deterministic snapshot")
         if LATEST_CSV.read_text() != expected_csv:
             errors.append("data/latest.csv is stale")
+        if LATEST_MD.read_text() != expected_md:
+            errors.append("data/latest.md is stale")
         if CHECKSUMS.exists() and CHECKSUMS.read_text() != checksum_text():
             errors.append("metadata/SHA256SUMS is stale")
         if errors:
@@ -112,10 +147,10 @@ def main() -> int:
         return 0
     LATEST_JSON.write_text(expected_json)
     LATEST_CSV.write_text(expected_csv)
+    LATEST_MD.write_text(expected_md)
     CHECKSUMS.write_text(checksum_text())
     return 0
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

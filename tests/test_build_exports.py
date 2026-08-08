@@ -19,7 +19,11 @@ class BuildExportsTests(unittest.TestCase):
     def test_columns_are_unique(self):
         self.assertEqual(len(MODULE.COLUMNS), len(set(MODULE.COLUMNS)))
 
+    def test_empty_markdown_does_not_imply_results(self):
+        text = MODULE.markdown_text({"observations": []})
+        self.assertIn("No manually reviewed observations", text)
+        self.assertNotIn("| Provider |", text)
+
 
 if __name__ == "__main__":
     unittest.main()
-

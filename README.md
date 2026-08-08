@@ -39,6 +39,7 @@ data/providers.json            Provider population and inclusion basis
 data/observations/             Immutable reviewed daily snapshots
 data/latest.json               Most recent reviewed snapshot
 data/latest.csv                Flat export of the most recent snapshot
+data/latest.md                 GitHub-rendered table of the latest snapshot
 schemas/                       JSON Schemas
 methodology/                   Collection, field, renewal, and manual protocols
 metadata/                      Release and repository-deposit metadata
@@ -67,3 +68,6 @@ used. Provider names and trademarks remain the property of their owners.
 Corrections are welcome through the correction issue form. A correction must
 identify the observation and provide a primary source or reproducible evidence.
 
+The [latest reviewed table](data/latest.md) is generated from the same snapshot
+as the JSON and CSV exports. It is empty until the first manual review is
+complete; raw automated captures are intentionally not displayed as results.
