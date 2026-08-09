@@ -96,6 +96,19 @@ def main() -> int:
     ids = [item["id"] for item in providers["providers"]]
     if len(ids) != len(set(ids)):
         errors.append("provider IDs are not unique")
+    if len(ids) != 29:
+        errors.append(f"expected 29 providers in the pre-observation development panel, found {len(ids)}")
+    expected_permissioned = {"torguard", "privadovpn", "fastestvpn", "x-vpn"}
+    actual_permissioned = {
+        item["id"] for item in providers["providers"]
+        if item.get("automation_basis") == "permission_reported_by_research_owner"
+        and item.get("review_requirement") == "permissioned_manual_review"
+    }
+    if actual_permissioned != expected_permissioned:
+        errors.append("permissioned manual-review provider set does not match the recorded exceptions")
+    overlap = set(ids) & {item["id"] for item in providers["watchlist"]}
+    if overlap:
+        errors.append(f"providers also appear on watchlist: {sorted(overlap)}")
     snapshots = [ROOT / "data" / "latest.json", *sorted((ROOT / "data" / "observations").glob("*.json"))]
     for path in snapshots:
         snapshot = load(path)
@@ -110,4 +123,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

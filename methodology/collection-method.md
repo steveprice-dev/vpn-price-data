@@ -12,10 +12,11 @@ One observation represents one provider, one named plan, one country market,
 and one UTC capture time. The initial panel is prespecified in
 `data/providers.json`; inclusion does not imply endorsement or ranking.
 
-The 25-provider development panel is fixed before the first reviewed price
-observation. Providers whose published terms prohibit automated monitoring are
-excluded from the panel rather than placed in a daily manual queue. The dated
-decision record and permission path are published in
+The 29-provider development panel is fixed before the first reviewed price
+observation. Four providers with otherwise restrictive published terms are
+included after the research owner reported provider exceptions covering
+GitHub Actions collection. They are collected automatically but remain in a
+permissioned manual-review queue. The dated decision record is published in
 `methodology/automation-eligibility.md`.
 
 The first automated GitHub-hosted runner is a discovery and change-detection
@@ -33,9 +34,12 @@ insufficient for a VAT conclusion.
    recorded; it never silently replaces a direct result.
 3. Automated parsing creates draft values. A fetch failure is recorded as a
    failure, not as evidence that a plan disappeared.
-4. Checkout, renewal visibility, tax, and cancellation claims require manual
+4. Permissioned providers are captured on the same schedule but carry a
+   `permissioned_manual_review` marker; the marker blocks publication, not
+   retrieval.
+5. Checkout, renewal visibility, tax, and cancellation claims require manual
    verification where the public page is insufficient.
-5. Only manually verified, schema-valid observations are exported. Public
+6. Only manually verified, schema-valid observations are exported. Public
    files contain facts, source URLs, and hashes, not raw HTML, cookies,
    screenshots with personal data, IP addresses, or credentials.
 

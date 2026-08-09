@@ -3,15 +3,15 @@
   "type":"object","additionalProperties":false,
   "required":["schema_version","as_of","selection_method","providers","watchlist"],
   "properties": {
-    "schema_version":{"const":"1.0.0"},
+    "schema_version":{"const":"1.1.0"},
     "as_of":{"type":"string","format":"date"},
     "selection_method":{"type":"string","minLength":20},
-    "providers":{"type":"array","minItems":15,"maxItems":25,"uniqueItems":true,"items":{"$ref":"#/$defs/provider"}},
+    "providers":{"type":"array","minItems":15,"maxItems":40,"uniqueItems":true,"items":{"$ref":"#/$defs/provider"}},
     "watchlist":{"type":"array","items":{"$ref":"#/$defs/watch"}}
   },
   "$defs": {
     "provider":{"type":"object","additionalProperties":false,"required":["id","name","pricing_url","inclusion","collection_priority"],"properties":{
-      "id":{"type":"string","pattern":"^[a-z0-9-]+$"},"name":{"type":"string","minLength":1},"pricing_url":{"type":"string","format":"uri","pattern":"^https://"},"inclusion":{"type":"array","minItems":1,"uniqueItems":true,"items":{"enum":["dovpn_featured","market_prominence","privacy_focused","security_suite","pricing_model_diversity","protocol_diversity","decentralized_network","infrastructure_transparency"]}},"collection_priority":{"enum":["daily","weekly","manual"]}
+      "id":{"type":"string","pattern":"^[a-z0-9-]+$"},"name":{"type":"string","minLength":1},"pricing_url":{"type":"string","format":"uri","pattern":"^https://"},"inclusion":{"type":"array","minItems":1,"uniqueItems":true,"items":{"enum":["dovpn_featured","market_prominence","privacy_focused","security_suite","pricing_model_diversity","protocol_diversity","decentralized_network","infrastructure_transparency"]}},"collection_priority":{"enum":["daily","weekly","manual"]},"automation_basis":{"enum":["published_access_terms","permission_reported_by_research_owner"]},"review_requirement":{"enum":["standard_manual_review","permissioned_manual_review"]}
     }},
     "watch":{"type":"object","additionalProperties":false,"required":["id","name","reason"],"properties":{"id":{"type":"string","pattern":"^[a-z0-9-]+$"},"name":{"type":"string"},"reason":{"type":"string","minLength":10}}}
   }

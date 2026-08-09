@@ -2,6 +2,16 @@
 
 All notable dataset and contract changes are recorded here.
 
+## 0.3.0 - 2026-08-09
+
+- Expand the pre-observation development panel from 25 to 29 providers.
+- Add TorGuard, PrivadoVPN, FastestVPN, and X-VPN after the research owner
+  reported provider exceptions permitting GitHub Actions collection.
+- Mark those four as permissioned automated sources requiring manual review;
+  the marker blocks publication rather than retrieval.
+- Retain permission correspondence outside the public repository while
+  publishing the authorization basis and review requirement.
+
 ## 0.2.0 - 2026-08-09
 
 - Expand the pre-observation population from 20 to 25 providers.
