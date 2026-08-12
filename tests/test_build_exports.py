@@ -24,6 +24,11 @@ class BuildExportsTests(unittest.TestCase):
         self.assertIn("No manually reviewed observations", text)
         self.assertNotIn("| Provider |", text)
 
+    def test_operational_feed_is_covered_by_checksums(self):
+        checksums = MODULE.checksum_text()
+        self.assertIn("feeds/dovpn/latest.json", checksums)
+        self.assertIn("schemas/operational-feed.schema.json", checksums)
+
 
 if __name__ == "__main__":
     unittest.main()

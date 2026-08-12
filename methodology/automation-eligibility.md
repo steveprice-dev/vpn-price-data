@@ -12,7 +12,7 @@ not workarounds for a prohibited collection method.
 | Provider | Daily status | Basis | Publication gate |
 |---|---|---|---|
 | TorGuard | Permissioned automated collection | The research owner reports an exception permitting GitHub Actions collection for this study. The permission record is retained privately outside this public repository. | Manual review required before any normalized observation is published. |
-| PrivadoVPN | Permissioned automated collection | The research owner reports an exception permitting GitHub Actions collection for this study. The permission record is retained privately outside this public repository. | Manual review required before any normalized observation is published. |
+| PrivadoVPN | Permissioned automated collection and operational processing | The research owner reports an exception permitting GitHub Actions collection and automated processing for this study. The permission record is retained privately outside this public repository. | Machine-validated operational records may be published; research-grade observations still require manual review. |
 | FastestVPN | Permissioned automated collection | The research owner reports an exception permitting GitHub Actions collection for this study. The permission record is retained privately outside this public repository. | Manual review required before any normalized observation is published. |
 | X-VPN | Permissioned automated collection | The research owner reports an exception permitting GitHub Actions collection for this study. The permission record is retained privately outside this public repository. | Manual review required before any normalized observation is published. |
 

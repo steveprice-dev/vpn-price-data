@@ -16,6 +16,8 @@ LATEST_JSON = ROOT / "data" / "latest.json"
 LATEST_CSV = ROOT / "data" / "latest.csv"
 LATEST_MD = ROOT / "data" / "latest.md"
 CHECKSUMS = ROOT / "metadata" / "SHA256SUMS"
+OPERATIONAL_LATEST = ROOT / "feeds" / "dovpn" / "latest.json"
+OPERATIONAL_SNAPSHOTS = ROOT / "feeds" / "dovpn" / "snapshots"
 
 COLUMNS = [
     "observation_id", "provider_id", "provider_name", "plan_id", "plan_name",
@@ -116,7 +118,12 @@ def checksum_text() -> str:
         LATEST_MD,
         ROOT / "schemas" / "observation.schema.json",
         ROOT / "schemas" / "providers.schema.json",
+        ROOT / "schemas" / "operational-feed.schema.json",
     ] + sorted(OBSERVATIONS.glob("*.json"))
+    if OPERATIONAL_LATEST.exists():
+        targets.append(OPERATIONAL_LATEST)
+    if OPERATIONAL_SNAPSHOTS.exists():
+        targets.extend(sorted(OPERATIONAL_SNAPSHOTS.glob("*.json")))
     lines = []
     for path in targets:
         digest = hashlib.sha256(path.read_bytes()).hexdigest()

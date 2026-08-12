@@ -15,6 +15,11 @@ No price observation is published merely because a page was fetched. A record
 must pass schema validation and the review gate described in
 [`methodology/collection-method.md`](methodology/collection-method.md).
 
+The separate [`feeds/dovpn/latest.json`](feeds/dovpn/latest.json) file is an
+automatically validated operational feed for reader-facing website prices. It
+is explicitly not a substitute for the manually reviewed research dataset;
+see [`methodology/operational-feed.md`](methodology/operational-feed.md).
+
 ## What this measures
 
 One observation is one provider, one plan, one market, and one UTC capture
@@ -40,6 +45,8 @@ data/observations/             Immutable reviewed daily snapshots
 data/latest.json               Most recent reviewed snapshot
 data/latest.csv                Flat export of the most recent snapshot
 data/latest.md                 GitHub-rendered table of the latest snapshot
+feeds/dovpn/latest.json        Current automated operational website feed
+feeds/dovpn/snapshots/         Versioned operational feed history
 schemas/                       JSON Schemas
 methodology/                   Collection, field, renewal, and manual protocols
 metadata/                      Release and repository-deposit metadata
