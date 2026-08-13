@@ -120,6 +120,14 @@ def operational_checks(feed: dict, provider_ids: set[str]) -> list[str]:
                 errors.append(f"{prefix}: partial renewal data crossed the boundary")
         elif not close(Decimal(str(item["effective_renewal_monthly"])), Decimal(str(item["renewal_total"])) / Decimal(item["renewal_period_months"])):
             errors.append(f"{prefix}: effective renewal price does not reconcile")
+        renewal_status = item.get("renewal_total_status")
+        billing_type = item.get("billing_type")
+        if renewal_status == "not_applicable" and billing_type not in {"non_recurring_prepaid", "free", "one_time_purchase", "lifetime"}:
+            errors.append(f"{prefix}: renewal cannot be not_applicable for its billing type")
+        if renewal_status == "not_applicable" and item["renewal_total"] is not None:
+            errors.append(f"{prefix}: not-applicable renewal unexpectedly has an amount")
+        if renewal_status and renewal_status != "not_applicable" and item["renewal_total"] is not None and billing_type in {"non_recurring_prepaid", "free", "one_time_purchase", "lifetime"}:
+            errors.append(f"{prefix}: non-recurring billing unexpectedly has a renewal amount")
         parsed = urlsplit(item["source_url"])
         if parsed.query or parsed.fragment:
             errors.append(f"{prefix}: source URL contains query or fragment")

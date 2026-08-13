@@ -21,8 +21,12 @@ An operational record is published only when it:
 - stays within automated continuity checks against the last accepted record.
 
 If a new candidate fails those checks, the feed retains the last known good
-record and marks it accordingly. Missing renewal or refund information remains
-null and is not converted into a claim that the term does not exist.
+record and marks it accordingly. `renewal_total_status` distinguishes a genuinely
+unavailable renewal amount from a plan where renewal is not applicable, while
+`billing_type` records whether the selected offer is recurring or prepaid.
+Consumers should not interpret a null renewal amount without these fields.
+Missing renewal or refund information is never converted into a claim that the
+term does not exist.
 
 `discount_basis` distinguishes a provider-displayed percentage from one
 calculated from the recorded reference total. `reference_price_basis`
