@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/steveprice-dev/vpn-price-data/blob/main/schemas/operational-feed.schema.json",
+  "title": "DoVPN operational price feed",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version","feed_type","generated_at","observation_date","market","methodology_url","records"],
+  "properties": {
+    "schema_version": {"const":"1.0.0"},
+    "feed_type": {"const":"dovpn_operational_prices"},
+    "generated_at": {"type":"string","format":"date-time"},
+    "observation_date": {"type":"string","format":"date"},
+    "market": {"type":"object","additionalProperties":false,"required":["country_code","currency"],"properties":{"country_code":{"const":"US"},"currency":{"const":"USD"}}},
+    "methodology_url": {"type":"string","format":"uri","pattern":"^https://github.com/steveprice-dev/vpn-price-data/"},
+    "records": {"type":"array","minItems":10,"maxItems":10,"items":{"$ref":"#/$defs/record"}}
+  },
+  "$defs": {
+    "money": {"type":["number","null"],"minimum":0},
+    "record": {
+      "type":"object","additionalProperties":false,
+      "required":["provider_id","provider_name","plan_id","plan_name","country_code","currency","observed_at","materially_changed_at","advertised_monthly_equivalent","upfront_total","paid_months","free_months","service_months","effective_intro_monthly","discount_percent","discount_basis","reference_price_total","reference_monthly_equivalent","reference_price_basis","renewal_total","renewal_period_months","effective_renewal_monthly","refund_days","tax_treatment","promotion_label","promotion_theme","source_url","evidence_sha256","validation_status","freshness_status","content_fingerprint"],
+      "properties": {
+        "provider_id":{"type":"string","pattern":"^[a-z0-9-]+$"},
+        "provider_name":{"type":"string","minLength":1},
+        "plan_id":{"type":"string","pattern":"^[a-z0-9-]+$"},
+        "plan_name":{"type":"string","minLength":1},
+        "country_code":{"const":"US"},
+        "currency":{"const":"USD"},
+        "observed_at":{"type":"string","format":"date-time"},
+        "materially_changed_at":{"type":"string","format":"date-time"},
+        "advertised_monthly_equivalent":{"type":"number","exclusiveMinimum":0},
+        "upfront_total":{"type":"number","exclusiveMinimum":0},
+        "paid_months":{"type":"integer","minimum":1},
+        "free_months":{"type":"integer","minimum":0,"maximum":12},
+        "service_months":{"type":"integer","minimum":1},
+        "effective_intro_monthly":{"type":"number","exclusiveMinimum":0},
+        "discount_percent":{"type":["number","null"],"minimum":0,"maximum":100},
+        "discount_basis":{"type":["string","null"],"enum":["provider_claim","derived_from_reference_total",null]},
+        "reference_price_total":{"$ref":"#/$defs/money"},
+        "reference_monthly_equivalent":{"$ref":"#/$defs/money"},
+        "reference_price_basis":{"type":["string","null"],"enum":["provider_reference_total","derived_from_monthly_plan",null]},
+        "billing_type":{"enum":["recurring_subscription","prepaid_optional_auto_renewal","non_recurring_prepaid","manual_renewal_prepaid","free","one_time_purchase","lifetime"]},
+        "renewal_total":{"$ref":"#/$defs/money"},
+        "renewal_total_status":{"enum":["machine_extracted","derived","not_visible","not_applicable","ambiguous","checkout_observed","derived_from_checkout"]},
+        "renewal_period_months":{"type":["integer","null"],"minimum":1},
+        "effective_renewal_monthly":{"$ref":"#/$defs/money"},
+        "refund_days":{"type":["integer","null"],"minimum":0},
+        "tax_treatment":{"type":"string","pattern":"^[a-z0-9_]+$"},
+        "promotion_label":{"type":["string","null"],"maxLength":120},
+        "promotion_theme":{"type":["string","null"],"pattern":"^[a-z0-9_]+$"},
+        "source_url":{"type":"string","format":"uri","pattern":"^https://[^?#]+$"},
+        "evidence_sha256":{"type":"string","pattern":"^[a-f0-9]{64}$"},
+        "validation_status":{"const":"automated_validated"},
+        "freshness_status":{"enum":["current","last_known_good"]},
+        "content_fingerprint":{"type":"string","pattern":"^[a-f0-9]{64}$"}
+      }
+    }
+  }
+}

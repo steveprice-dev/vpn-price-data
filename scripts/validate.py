@@ -6,6 +6,7 @@ from __future__ import annotations
 import ipaddress
 import json
 import re
+import hashlib
 from decimal import Decimal
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -90,6 +91,62 @@ def leakage_checks() -> list[str]:
     return errors
 
 
+def operational_checks(feed: dict, provider_ids: set[str]) -> list[str]:
+    errors: list[str] = []
+    expected = {"nordvpn", "surfshark", "privadovpn", "expressvpn", "purevpn", "cyberghost", "protonvpn", "pia", "ipvanish", "tunnelbear"}
+    actual = [item["provider_id"] for item in feed["records"]]
+    if set(actual) != expected or len(actual) != len(set(actual)):
+        errors.append("operational feed provider set is incomplete or duplicated")
+    for item in feed["records"]:
+        prefix = f"operational:{item['provider_id']}"
+        if item["provider_id"] not in provider_ids:
+            errors.append(f"{prefix}: provider is outside the registry")
+        if item["service_months"] != item["paid_months"] + item["free_months"]:
+            errors.append(f"{prefix}: service duration does not reconcile")
+        if not close(Decimal(str(item["effective_intro_monthly"])), Decimal(str(item["upfront_total"])) / Decimal(item["service_months"])):
+            errors.append(f"{prefix}: effective introductory price does not reconcile")
+        if (item["discount_percent"] is None) != (item["discount_basis"] is None):
+            errors.append(f"{prefix}: discount value and basis are inconsistent")
+        reference_values_missing = item["reference_price_total"] is None or item["reference_monthly_equivalent"] is None
+        if reference_values_missing != (item["reference_price_basis"] is None):
+            errors.append(f"{prefix}: reference price values and basis are inconsistent")
+        if not reference_values_missing and not close(
+            Decimal(str(item["reference_price_total"])),
+            Decimal(str(item["reference_monthly_equivalent"])) * Decimal(item["service_months"]),
+        ):
+            errors.append(f"{prefix}: reference price total does not reconcile")
+        if item["renewal_total"] is None:
+            if item["renewal_period_months"] is not None or item["effective_renewal_monthly"] is not None:
+                errors.append(f"{prefix}: partial renewal data crossed the boundary")
+        elif not close(Decimal(str(item["effective_renewal_monthly"])), Decimal(str(item["renewal_total"])) / Decimal(item["renewal_period_months"])):
+            errors.append(f"{prefix}: effective renewal price does not reconcile")
+        renewal_status = item.get("renewal_total_status")
+        billing_type = item.get("billing_type")
+        if renewal_status == "not_applicable" and billing_type not in {"non_recurring_prepaid", "free", "one_time_purchase", "lifetime"}:
+            errors.append(f"{prefix}: renewal cannot be not_applicable for its billing type")
+        if renewal_status == "not_applicable" and item["renewal_total"] is not None:
+            errors.append(f"{prefix}: not-applicable renewal unexpectedly has an amount")
+        if renewal_status and renewal_status != "not_applicable" and item["renewal_total"] is not None and billing_type in {"non_recurring_prepaid", "free", "one_time_purchase", "lifetime"}:
+            errors.append(f"{prefix}: non-recurring billing unexpectedly has a renewal amount")
+        parsed = urlsplit(item["source_url"])
+        if parsed.query or parsed.fragment:
+            errors.append(f"{prefix}: source URL contains query or fragment")
+        fingerprint_source = {
+            key: value for key, value in item.items()
+            if key not in {
+                "observed_at", "materially_changed_at", "freshness_status",
+                "content_fingerprint", "source_url", "evidence_sha256",
+                "validation_status",
+            }
+        }
+        expected_fingerprint = hashlib.sha256(
+            json.dumps(fingerprint_source, sort_keys=True, separators=(",", ":")).encode()
+        ).hexdigest()
+        if item["content_fingerprint"] != expected_fingerprint:
+            errors.append(f"{prefix}: content fingerprint does not match")
+    return errors
+
+
 def main() -> int:
     providers = load(ROOT / "data" / "providers.json")
     errors = validate_schema(providers, ROOT / "schemas" / "providers.schema.json", "providers")
@@ -106,6 +163,12 @@ def main() -> int:
     }
     if actual_permissioned != expected_permissioned:
         errors.append("permissioned manual-review provider set does not match the recorded exceptions")
+    operational_allowed = {
+        item["id"] for item in providers["providers"]
+        if item.get("operational_processing") == "automated_validated_allowed"
+    }
+    if operational_allowed != {"privadovpn"}:
+        errors.append("automated operational exception set does not match the recorded permission")
     overlap = set(ids) & {item["id"] for item in providers["watchlist"]}
     if overlap:
         errors.append(f"providers also appear on watchlist: {sorted(overlap)}")
@@ -114,6 +177,14 @@ def main() -> int:
         snapshot = load(path)
         errors.extend(validate_schema(snapshot, ROOT / "schemas" / "observation.schema.json", str(path.relative_to(ROOT))))
         errors.extend(semantic_checks(snapshot, set(ids)))
+    operational_paths = [ROOT / "feeds" / "dovpn" / "latest.json", *sorted((ROOT / "feeds" / "dovpn" / "snapshots").glob("*.json"))]
+    for path in operational_paths:
+        if not path.exists():
+            errors.append(f"missing operational feed: {path.relative_to(ROOT)}")
+            continue
+        feed = load(path)
+        errors.extend(validate_schema(feed, ROOT / "schemas" / "operational-feed.schema.json", str(path.relative_to(ROOT))))
+        errors.extend(operational_checks(feed, set(ids)))
     errors.extend(leakage_checks())
     if errors:
         raise SystemExit("\n".join(errors))
