@@ -1,24 +1,25 @@
 # VPN Price Transparency Index
 
-An independent, versioned record of the real introductory cost and renewal
-terms of consumer VPN subscriptions. The project is maintained by Steve Price
+An independent, versioned record of introductory prices and renewal terms for
+consumer VPN subscriptions. The project is maintained by Steve Price
 ([ORCID 0009-0009-6603-6878](https://orcid.org/0009-0009-6603-6878)).
 
 ## Status
 
-Version `0.3.0` establishes the research contract, 29-provider population,
-validation tools, and publication format. Automated collection runs in a
-separate private repository so raw pages, screenshots, network details,
-cookies, and collection credentials cannot leak into this public dataset.
+Version `0.3.0` defines the research contract, 29-provider population,
+validation tools, and publication format. Collection takes place in a separate
+private repository. Raw pages, screenshots, network details, cookies, and
+collection credentials are not part of this public dataset.
 
-No price observation is published merely because a page was fetched. A record
-must pass schema validation and the review gate described in
-[`methodology/collection-method.md`](methodology/collection-method.md).
+The project does not publish a price observation simply because it was
+collected. Every record must pass schema validation and the review gate
+described in the
+[`collection method`](methodology/collection-method.md).
 
-The separate [`feeds/dovpn/latest.json`](feeds/dovpn/latest.json) file is an
-automatically validated operational feed for reader-facing website prices. It
-is explicitly not a substitute for the manually reviewed research dataset;
-see [`methodology/operational-feed.md`](methodology/operational-feed.md).
+The separate [`feeds/dovpn/latest.json`](feeds/dovpn/latest.json) file is a
+validated operational feed for prices shown on the [DoVPN website](https://dovpn.com/).
+It is not a substitute for the manually reviewed research dataset. See
+[`methodology/operational-feed.md`](methodology/operational-feed.md).
 
 ## What this measures
 
