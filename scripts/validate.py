@@ -148,6 +148,7 @@ def operational_checks(feed: dict, provider_ids: set[str]) -> list[str]:
 
 
 def main() -> int:
+    from validate_comparison_catalog import comparison_checks
     providers = load(ROOT / "data" / "providers.json")
     errors = validate_schema(providers, ROOT / "schemas" / "providers.schema.json", "providers")
     ids = [item["id"] for item in providers["providers"]]
@@ -185,6 +186,12 @@ def main() -> int:
         feed = load(path)
         errors.extend(validate_schema(feed, ROOT / "schemas" / "operational-feed.schema.json", str(path.relative_to(ROOT))))
         errors.extend(operational_checks(feed, set(ids)))
+    for path in sorted((ROOT / "feeds" / "dovpn" / "comparison").rglob("*.json")):
+        feed = load(path)
+        schema_errors = validate_schema(feed, ROOT / "schemas" / "comparison-catalog.schema.json", str(path.relative_to(ROOT)))
+        errors.extend(schema_errors)
+        if not schema_errors:
+            errors.extend(comparison_checks(feed, set(ids)))
     errors.extend(leakage_checks())
     if errors:
         raise SystemExit("\n".join(errors))

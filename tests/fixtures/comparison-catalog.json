@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "feed_type": "dovpn_comparison_catalog",
+  "generated_at": "2026-09-15T11:07:11Z",
+  "methodology_url": "https://github.com/steveprice-dev/vpn-price-data/blob/main/methodology/comparison-catalog.md",
+  "validation_status": "automated_validated",
+  "records": [
+    {
+      "provider_id": "cyberghost",
+      "provider_name": "CyberGhost",
+      "plan_id": "monthly",
+      "plan_name": "Monthly",
+      "country_code": "US",
+      "currency": "USD",
+      "observed_at": "2026-09-15T05:02:51Z",
+      "advertised_monthly_equivalent": 12.99,
+      "upfront_total": 12.99,
+      "paid_months": 1,
+      "free_months": 0,
+      "service_months": 1,
+      "effective_intro_monthly": 12.99,
+      "billing_type": "recurring_subscription",
+      "renewal_total": 12.99,
+      "renewal_total_status": "machine_extracted",
+      "renewal_period_months": 1,
+      "effective_renewal_monthly": 12.99,
+      "refund_days": 14,
+      "tax_treatment": "not_disclosed",
+      "promotion_label": null,
+      "promotion_theme": null,
+      "source_url": "https://www.cyberghostvpn.com/en_US/buy/cyberghost-vpn-3",
+      "evidence_sha256": "dfd39b737f0d59fc4a5500ec61b6104525aea29718d9baa4dad939be97e6b3dc",
+      "validation_status": "automated_validated",
+      "freshness_status": "current",
+      "upfront_total_status": "derived",
+      "refund_status": "machine_extracted",
+      "refund_note": null,
+      "offer_key": "cyberghost:monthly:US:USD:a80266c94d0f2f8e",
+      "materially_changed_at": "2026-09-15T05:02:51Z"
+    }
+  ]
+}
