@@ -186,6 +186,20 @@ def main() -> int:
         feed = load(path)
         errors.extend(validate_schema(feed, ROOT / "schemas" / "operational-feed.schema.json", str(path.relative_to(ROOT))))
         errors.extend(operational_checks(feed, set(ids)))
+    drop_path = ROOT / "feeds" / "dovpn" / "price-drops" / "latest.json"
+    if drop_path.exists():
+        drop_feed = load(drop_path)
+        errors.extend(validate_schema(drop_feed, ROOT / "schemas" / "price-drops.schema.json", "price-drops/latest.json"))
+        operational = load(ROOT / "feeds" / "dovpn" / "latest.json")
+        if drop_feed.get("source_feed_generated_at") != operational.get("generated_at"):
+            errors.append("price-drop feed does not match latest operational feed")
+        records = {item["provider_id"]: item for item in operational["records"]}
+        for drop in drop_feed.get("drops", []):
+            record = records.get(drop["provider_id"])
+            if not record or record["plan_id"] != drop["plan_id"] or record["freshness_status"] != "current" or record["upfront_total"] != drop["current_upfront_total"] or record["observed_at"] != drop["current_observed_at"]:
+                errors.append(f"price-drop {drop['provider_id']} does not match a current accepted offer")
+            if drop["previous_upfront_total"] <= drop["current_upfront_total"]:
+                errors.append(f"price-drop {drop['provider_id']} has no reduction")
     for path in sorted((ROOT / "feeds" / "dovpn" / "comparison").rglob("*.json")):
         feed = load(path)
         schema_errors = validate_schema(feed, ROOT / "schemas" / "comparison-catalog.schema.json", str(path.relative_to(ROOT)))

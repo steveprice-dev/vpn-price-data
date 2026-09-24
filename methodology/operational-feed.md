@@ -47,3 +47,15 @@ lengths, but long plans are normally charged upfront. A consuming page should
 therefore show the monthly equivalent together with the total due, paid and
 included months, renewal terms when available, market, currency and observation
 date. The provider checkout remains authoritative.
+
+## Detected price drops
+
+`feeds/dovpn/price-drops/latest.json` contains short-lived comparisons between
+successive accepted offers from the same provider, plan, duration, market and
+provider source URL. It is derived from the operational snapshots, not from the
+provider's advertised reference-price percentage. A drop qualifies when the
+upfront total falls by at least $2 and 3%, remains current, and was first
+observed within the previous 30 UTC calendar dates. Any price rise, source or
+plan switch ends that episode. A carried-forward record cannot be featured.
+The feed's `source_feed_generated_at` must match the operational feed used by a
+website, and checkout remains the final price authority.

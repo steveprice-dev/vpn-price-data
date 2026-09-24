@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "feed_type",
+    "source_feed_generated_at",
+    "market",
+    "drops"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "feed_type": {
+      "const": "dovpn_price_drops"
+    },
+    "source_feed_generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "market": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "country_code",
+        "currency"
+      ],
+      "properties": {
+        "country_code": {
+          "const": "US"
+        },
+        "currency": {
+          "const": "USD"
+        }
+      }
+    },
+    "drops": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "provider_id",
+          "plan_id",
+          "detected_at",
+          "previous_upfront_total",
+          "current_upfront_total",
+          "current_observed_at"
+        ],
+        "properties": {
+          "provider_id": {
+            "type": "string"
+          },
+          "plan_id": {
+            "type": "string"
+          },
+          "detected_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "previous_upfront_total": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "current_upfront_total": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "current_observed_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    }
+  }
+}

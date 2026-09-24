@@ -119,11 +119,13 @@ def checksum_text() -> str:
         ROOT / "schemas" / "observation.schema.json",
         ROOT / "schemas" / "providers.schema.json",
         ROOT / "schemas" / "operational-feed.schema.json",
+        ROOT / "schemas" / "price-drops.schema.json",
     ] + sorted(OBSERVATIONS.glob("*.json"))
     if OPERATIONAL_LATEST.exists():
         targets.append(OPERATIONAL_LATEST)
     if OPERATIONAL_SNAPSHOTS.exists():
         targets.extend(sorted(OPERATIONAL_SNAPSHOTS.glob("*.json")))
+    targets.extend(sorted((ROOT / "feeds" / "dovpn" / "price-drops").glob("*.json")))
     comparison_schema = ROOT / "schemas" / "comparison-catalog.schema.json"
     if comparison_schema.exists():
         targets.append(comparison_schema)
