@@ -83,7 +83,7 @@ complete; raw automated captures are intentionally not displayed as results.
 ## Full tracked population and monthly history
 
 [All-provider catalog](feeds/price-tracking-usd/latest.json) publishes sanitized
-extractions for **all 29 tracked providers and every extracted plan**, independently
+extractions for **all 29 tracked providers and every extracted USD plan**, independently
 of which providers are featured on DoVPN. [Daily/intraday snapshots](feeds/price-tracking-usd/snapshots)
 retain the available history from August 11, 2026. Explicit provider coverage,
 missing values, extraction states, source pages, evidence hashes, review flags
