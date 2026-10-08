@@ -1,0 +1,533 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "feed_type",
+    "generated_at",
+    "validation_status",
+    "manual_review_required",
+    "methodology_url",
+    "providers",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "feed_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "generated_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "validation_status": {
+      "const": "automated_unreviewed"
+    },
+    "manual_review_required": {
+      "const": true
+    },
+    "methodology_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "providers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "provider_id",
+          "provider_name",
+          "record_count",
+          "fresh_record_count",
+          "trend_eligible_record_count",
+          "status",
+          "issue",
+          "capture_results"
+        ],
+        "properties": {
+          "provider_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "provider_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "record_count": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "fresh_record_count": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "trend_eligible_record_count": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "issue": {
+            "type": [
+              "string",
+              "number",
+              "null"
+            ]
+          },
+          "capture_results": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "provider_id",
+          "provider_name",
+          "plan_id",
+          "plan_name",
+          "billing_type",
+          "country_code",
+          "currency",
+          "captured_at",
+          "data_freshness_status",
+          "tax_treatment_claim",
+          "promotion_label",
+          "promotion_theme",
+          "review_status",
+          "advertised_monthly",
+          "advertised_monthly_status",
+          "intro_total",
+          "intro_total_status",
+          "paid_months",
+          "paid_months_status",
+          "free_months",
+          "free_months_status",
+          "service_months",
+          "service_months_status",
+          "effective_intro_monthly",
+          "effective_intro_monthly_status",
+          "advertised_discount_pct",
+          "advertised_discount_pct_status",
+          "reference_price_total",
+          "reference_price_total_status",
+          "renewal_total",
+          "renewal_total_status",
+          "renewal_period_months",
+          "renewal_period_months_status",
+          "effective_renewal_monthly",
+          "effective_renewal_monthly_status",
+          "renewal_increase_pct",
+          "renewal_increase_pct_status",
+          "refund_days",
+          "refund_days_status",
+          "freshness_status",
+          "validation_status",
+          "review_flags",
+          "manual_review_required",
+          "sources",
+          "policy_sources",
+          "policy_observed_at",
+          "checkout_observed_at",
+          "checkout_evidence_sha256",
+          "source_url",
+          "evidence_sha256",
+          "source_kind",
+          "trend_eligible",
+          "series_id"
+        ],
+        "properties": {
+          "provider_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "provider_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "plan_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "plan_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "billing_type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "country_code": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "currency": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "captured_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "data_freshness_status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "tax_treatment_claim": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "promotion_label": {
+            "type": [
+              "string",
+              "number",
+              "null"
+            ]
+          },
+          "promotion_theme": {
+            "type": [
+              "string",
+              "number",
+              "null"
+            ]
+          },
+          "review_status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "advertised_monthly": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "advertised_monthly_status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "intro_total": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "intro_total_status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "paid_months": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "paid_months_status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "free_months": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "free_months_status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "service_months": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "service_months_status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "effective_intro_monthly": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "effective_intro_monthly_status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "advertised_discount_pct": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "advertised_discount_pct_status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reference_price_total": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "reference_price_total_status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "renewal_total": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "renewal_total_status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "renewal_period_months": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "renewal_period_months_status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "effective_renewal_monthly": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "effective_renewal_monthly_status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "renewal_increase_pct": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "renewal_increase_pct_status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "refund_days": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "refund_days_status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "freshness_status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "validation_status": {
+            "const": "automated_unreviewed"
+          },
+          "review_flags": {
+            "type": "array",
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "manual_review_required": {
+            "const": true
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "page_id",
+                "url",
+                "result",
+                "method",
+                "content_sha256"
+              ],
+              "properties": {
+                "page_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "result": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "method": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "content_sha256": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "policy_sources": {
+            "type": "array",
+            "items": {}
+          },
+          "policy_observed_at": {
+            "type": [
+              "string",
+              "number",
+              "null"
+            ]
+          },
+          "checkout_observed_at": {
+            "type": [
+              "string",
+              "number",
+              "null"
+            ]
+          },
+          "checkout_evidence_sha256": {
+            "type": [
+              "string",
+              "number",
+              "null"
+            ]
+          },
+          "source_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence_sha256": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_kind": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "trend_eligible": {
+            "type": "boolean"
+          },
+          "series_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "All-provider provisional price tracking"
+}

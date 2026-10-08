@@ -130,6 +130,10 @@ def checksum_text() -> str:
     if comparison_schema.exists():
         targets.append(comparison_schema)
     targets.extend(sorted((ROOT / "feeds" / "dovpn" / "comparison").rglob("*.json")))
+    targets.extend(sorted((ROOT / "data" / "price-history").rglob("*")))
+    targets.extend(sorted((ROOT / "feeds" / "price-tracking").rglob("*.json")))
+    targets.append(ROOT / "schemas" / "price-tracking.schema.json")
+    targets = [path for path in targets if path.is_file()]
     lines = []
     for path in targets:
         digest = hashlib.sha256(path.read_bytes()).hexdigest()

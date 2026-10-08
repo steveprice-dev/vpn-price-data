@@ -79,3 +79,38 @@ identify the observation and provide a primary source or reproducible evidence.
 The [latest reviewed table](data/latest.md) is generated from the same snapshot
 as the JSON and CSV exports. It is empty until the first manual review is
 complete; raw automated captures are intentionally not displayed as results.
+
+## Full tracked population and monthly history
+
+[All-provider catalog](feeds/price-tracking/latest.json) publishes sanitized
+extractions for **all 29 tracked providers and every extracted plan**, independently
+of which providers are featured on DoVPN. [Daily/intraday snapshots](feeds/price-tracking/snapshots)
+retain the available history from August 11, 2026. Explicit provider coverage,
+missing values, extraction states, source pages, evidence hashes, review flags
+and carried-forward states remain visible. These records are **automated and
+unreviewed**, not manually verified research. No raw captures or private paths
+are published. Trend eligibility means the arithmetic, source and freshness
+checks pass; it is not a human verification claim.
+
+[September 2026 frozen release](data/price-history/releases/price-history-2026-09-v1)
+contains JSON, CSV, monthly summary and SHA-256 checksums.
+The [monthly index](data/price-history/index.json) is the entry point for consumers.
+[Methods](methodology/price-history.md) explain eligibility, gaps, source and
+extraction changes, renewal calculations, and citation.
+The Proton standard-to-partner source switch is documented in the
+[source ledger](data/price-history/source-changes.json), and excluded from
+same-source price-cut statistics. Earlier snapshots are unchanged.
+
+The daily private exporter publishes full-provider snapshots and builds
+completed-month releases. Public CI independently regenerates each release in
+check mode. Frozen files cannot silently change.
+
+```sh
+python scripts/build_price_history.py --month 2026-09
+python scripts/build_price_history.py --check
+```
+
+Cite: Price, Steve. *VPN Price Transparency Index: provisional all-provider
+price history, September 2026*. Release `price-history-2026-09-v1`. CC BY 4.0.
+Identify the exact release, currency, offer context and automated unreviewed
+evidence status. No DOI has been assigned to this release.

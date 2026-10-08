@@ -206,6 +206,8 @@ def main() -> int:
         errors.extend(schema_errors)
         if not schema_errors:
             errors.extend(comparison_checks(feed, set(ids)))
+    from validate_price_tracking import tracking_checks
+    errors.extend(tracking_checks(ROOT, set(ids)))
     errors.extend(leakage_checks())
     if errors:
         raise SystemExit("\n".join(errors))

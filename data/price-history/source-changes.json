@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "changes": [
+    {
+      "provider_id": "protonvpn",
+      "plan_id": "vpn-plus-24-month",
+      "detected_at": "2026-09-09T06:39:14Z",
+      "old_source_url": "https://protonvpn.com/pricing",
+      "new_source_url": "https://protonvpn.com/l/special-partner-offer",
+      "old_upfront_total": 83.76,
+      "new_upfront_total": 71.76,
+      "currency": "USD",
+      "paid_months": 24,
+      "classification": "source_change_not_price_cut",
+      "reason": "Collection switched from standard pricing to a publicly accessible partner offer. This does not establish a reduction on the standard price page.",
+      "previous_snapshot": "feeds/dovpn/snapshots/20260909T045337Z.json",
+      "first_partner_snapshot": "feeds/dovpn/snapshots/20260909T063956Z.json",
+      "recorded_at": "2026-10-08",
+      "historical_snapshots_rewritten": false
+    }
+  ]
+}

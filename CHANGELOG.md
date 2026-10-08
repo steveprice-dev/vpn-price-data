@@ -30,3 +30,10 @@ All notable dataset and contract changes are recorded here.
 - Add collection, renewal, field, and manual verification methods.
 - Add deterministic JSON, CSV, checksum, and release-manifest validation.
 - Establish the private-evidence/public-results publication boundary.
+
+## price-history-2026-09-v1 — 2026-10-08
+
+- Publish the full provisional 29-provider extraction catalog and retained history.
+- Freeze September JSON, CSV, monthly summary and checksums.
+- Preserve source/method discontinuities and explicitly annotate Proton's partner offer.
+- Keep unreviewed extraction separate from verified observations and website-approved feeds.
