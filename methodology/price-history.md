@@ -2,8 +2,10 @@
 
 The publisher is Steve Price (ORCID 0009-0009-6603-6878). Data is CC BY 4.0.
 The reporting universe is all 29 providers configured in the private collector
-and every extracted plan. It includes USD, EUR and GBP observations from US
-runners; currency is never converted or blended. Coverage rows retain providers
+and every extracted USD plan from US runners. EUR and GBP test observations
+are excluded from active research without conversion. Providers with no USD
+extractions remain visible in coverage. Earlier multi-currency v1 files are
+archived for reproducibility; the current monthly index points to USD revisions. Coverage rows retain providers
 with missing, blocked, ambiguous or carried-forward data. This is not a census
 of the VPN market or a representative price index. The records are automated
 and unreviewed, with original extraction states and review flags. Trend
@@ -108,3 +110,13 @@ the cited policy before publication as a consumer claim. Terms conflicts,
 ambiguous reference DOM, missing-duration/total, uncollected checkout facts,
 and ambiguous lifetime definitions block price-trend eligibility. Carried
 forward rows are downloadable but never plotted as fresh observations.
+
+## Amnezia correction in September v2
+
+The two-year plan was missed by a parser limited to six months and one year.
+V2 restores $80 for 24 months from successful archived captures beginning
+September 2 at 04:45:06 UTC, alongside the first $30 / six-month and $50 / annual
+observations. It does not infer that the new plan caused the shorter-plan rises.
+The correction date and reason are explicit in recovered rows. No row is added
+before the source first displayed the offer. See `CORRECTIONS.md` for the changed
+coverage counts and archived release details.

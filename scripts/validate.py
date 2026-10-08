@@ -212,6 +212,17 @@ def main() -> int:
     if errors:
         raise SystemExit("\n".join(errors))
     print(f"Validated {len(ids)} providers and {len(snapshots)} snapshot file(s).")
+    # The active research boundary accepts USD only and preserves every provider ID.
+    for path in sorted((ROOT / 'feeds/price-tracking-usd').rglob('*.json')):
+        feed = load(path)
+        scope_errors = validate_schema(feed, ROOT/'schemas/price-tracking.schema.json', str(path.relative_to(ROOT)))
+        if feed.get('currency_scope') != 'USD' or any(r.get('currency') != 'USD' for r in feed['records']):
+            scope_errors.append(f'{path}: active research must be USD only')
+        if {p['provider_id'] for p in feed['providers']} != set(ids):
+            scope_errors.append(f'{path}: missing provider coverage')
+        if scope_errors:
+            print('\n'.join(scope_errors))
+            return 1
     return 0
 
 

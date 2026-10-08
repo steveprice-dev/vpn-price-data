@@ -523,11 +523,48 @@
               "string",
               "null"
             ]
+          },
+          "extraction_corrected_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "extraction_correction": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "currency_scope": {
+      "const": "USD"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "All-provider provisional price tracking",
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "currency_scope"
+        ]
+      },
+      "then": {
+        "properties": {
+          "records": {
+            "items": {
+              "properties": {
+                "currency": {
+                  "const": "USD"
+                }
+              }
+            }
           }
         }
       }
     }
-  },
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "All-provider provisional price tracking"
+  ]
 }

@@ -82,9 +82,9 @@ complete; raw automated captures are intentionally not displayed as results.
 
 ## Full tracked population and monthly history
 
-[All-provider catalog](feeds/price-tracking/latest.json) publishes sanitized
+[All-provider catalog](feeds/price-tracking-usd/latest.json) publishes sanitized
 extractions for **all 29 tracked providers and every extracted plan**, independently
-of which providers are featured on DoVPN. [Daily/intraday snapshots](feeds/price-tracking/snapshots)
+of which providers are featured on DoVPN. [Daily/intraday snapshots](feeds/price-tracking-usd/snapshots)
 retain the available history from August 11, 2026. Explicit provider coverage,
 missing values, extraction states, source pages, evidence hashes, review flags
 and carried-forward states remain visible. These records are **automated and
@@ -92,7 +92,7 @@ unreviewed**, not manually verified research. No raw captures or private paths
 are published. Trend eligibility means the arithmetic, source and freshness
 checks pass; it is not a human verification claim.
 
-[September 2026 frozen release](data/price-history/releases/price-history-2026-09-v1)
+[September 2026 frozen release](data/price-history/releases/price-history-2026-09-v2)
 contains JSON, CSV, monthly summary and SHA-256 checksums.
 The [monthly index](data/price-history/index.json) is the entry point for consumers.
 [Methods](methodology/price-history.md) explain eligibility, gaps, source and
@@ -111,6 +111,8 @@ python scripts/build_price_history.py --check
 ```
 
 Cite: Price, Steve. *VPN Price Transparency Index: provisional all-provider
-price history, September 2026*. Release `price-history-2026-09-v1`. CC BY 4.0.
+price history, September 2026*. Release `price-history-2026-09-v2`. CC BY 4.0.
 Identify the exact release, currency, offer context and automated unreviewed
 evidence status. No DOI has been assigned to this release.
+
+Active price-history research is USD only. EUR and GBP test observations remain solely in the superseded v1 archive. The v2 correction restores Amnezia’s missed 24-month offer from September 2 capture evidence; see [the corrections log](CORRECTIONS.md).

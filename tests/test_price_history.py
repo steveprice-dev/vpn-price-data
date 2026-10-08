@@ -3,7 +3,7 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]
 spec=importlib.util.spec_from_file_location('history',ROOT/'scripts/build_price_history.py');mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod)
 class MonthlyHistory(unittest.TestCase):
  @classmethod
- def setUpClass(cls):cls.data=mod.build('2026-09')
+ def setUpClass(cls):cls.data=mod.build('2026-09', revision=1)
  def test_full_population_and_gap_states(self):
   s=self.data['summary'];self.assertEqual(s['provider_count'],29);self.assertEqual(s['plan_count'],124);self.assertEqual(s['days_with_snapshots'],30);self.assertGreater(s['fallback_record_count'],0)
   self.assertTrue(all(not r['trend_eligible'] for r in self.data['records'] if r['freshness_status']=='carried_forward'))
@@ -18,4 +18,17 @@ class MonthlyHistory(unittest.TestCase):
  def test_incomplete_month_is_rejected(self):
   with tempfile.TemporaryDirectory() as directory:
    with self.assertRaises(ValueError):mod.build('2026-10',pathlib.Path(directory))
- def test_rebuild_matches_frozen_release(self):mod.write_month('2026-09',check=True)
+ def test_rebuild_matches_frozen_release(self):mod.write_month('2026-09',check=True,revision=1)
+
+class USDRevision(unittest.TestCase):
+ def test_scope_and_archived_plan_recovery(self):
+  data=mod.build('2026-09')
+  self.assertEqual(data['release_id'],'price-history-2026-09-v2')
+  self.assertEqual(data['summary']['provider_count'],29)
+  self.assertTrue(all(r['currency']=='USD' for r in data['records']))
+  rows=[r for r in data['records'] if r['provider_id']=='amnezia-premium' and r['plan_id']=='24-month']
+  self.assertEqual(min(r['observed_at'] for r in rows),'2026-09-02T04:45:06Z')
+  self.assertTrue(all(r['upfront_total']==80 and r['service_months']==24 for r in rows))
+  plan=next(r for r in data['summary']['plans'] if r['provider_id']=='amnezia-premium' and r['plan_id']=='24-month')
+  self.assertFalse(plan['endpoint_comparable'])
+ def test_usd_revision_is_reproducible(self):mod.write_month('2026-09',check=True)
