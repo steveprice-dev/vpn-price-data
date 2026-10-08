@@ -85,7 +85,7 @@ news stories require a separate evidence-based write-up.
 
 Citation: Price, Steve. VPN Price Transparency Index: provisional all-provider
 price history, [month year]. Release [release_id]. CC BY 4.0. Include the
-US/USD market, coverage period, tagged GitHub release URL and access date.
+observed market and currency, coverage period, release URL and access date.
 No DOI is implied. DoVPN earns affiliate revenue on its commercial pages;
 research pages contain no affiliate purchase links. No provider response was
 requested before this September analysis; corrections can be submitted via
@@ -98,7 +98,7 @@ a `records` array with every available plan. Numeric fields preserve a parallel
 `_status` (machine_extracted, derived, not_visible, ambiguous, not_applicable,
 not_collected, checkout_observed or derived_from_checkout). `sources` and
 `policy_sources` retain only page ID, public URL, result, method and content
-hash. CSV exports include major quality fields and pipe-separated review flags;
+hash. CSV exports include major quality fields and serialized review-flag lists;
 JSON preserves full provenance and extraction states. Month-end `summary.plans`
 contains all plans, while `summary.providers` includes every provider regardless
 of trend eligibility. No blocked provider disappears from the cohort.
