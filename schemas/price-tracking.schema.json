@@ -535,12 +535,18 @@
               "string",
               "null"
             ]
+          },
+          "upfront_eligible": {
+            "type": "boolean"
           }
         }
       }
     },
     "currency_scope": {
-      "const": "USD"
+      "enum": [
+        "USD",
+        "USD_EUR"
+      ]
     }
   },
   "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -550,7 +556,12 @@
       "if": {
         "required": [
           "currency_scope"
-        ]
+        ],
+        "properties": {
+          "currency_scope": {
+            "const": "USD"
+          }
+        }
       },
       "then": {
         "properties": {

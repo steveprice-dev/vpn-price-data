@@ -46,3 +46,20 @@ AirVPN, AzireVPN and Mullvad have no extracted USD offers in this release.
 
 The new plan and the shorter-plan increases were first observed in the same
 capture. This timing does not establish why Amnezia raised those prices.
+
+## 2026-10-09: Restore genuine native EUR offers
+
+`price-history-2026-09-v3` supersedes v2 for current reporting. AirVPN,
+AzireVPN and Mullvad's EUR offers are genuine provider pricing, not test-market
+observations. The earlier scope description grouped these with test data
+incorrectly. This revision restores their 11 native EUR plans, without currency
+conversion, while excluding other non-USD test-market records. USD findings are
+unchanged: 114 month-end plans and 78 comparable offers (73 unchanged, four
+higher, one lower). Ten EUR offers are comparable and unchanged; AirVPN's
+three-day offer has no integral monthly equivalent.
+
+New daily observations use `feeds/price-tracking-native/`, which accepts USD
+plus EUR only for these three providers. USD-only feed and v1/v2 releases keep
+their original hashes. Each record retains its original observation time,
+source URL and evidence hash. Currency summaries and chart comparisons remain
+separate; the data does not compare euros with dollars.

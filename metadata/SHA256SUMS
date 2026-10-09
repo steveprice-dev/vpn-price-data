@@ -106,7 +106,7 @@ c438380b364c9c13886b4b74510932a23ea79b547e15b13816d15331b06939cb  feeds/dovpn/co
 0745cf1e123993f957cbd699312a5beff517aed5775e8cf0e2f9a10ff3b62e39  feeds/dovpn/comparison/snapshots/20261008T061845Z.json
 9f2643fd7e5f9505fb0bf94919b7ba6c99dbdf16eaa2031a2c0054bb6cb61e08  feeds/dovpn/comparison/snapshots/20261008T231519Z.json
 896326c115cd40080b5ae4f6966b433a87467fd99f4b3550ecce02bdaa2fc4f0  feeds/dovpn/comparison/snapshots/20261008T235859Z.json
-153d52dd9bf996cdfec9482d7696aa0ae3a3455d13d4a7a9e06c501976367fb4  data/price-history/index.json
+32dcaf9197c4600e4c99e9b4edfc045dec36297a43d44a02614dae0455a22213  data/price-history/index.json
 d4bbbb53b5dabe2133890ba4c38e8fa5f0a1598d67e3e1304d7ed4d5a1ca7a19  data/price-history/releases/price-history-2026-09-v1/SHA256SUMS
 163c537d3b95326b1c6fa2d56f89b7fd434d77c8a2d6596851198eb0fb4408b1  data/price-history/releases/price-history-2026-09-v1/data.csv
 96902be42474a0d2c1124fa19214fcd656c43341decd4dcbcab0ae041598fea4  data/price-history/releases/price-history-2026-09-v1/data.json
@@ -115,6 +115,10 @@ d4bbbb53b5dabe2133890ba4c38e8fa5f0a1598d67e3e1304d7ed4d5a1ca7a19  data/price-his
 a36ce37547b76a5fd83bd883043d4a5d95e2a673a84379979c27e9f54175f07d  data/price-history/releases/price-history-2026-09-v2/data.csv
 f893839ce856174c067da4d1b66b4dd98e7796be317681d5d0a7006723ba00fa  data/price-history/releases/price-history-2026-09-v2/data.json
 1995b5e630153553399a9bde5672f0bbd1356d378f96ba75e800f562ed64e465  data/price-history/releases/price-history-2026-09-v2/summary.json
+e6b673f070c0129dc4606ab7abf283e341ccd3220a5324530250326efef3e6c3  data/price-history/releases/price-history-2026-09-v3/SHA256SUMS
+bf4b494867d1788f39cd307f576780cf0eb5e7f057e04310e7aa9c31a3f45369  data/price-history/releases/price-history-2026-09-v3/data.csv
+45cfcab46b79ea66e0204d34c137858f11773e0968988261f3e2669ddbbd8f9d  data/price-history/releases/price-history-2026-09-v3/data.json
+d4ec6bb404d4ba911121ea762b85032c0cb7058a731ece7701d70da2d4b22f10  data/price-history/releases/price-history-2026-09-v3/summary.json
 87f8c561c3172394ee32fefbdb0e014217cdb377a26d8e3d0dade2e2251fe449  data/price-history/source-changes.json
 fe6034005ccdb47593423db79ba9b174a96701fea0b387a04bec47b61411f290  feeds/price-tracking/latest.json
 cf6097b516408e1659f99ba4a53628066202431ac86cb5d613591aff8f256b39  feeds/price-tracking/snapshots/2026-08-11T153649Z.json
@@ -262,4 +266,4 @@ f7f5d68b30fc7145b144fc0a11bb9fbdec9d20b690a5bc8cb9150f923a50e7e4  feeds/price-tr
 b8cbbea30ac68c0dde82902fb5cd41f795ad126a4c01f20b04e42927eeccec82  feeds/price-tracking-usd/snapshots/2026-10-08T061336Z.json
 a68c5b8d97fa341f01a6b3f80bf7d615b7d236f27166e43897f3fb51b52de9f9  feeds/price-tracking-usd/snapshots/2026-10-08T230957Z.json
 e570ae14e1577f4b0c8734a8e9194cc0eb5e5c6337620b84d002a08aed6d293a  feeds/price-tracking-usd/snapshots/2026-10-08T235414Z.json
-af0c8de2345345be4e457287ba5937f1e4993a130601969328e88d3e35567981  schemas/price-tracking.schema.json
+32fc4f07663a1e312b57a9222652a4ab5d26cb3c3880f5d5acba38e980e8faa3  schemas/price-tracking.schema.json

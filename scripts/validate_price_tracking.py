@@ -3,12 +3,13 @@ import json, re
 from urllib.parse import urlsplit
 from jsonschema import Draft202012Validator, FormatChecker
 
-def tracking_checks(root, provider_ids):
+def tracking_checks(root, provider_ids, feed_name="price-tracking"):
  errors=[];schema=json.loads((root/'schemas/price-tracking.schema.json').read_text());validator=Draft202012Validator(schema,format_checker=FormatChecker())
- for path in sorted((root/'feeds/price-tracking').rglob('*.json')):
+ for path in sorted((root/f'feeds/{feed_name}').rglob('*.json')):
   data=json.loads(path.read_text());errors.extend(f'{path.name}: {e.message}' for e in validator.iter_errors(data))
   if {p['provider_id'] for p in data['providers']} != provider_ids:errors.append(f'{path.name}: incomplete tracked population')
   seen=set()
+  if feed_name=='price-tracking-native' and (data.get('currency_scope')!='USD_EUR' or any(not(r['currency']=='USD' or r['currency']=='EUR' and r['provider_id'] in {'airvpn','azirevpn','mullvad'}) for r in data['records'])):errors.append(f'{path.name}: unapproved native currency observation')
   for row in data['records']:
    key=(row['provider_id'],row['plan_id'],row['country_code'],row['currency'])
    if key in seen:errors.append(f'{path.name}: duplicate plan identity {key}')

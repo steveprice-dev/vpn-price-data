@@ -32,3 +32,15 @@ class USDRevision(unittest.TestCase):
   plan=next(r for r in data['summary']['plans'] if r['provider_id']=='amnezia-premium' and r['plan_id']=='24-month')
   self.assertFalse(plan['endpoint_comparable'])
  def test_usd_revision_is_reproducible(self):mod.write_month('2026-09',check=True)
+
+class NativeCurrencyRevision(unittest.TestCase):
+ def test_native_offers_and_unchanged_usd_results(self):
+  data=mod.build('2026-09',revision=3)
+  self.assertEqual(data['summary']['plan_count'],125)
+  self.assertEqual(data['summary']['currency_summaries']['USD']['comparable_plan_count'],78)
+  self.assertEqual(data['summary']['currency_summaries']['EUR']['plan_count'],11)
+  self.assertEqual({r['provider_id'] for r in data['records'] if r['currency']=='EUR'},{'airvpn','azirevpn','mullvad'})
+  self.assertNotIn('GBP',{r['currency'] for r in data['records']})
+  for currency in ('USD','EUR'):
+   self.assertTrue(all(e['currency']==currency for e in data['events'] if e['currency']==currency))
+ def test_native_release_is_reproducible(self):mod.write_month('2026-09',check=True,revision=3)

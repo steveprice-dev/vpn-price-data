@@ -2,10 +2,10 @@
 
 The publisher is Steve Price (ORCID 0009-0009-6603-6878). Data is CC BY 4.0.
 The reporting universe is all 29 providers configured in the private collector
-and every extracted USD plan from US runners. EUR and GBP test observations
-are excluded from active research without conversion. Providers with no USD
-extractions remain visible in coverage. Earlier multi-currency v1 files are
-archived for reproducibility; the current monthly index points to USD revisions. Coverage rows retain providers
+and every extracted USD plan plus genuine native EUR offers from AirVPN,
+AzireVPN and Mullvad. Other non-USD test-market observations are excluded.
+Prices retain their currency and are never converted. Earlier v1/v2 files
+remain archived; the current monthly index points to native-currency revisions. Coverage rows retain providers
 with missing, blocked, ambiguous or carried-forward data. This is not a census
 of the VPN market or a representative price index. The records are automated
 and unreviewed, with original extraction states and review flags. Trend
@@ -120,3 +120,11 @@ observations. It does not infer that the new plan caused the shorter-plan rises.
 The correction date and reason are explicit in recovered rows. No row is added
 before the source first displayed the offer. See `CORRECTIONS.md` for the changed
 coverage counts and archived release details.
+
+### Native EUR offers (v3 onward)
+
+Current reporting includes USD offers and genuine native EUR prices for AirVPN,
+AzireVPN and Mullvad. Prices retain their original currency; no conversion is
+performed. Other non-USD test-market observations remain excluded. Currency
+summaries report each currency separately. The USD-only archive remains
+reproducible, and v3 retains its original USD figures while restoring EUR plans.

@@ -208,6 +208,7 @@ def main() -> int:
             errors.extend(comparison_checks(feed, set(ids)))
     from validate_price_tracking import tracking_checks
     errors.extend(tracking_checks(ROOT, set(ids)))
+    errors.extend(tracking_checks(ROOT, set(ids), "price-tracking-native"))
     errors.extend(leakage_checks())
     if errors:
         raise SystemExit("\n".join(errors))
