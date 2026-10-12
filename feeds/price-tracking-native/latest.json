@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "feed_type": "all_provider_price_tracking",
-  "generated_at": "2026-10-11T06:00:02Z",
+  "generated_at": "2026-10-12T06:10:29Z",
   "validation_status": "automated_unreviewed",
   "manual_review_required": true,
   "currency_scope": "USD_EUR",
@@ -71,8 +71,8 @@
       "provider_id": "expressvpn",
       "provider_name": "ExpressVPN",
       "record_count": 6,
-      "fresh_record_count": 6,
-      "trend_eligible_record_count": 3,
+      "fresh_record_count": 3,
+      "trend_eligible_record_count": 0,
       "status": "current",
       "issue": null,
       "capture_results": {}
@@ -166,17 +166,17 @@
       "status": "carried_forward_only",
       "issue": "no_normalized_plans",
       "capture_results": {
-        "pricing": "needs_browser",
+        "pricing": "ok",
         "renewal-pricing": "ok"
       }
     },
     {
       "provider_id": "ovpn",
       "provider_name": "OVPN",
-      "record_count": 3,
-      "fresh_record_count": 3,
-      "trend_eligible_record_count": 3,
-      "status": "current",
+      "record_count": 0,
+      "fresh_record_count": 0,
+      "trend_eligible_record_count": 0,
+      "status": "no_extracted_records",
       "issue": null,
       "capture_results": {}
     },
@@ -273,10 +273,10 @@
     {
       "provider_id": "vyprvpn",
       "provider_name": "VyprVPN",
-      "record_count": 3,
-      "fresh_record_count": 3,
-      "trend_eligible_record_count": 3,
-      "status": "current",
+      "record_count": 0,
+      "fresh_record_count": 0,
+      "trend_eligible_record_count": 0,
+      "status": "no_extracted_records",
       "issue": null,
       "capture_results": {}
     },
@@ -310,7 +310,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -358,14 +358,14 @@
           "url": "https://adguard-vpn.com/en/license.html",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "74dc6b0db1e8e61f13febe9b5da63f0fd37d0d8841ddf7805ba4cb6f1cffeea9"
+          "content_sha256": "45b1b77c2e9a06436f857fd2c75fb8fb7d30f6f02f854d4ab59dc3dd954ae4d5"
         },
         {
           "page_id": "terms-of-sale",
           "url": "https://adguard-vpn.com/en/terms-of-sale.html",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "5707f8a90e964453fc56bf19d3c250bfd256b709e91fc92f8a8dc012f74fee5c"
+          "content_sha256": "cd773b82068f6d99a98952762017c0567a03982f52af7901d162b343e0073ae2"
         }
       ],
       "policy_sources": [],
@@ -373,7 +373,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://adguard-vpn.com/en/license.html",
-      "evidence_sha256": "74dc6b0db1e8e61f13febe9b5da63f0fd37d0d8841ddf7805ba4cb6f1cffeea9",
+      "evidence_sha256": "45b1b77c2e9a06436f857fd2c75fb8fb7d30f6f02f854d4ab59dc3dd954ae4d5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -387,7 +387,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -435,14 +435,14 @@
           "url": "https://adguard-vpn.com/en/license.html",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "74dc6b0db1e8e61f13febe9b5da63f0fd37d0d8841ddf7805ba4cb6f1cffeea9"
+          "content_sha256": "45b1b77c2e9a06436f857fd2c75fb8fb7d30f6f02f854d4ab59dc3dd954ae4d5"
         },
         {
           "page_id": "terms-of-sale",
           "url": "https://adguard-vpn.com/en/terms-of-sale.html",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "5707f8a90e964453fc56bf19d3c250bfd256b709e91fc92f8a8dc012f74fee5c"
+          "content_sha256": "cd773b82068f6d99a98952762017c0567a03982f52af7901d162b343e0073ae2"
         }
       ],
       "policy_sources": [],
@@ -450,7 +450,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://adguard-vpn.com/en/license.html",
-      "evidence_sha256": "74dc6b0db1e8e61f13febe9b5da63f0fd37d0d8841ddf7805ba4cb6f1cffeea9",
+      "evidence_sha256": "45b1b77c2e9a06436f857fd2c75fb8fb7d30f6f02f854d4ab59dc3dd954ae4d5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -464,7 +464,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -512,14 +512,14 @@
           "url": "https://adguard-vpn.com/en/license.html",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "74dc6b0db1e8e61f13febe9b5da63f0fd37d0d8841ddf7805ba4cb6f1cffeea9"
+          "content_sha256": "45b1b77c2e9a06436f857fd2c75fb8fb7d30f6f02f854d4ab59dc3dd954ae4d5"
         },
         {
           "page_id": "terms-of-sale",
           "url": "https://adguard-vpn.com/en/terms-of-sale.html",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "5707f8a90e964453fc56bf19d3c250bfd256b709e91fc92f8a8dc012f74fee5c"
+          "content_sha256": "cd773b82068f6d99a98952762017c0567a03982f52af7901d162b343e0073ae2"
         }
       ],
       "policy_sources": [],
@@ -527,7 +527,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://adguard-vpn.com/en/license.html",
-      "evidence_sha256": "74dc6b0db1e8e61f13febe9b5da63f0fd37d0d8841ddf7805ba4cb6f1cffeea9",
+      "evidence_sha256": "45b1b77c2e9a06436f857fd2c75fb8fb7d30f6f02f854d4ab59dc3dd954ae4d5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -541,7 +541,7 @@
       "billing_type": "non_recurring_prepaid",
       "country_code": "US",
       "currency": "EUR",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -585,14 +585,14 @@
           "url": "https://airvpn.org/buy/",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "d006c293997f243bd5434db7965cb7625e2f5f78e8c6460854d2cfe13f253da8"
+          "content_sha256": "a05c5fe77739f9d1a0712bb312d0547aa1803730f05e98f9205a6cda50893f1c"
         },
         {
           "page_id": "service-terms",
           "url": "https://airvpn.org/tos/",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "e2e560d8dba7d6e979167a9f7dcb03b17415a320f4324da3f4079586abee5ca0"
+          "content_sha256": "872514e1d6e427872b7e3c90d86a7daa8366f6ee85bf1ba6edf7f6d1404b92fc"
         }
       ],
       "policy_sources": [],
@@ -600,7 +600,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://airvpn.org/buy/",
-      "evidence_sha256": "d006c293997f243bd5434db7965cb7625e2f5f78e8c6460854d2cfe13f253da8",
+      "evidence_sha256": "a05c5fe77739f9d1a0712bb312d0547aa1803730f05e98f9205a6cda50893f1c",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -614,7 +614,7 @@
       "billing_type": "non_recurring_prepaid",
       "country_code": "US",
       "currency": "EUR",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -658,14 +658,14 @@
           "url": "https://airvpn.org/buy/",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "d006c293997f243bd5434db7965cb7625e2f5f78e8c6460854d2cfe13f253da8"
+          "content_sha256": "a05c5fe77739f9d1a0712bb312d0547aa1803730f05e98f9205a6cda50893f1c"
         },
         {
           "page_id": "service-terms",
           "url": "https://airvpn.org/tos/",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "e2e560d8dba7d6e979167a9f7dcb03b17415a320f4324da3f4079586abee5ca0"
+          "content_sha256": "872514e1d6e427872b7e3c90d86a7daa8366f6ee85bf1ba6edf7f6d1404b92fc"
         }
       ],
       "policy_sources": [],
@@ -673,7 +673,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://airvpn.org/buy/",
-      "evidence_sha256": "d006c293997f243bd5434db7965cb7625e2f5f78e8c6460854d2cfe13f253da8",
+      "evidence_sha256": "a05c5fe77739f9d1a0712bb312d0547aa1803730f05e98f9205a6cda50893f1c",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -687,7 +687,7 @@
       "billing_type": "non_recurring_prepaid",
       "country_code": "US",
       "currency": "EUR",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -731,14 +731,14 @@
           "url": "https://airvpn.org/buy/",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "d006c293997f243bd5434db7965cb7625e2f5f78e8c6460854d2cfe13f253da8"
+          "content_sha256": "a05c5fe77739f9d1a0712bb312d0547aa1803730f05e98f9205a6cda50893f1c"
         },
         {
           "page_id": "service-terms",
           "url": "https://airvpn.org/tos/",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "e2e560d8dba7d6e979167a9f7dcb03b17415a320f4324da3f4079586abee5ca0"
+          "content_sha256": "872514e1d6e427872b7e3c90d86a7daa8366f6ee85bf1ba6edf7f6d1404b92fc"
         }
       ],
       "policy_sources": [],
@@ -746,7 +746,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://airvpn.org/buy/",
-      "evidence_sha256": "d006c293997f243bd5434db7965cb7625e2f5f78e8c6460854d2cfe13f253da8",
+      "evidence_sha256": "a05c5fe77739f9d1a0712bb312d0547aa1803730f05e98f9205a6cda50893f1c",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -760,7 +760,7 @@
       "billing_type": "non_recurring_prepaid",
       "country_code": "US",
       "currency": "EUR",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -804,14 +804,14 @@
           "url": "https://airvpn.org/buy/",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "d006c293997f243bd5434db7965cb7625e2f5f78e8c6460854d2cfe13f253da8"
+          "content_sha256": "a05c5fe77739f9d1a0712bb312d0547aa1803730f05e98f9205a6cda50893f1c"
         },
         {
           "page_id": "service-terms",
           "url": "https://airvpn.org/tos/",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "e2e560d8dba7d6e979167a9f7dcb03b17415a320f4324da3f4079586abee5ca0"
+          "content_sha256": "872514e1d6e427872b7e3c90d86a7daa8366f6ee85bf1ba6edf7f6d1404b92fc"
         }
       ],
       "policy_sources": [],
@@ -819,7 +819,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://airvpn.org/buy/",
-      "evidence_sha256": "d006c293997f243bd5434db7965cb7625e2f5f78e8c6460854d2cfe13f253da8",
+      "evidence_sha256": "a05c5fe77739f9d1a0712bb312d0547aa1803730f05e98f9205a6cda50893f1c",
       "source_kind": "standard_public_page",
       "trend_eligible": false,
       "upfront_eligible": true,
@@ -833,7 +833,7 @@
       "billing_type": "non_recurring_prepaid",
       "country_code": "US",
       "currency": "EUR",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -877,14 +877,14 @@
           "url": "https://airvpn.org/buy/",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "d006c293997f243bd5434db7965cb7625e2f5f78e8c6460854d2cfe13f253da8"
+          "content_sha256": "a05c5fe77739f9d1a0712bb312d0547aa1803730f05e98f9205a6cda50893f1c"
         },
         {
           "page_id": "service-terms",
           "url": "https://airvpn.org/tos/",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "e2e560d8dba7d6e979167a9f7dcb03b17415a320f4324da3f4079586abee5ca0"
+          "content_sha256": "872514e1d6e427872b7e3c90d86a7daa8366f6ee85bf1ba6edf7f6d1404b92fc"
         }
       ],
       "policy_sources": [],
@@ -892,7 +892,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://airvpn.org/buy/",
-      "evidence_sha256": "d006c293997f243bd5434db7965cb7625e2f5f78e8c6460854d2cfe13f253da8",
+      "evidence_sha256": "a05c5fe77739f9d1a0712bb312d0547aa1803730f05e98f9205a6cda50893f1c",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -906,7 +906,7 @@
       "billing_type": "non_recurring_prepaid",
       "country_code": "US",
       "currency": "EUR",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -950,14 +950,14 @@
           "url": "https://airvpn.org/buy/",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "d006c293997f243bd5434db7965cb7625e2f5f78e8c6460854d2cfe13f253da8"
+          "content_sha256": "a05c5fe77739f9d1a0712bb312d0547aa1803730f05e98f9205a6cda50893f1c"
         },
         {
           "page_id": "service-terms",
           "url": "https://airvpn.org/tos/",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "e2e560d8dba7d6e979167a9f7dcb03b17415a320f4324da3f4079586abee5ca0"
+          "content_sha256": "872514e1d6e427872b7e3c90d86a7daa8366f6ee85bf1ba6edf7f6d1404b92fc"
         }
       ],
       "policy_sources": [],
@@ -965,7 +965,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://airvpn.org/buy/",
-      "evidence_sha256": "d006c293997f243bd5434db7965cb7625e2f5f78e8c6460854d2cfe13f253da8",
+      "evidence_sha256": "a05c5fe77739f9d1a0712bb312d0547aa1803730f05e98f9205a6cda50893f1c",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -979,7 +979,7 @@
       "billing_type": "non_recurring_prepaid",
       "country_code": "US",
       "currency": "EUR",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -1023,14 +1023,14 @@
           "url": "https://airvpn.org/buy/",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "d006c293997f243bd5434db7965cb7625e2f5f78e8c6460854d2cfe13f253da8"
+          "content_sha256": "a05c5fe77739f9d1a0712bb312d0547aa1803730f05e98f9205a6cda50893f1c"
         },
         {
           "page_id": "service-terms",
           "url": "https://airvpn.org/tos/",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "e2e560d8dba7d6e979167a9f7dcb03b17415a320f4324da3f4079586abee5ca0"
+          "content_sha256": "872514e1d6e427872b7e3c90d86a7daa8366f6ee85bf1ba6edf7f6d1404b92fc"
         }
       ],
       "policy_sources": [],
@@ -1038,7 +1038,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://airvpn.org/buy/",
-      "evidence_sha256": "d006c293997f243bd5434db7965cb7625e2f5f78e8c6460854d2cfe13f253da8",
+      "evidence_sha256": "a05c5fe77739f9d1a0712bb312d0547aa1803730f05e98f9205a6cda50893f1c",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -1052,7 +1052,7 @@
       "billing_type": "manual_renewal_prepaid",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -1098,14 +1098,14 @@
           "url": "https://pay.amnezia.org/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "615fc91cf3b0fb0e2bb03cd78374c17949c3811a7448761d7da5402d5d4e6e96"
+          "content_sha256": "2f29c2973a26a2f632f7ddc79fb4065db16f006845ba3e27a8805596584e1b2d"
         },
         {
           "page_id": "renewal-refund",
           "url": "https://docs.amnezia.org/faq/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "6fbb85ce1cec5027dc907bcb58ea9aafad0e3a632dfdd82d578da563d70f8f58"
+          "content_sha256": "1f9ef625674d5ba4736906cf4a286bc5d070470b8560549ff22ea0c97f0d8fb7"
         }
       ],
       "policy_sources": [],
@@ -1113,7 +1113,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://pay.amnezia.org/",
-      "evidence_sha256": "615fc91cf3b0fb0e2bb03cd78374c17949c3811a7448761d7da5402d5d4e6e96",
+      "evidence_sha256": "2f29c2973a26a2f632f7ddc79fb4065db16f006845ba3e27a8805596584e1b2d",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -1127,7 +1127,7 @@
       "billing_type": "manual_renewal_prepaid",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -1173,14 +1173,14 @@
           "url": "https://pay.amnezia.org/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "615fc91cf3b0fb0e2bb03cd78374c17949c3811a7448761d7da5402d5d4e6e96"
+          "content_sha256": "2f29c2973a26a2f632f7ddc79fb4065db16f006845ba3e27a8805596584e1b2d"
         },
         {
           "page_id": "renewal-refund",
           "url": "https://docs.amnezia.org/faq/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "6fbb85ce1cec5027dc907bcb58ea9aafad0e3a632dfdd82d578da563d70f8f58"
+          "content_sha256": "1f9ef625674d5ba4736906cf4a286bc5d070470b8560549ff22ea0c97f0d8fb7"
         }
       ],
       "policy_sources": [],
@@ -1188,7 +1188,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://pay.amnezia.org/",
-      "evidence_sha256": "615fc91cf3b0fb0e2bb03cd78374c17949c3811a7448761d7da5402d5d4e6e96",
+      "evidence_sha256": "2f29c2973a26a2f632f7ddc79fb4065db16f006845ba3e27a8805596584e1b2d",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -1202,7 +1202,7 @@
       "billing_type": "manual_renewal_prepaid",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -1248,14 +1248,14 @@
           "url": "https://pay.amnezia.org/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "615fc91cf3b0fb0e2bb03cd78374c17949c3811a7448761d7da5402d5d4e6e96"
+          "content_sha256": "2f29c2973a26a2f632f7ddc79fb4065db16f006845ba3e27a8805596584e1b2d"
         },
         {
           "page_id": "renewal-refund",
           "url": "https://docs.amnezia.org/faq/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "6fbb85ce1cec5027dc907bcb58ea9aafad0e3a632dfdd82d578da563d70f8f58"
+          "content_sha256": "1f9ef625674d5ba4736906cf4a286bc5d070470b8560549ff22ea0c97f0d8fb7"
         }
       ],
       "policy_sources": [],
@@ -1263,7 +1263,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://pay.amnezia.org/",
-      "evidence_sha256": "615fc91cf3b0fb0e2bb03cd78374c17949c3811a7448761d7da5402d5d4e6e96",
+      "evidence_sha256": "2f29c2973a26a2f632f7ddc79fb4065db16f006845ba3e27a8805596584e1b2d",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -1277,7 +1277,7 @@
       "billing_type": "non_recurring_prepaid",
       "country_code": "US",
       "currency": "EUR",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -1321,7 +1321,7 @@
           "url": "https://www.azirevpn.com/pricing",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "97cc93ba5447e68b703194d0b2e8d1908836b284ebdf4fe21377a45c77d81248"
+          "content_sha256": "d742d1ffdcf065da4ef8bb9e8b2565e7aee3ca91d88df2fbca4eb6e194470ebc"
         },
         {
           "page_id": "renewal-policy",
@@ -1336,7 +1336,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.azirevpn.com/pricing",
-      "evidence_sha256": "97cc93ba5447e68b703194d0b2e8d1908836b284ebdf4fe21377a45c77d81248",
+      "evidence_sha256": "d742d1ffdcf065da4ef8bb9e8b2565e7aee3ca91d88df2fbca4eb6e194470ebc",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -1350,7 +1350,7 @@
       "billing_type": "non_recurring_prepaid",
       "country_code": "US",
       "currency": "EUR",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -1394,7 +1394,7 @@
           "url": "https://www.azirevpn.com/pricing",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "97cc93ba5447e68b703194d0b2e8d1908836b284ebdf4fe21377a45c77d81248"
+          "content_sha256": "d742d1ffdcf065da4ef8bb9e8b2565e7aee3ca91d88df2fbca4eb6e194470ebc"
         },
         {
           "page_id": "renewal-policy",
@@ -1409,7 +1409,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.azirevpn.com/pricing",
-      "evidence_sha256": "97cc93ba5447e68b703194d0b2e8d1908836b284ebdf4fe21377a45c77d81248",
+      "evidence_sha256": "d742d1ffdcf065da4ef8bb9e8b2565e7aee3ca91d88df2fbca4eb6e194470ebc",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -1423,7 +1423,7 @@
       "billing_type": "non_recurring_prepaid",
       "country_code": "US",
       "currency": "EUR",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -1467,7 +1467,7 @@
           "url": "https://www.azirevpn.com/pricing",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "97cc93ba5447e68b703194d0b2e8d1908836b284ebdf4fe21377a45c77d81248"
+          "content_sha256": "d742d1ffdcf065da4ef8bb9e8b2565e7aee3ca91d88df2fbca4eb6e194470ebc"
         },
         {
           "page_id": "renewal-policy",
@@ -1482,7 +1482,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.azirevpn.com/pricing",
-      "evidence_sha256": "97cc93ba5447e68b703194d0b2e8d1908836b284ebdf4fe21377a45c77d81248",
+      "evidence_sha256": "d742d1ffdcf065da4ef8bb9e8b2565e7aee3ca91d88df2fbca4eb6e194470ebc",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -1496,7 +1496,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -1542,7 +1542,7 @@
           "url": "https://www.bitdefender.com/en-us/consumer/vpn",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "e58cd8097ed92fdd3c7c8be90f515cf6cf7b6b3bb06e215bd7b221b74daf7ea3"
+          "content_sha256": "3513e3a46039f5b306a4a646d12dbc4ffbe1b1c2860eccca0d679963cdd813bd"
         }
       ],
       "policy_sources": [],
@@ -1550,7 +1550,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.bitdefender.com/en-us/consumer/vpn",
-      "evidence_sha256": "e58cd8097ed92fdd3c7c8be90f515cf6cf7b6b3bb06e215bd7b221b74daf7ea3",
+      "evidence_sha256": "3513e3a46039f5b306a4a646d12dbc4ffbe1b1c2860eccca0d679963cdd813bd",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -1564,7 +1564,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -1608,7 +1608,7 @@
           "url": "https://www.cyberghostvpn.com/en_US/buy/cyberghost-vpn-3",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "302681a7b19617312ab3e2a0f8c84a6445197beb4feedc105994f3512be60ddc"
+          "content_sha256": "4770e34795f741e484278d86b8cfa6bfff4ebc6aae4539bb4d0c471592c21c5a"
         }
       ],
       "policy_sources": [],
@@ -1616,7 +1616,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.cyberghostvpn.com/en_US/buy/cyberghost-vpn-3",
-      "evidence_sha256": "302681a7b19617312ab3e2a0f8c84a6445197beb4feedc105994f3512be60ddc",
+      "evidence_sha256": "4770e34795f741e484278d86b8cfa6bfff4ebc6aae4539bb4d0c471592c21c5a",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -1630,7 +1630,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -1674,7 +1674,7 @@
           "url": "https://www.cyberghostvpn.com/en_US/buy/cyberghost-vpn-3",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "302681a7b19617312ab3e2a0f8c84a6445197beb4feedc105994f3512be60ddc"
+          "content_sha256": "4770e34795f741e484278d86b8cfa6bfff4ebc6aae4539bb4d0c471592c21c5a"
         }
       ],
       "policy_sources": [],
@@ -1682,7 +1682,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.cyberghostvpn.com/en_US/buy/cyberghost-vpn-3",
-      "evidence_sha256": "302681a7b19617312ab3e2a0f8c84a6445197beb4feedc105994f3512be60ddc",
+      "evidence_sha256": "4770e34795f741e484278d86b8cfa6bfff4ebc6aae4539bb4d0c471592c21c5a",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -1696,7 +1696,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -1740,15 +1740,15 @@
           "url": "https://www.cyberghostvpn.com/en_US/buy/cyberghost-vpn-3",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "302681a7b19617312ab3e2a0f8c84a6445197beb4feedc105994f3512be60ddc"
+          "content_sha256": "4770e34795f741e484278d86b8cfa6bfff4ebc6aae4539bb4d0c471592c21c5a"
         }
       ],
       "policy_sources": [],
       "policy_observed_at": null,
-      "checkout_observed_at": "2026-10-11T06:00:49Z",
+      "checkout_observed_at": "2026-10-12T06:11:14Z",
       "checkout_evidence_sha256": "3238aee69119d466d3e82f30a090212b46577362d51c541fc959be379ad4c041",
       "source_url": "https://www.cyberghostvpn.com/en_US/buy/cyberghost-vpn-3",
-      "evidence_sha256": "302681a7b19617312ab3e2a0f8c84a6445197beb4feedc105994f3512be60ddc",
+      "evidence_sha256": "4770e34795f741e484278d86b8cfa6bfff4ebc6aae4539bb4d0c471592c21c5a",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -1762,7 +1762,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -1806,7 +1806,7 @@
           "url": "https://www.expressvpn.com/pricing",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "a392deea5fdbaa6154d66455ea3ee0b51d15bef929a5cc8ff0e44d25250c6580"
+          "content_sha256": "2add6e5b1ed43ea1e86b01819739193862d0a274aeb6ea5d555185ff29eb513e"
         }
       ],
       "policy_sources": [],
@@ -1831,11 +1831,11 @@
       "captured_at": "2026-10-11T06:00:02Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
-      "data_freshness_status": "current_capture",
+      "data_freshness_status": "carried_forward",
       "tax_treatment_claim": "sales_tax_calculated_at_checkout",
       "promotion_label": null,
       "promotion_theme": null,
-      "review_status": "automated_unreviewed",
+      "review_status": "automated_stale_carry_forward",
       "advertised_monthly": 4.49,
       "advertised_monthly_status": "machine_extracted",
       "intro_total": 125.72,
@@ -1862,9 +1862,11 @@
       "renewal_increase_pct_status": "derived",
       "refund_days": 30,
       "refund_days_status": "machine_extracted",
-      "freshness_status": "current",
+      "freshness_status": "carried_forward",
       "validation_status": "automated_unreviewed",
-      "review_flags": [],
+      "review_flags": [
+        "current_capture_missing_carried_forward"
+      ],
       "manual_review_required": true,
       "sources": [
         {
@@ -1889,8 +1891,8 @@
       "source_url": "https://www.expressvpn.com/order",
       "evidence_sha256": "c9e2332751b3e7cf94db6b459c6ad829a1d6d422f488208f75f341b2b5af0452",
       "source_kind": "standard_public_page",
-      "trend_eligible": true,
-      "upfront_eligible": true,
+      "trend_eligible": false,
+      "upfront_eligible": false,
       "series_id": "39a9b73f246181cea35a"
     },
     {
@@ -1901,7 +1903,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -1945,7 +1947,7 @@
           "url": "https://www.expressvpn.com/pricing",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "a392deea5fdbaa6154d66455ea3ee0b51d15bef929a5cc8ff0e44d25250c6580"
+          "content_sha256": "2add6e5b1ed43ea1e86b01819739193862d0a274aeb6ea5d555185ff29eb513e"
         }
       ],
       "policy_sources": [],
@@ -1970,11 +1972,11 @@
       "captured_at": "2026-10-11T06:00:02Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
-      "data_freshness_status": "current_capture",
+      "data_freshness_status": "carried_forward",
       "tax_treatment_claim": "sales_tax_calculated_at_checkout",
       "promotion_label": null,
       "promotion_theme": null,
-      "review_status": "automated_unreviewed",
+      "review_status": "automated_stale_carry_forward",
       "advertised_monthly": 2.99,
       "advertised_monthly_status": "machine_extracted",
       "intro_total": 83.72,
@@ -2001,9 +2003,11 @@
       "renewal_increase_pct_status": "derived",
       "refund_days": 30,
       "refund_days_status": "machine_extracted",
-      "freshness_status": "current",
+      "freshness_status": "carried_forward",
       "validation_status": "automated_unreviewed",
-      "review_flags": [],
+      "review_flags": [
+        "current_capture_missing_carried_forward"
+      ],
       "manual_review_required": true,
       "sources": [
         {
@@ -2028,8 +2032,8 @@
       "source_url": "https://www.expressvpn.com/order",
       "evidence_sha256": "c9e2332751b3e7cf94db6b459c6ad829a1d6d422f488208f75f341b2b5af0452",
       "source_kind": "standard_public_page",
-      "trend_eligible": true,
-      "upfront_eligible": true,
+      "trend_eligible": false,
+      "upfront_eligible": false,
       "series_id": "c4e4f04326538a8b0dc9"
     },
     {
@@ -2040,7 +2044,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -2084,7 +2088,7 @@
           "url": "https://www.expressvpn.com/pricing",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "a392deea5fdbaa6154d66455ea3ee0b51d15bef929a5cc8ff0e44d25250c6580"
+          "content_sha256": "2add6e5b1ed43ea1e86b01819739193862d0a274aeb6ea5d555185ff29eb513e"
         }
       ],
       "policy_sources": [],
@@ -2109,11 +2113,11 @@
       "captured_at": "2026-10-11T06:00:02Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
-      "data_freshness_status": "current_capture",
+      "data_freshness_status": "carried_forward",
       "tax_treatment_claim": "sales_tax_calculated_at_checkout",
       "promotion_label": null,
       "promotion_theme": null,
-      "review_status": "automated_unreviewed",
+      "review_status": "automated_stale_carry_forward",
       "advertised_monthly": 7.49,
       "advertised_monthly_status": "machine_extracted",
       "intro_total": 209.72,
@@ -2140,9 +2144,11 @@
       "renewal_increase_pct_status": "derived",
       "refund_days": 30,
       "refund_days_status": "machine_extracted",
-      "freshness_status": "current",
+      "freshness_status": "carried_forward",
       "validation_status": "automated_unreviewed",
-      "review_flags": [],
+      "review_flags": [
+        "current_capture_missing_carried_forward"
+      ],
       "manual_review_required": true,
       "sources": [
         {
@@ -2167,8 +2173,8 @@
       "source_url": "https://www.expressvpn.com/order",
       "evidence_sha256": "c9e2332751b3e7cf94db6b459c6ad829a1d6d422f488208f75f341b2b5af0452",
       "source_kind": "standard_public_page",
-      "trend_eligible": true,
-      "upfront_eligible": true,
+      "trend_eligible": false,
+      "upfront_eligible": false,
       "series_id": "bb5916aff709eb98d90f"
     },
     {
@@ -2179,7 +2185,7 @@
       "billing_type": "lifetime",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -2225,14 +2231,14 @@
           "url": "https://fastestvpn.com/buy-vpn-p",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "aadc1994bc1daf5123feb783e9087ebb698a3453f21f33060a3a95e93a68de1f"
+          "content_sha256": "5b672cbb6f2758e80b10743634e72037a8bd477aa00642a1e3ac45b7c23b015f"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://fastestvpn.com/terms-of-service",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "95eb29ca11fd5be7048dc125fe728ed1420ee9ec03af79a09a8703a13188024f"
+          "content_sha256": "32f11d77ba8d5dff329e101b2f141f9ebee65801cd137cf98131b6155d4e348e"
         }
       ],
       "policy_sources": [],
@@ -2240,7 +2246,7 @@
       "checkout_observed_at": "2026-08-10T11:06:55Z",
       "checkout_evidence_sha256": "f133fd1ec099f66178521437bb1b306d2b65d973a266c3865dda0d20e0fe97f6",
       "source_url": "https://fastestvpn.com/buy-vpn-p",
-      "evidence_sha256": "aadc1994bc1daf5123feb783e9087ebb698a3453f21f33060a3a95e93a68de1f",
+      "evidence_sha256": "5b672cbb6f2758e80b10743634e72037a8bd477aa00642a1e3ac45b7c23b015f",
       "source_kind": "standard_public_page",
       "trend_eligible": false,
       "upfront_eligible": false,
@@ -2254,7 +2260,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -2301,14 +2307,14 @@
           "url": "https://fastestvpn.com/buy-vpn-p",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "aadc1994bc1daf5123feb783e9087ebb698a3453f21f33060a3a95e93a68de1f"
+          "content_sha256": "5b672cbb6f2758e80b10743634e72037a8bd477aa00642a1e3ac45b7c23b015f"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://fastestvpn.com/terms-of-service",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "95eb29ca11fd5be7048dc125fe728ed1420ee9ec03af79a09a8703a13188024f"
+          "content_sha256": "32f11d77ba8d5dff329e101b2f141f9ebee65801cd137cf98131b6155d4e348e"
         }
       ],
       "policy_sources": [],
@@ -2316,7 +2322,7 @@
       "checkout_observed_at": "2026-08-10T11:06:55Z",
       "checkout_evidence_sha256": "4b9772020f8756504076286cfd33e7a20e11732fe5a5927ef22697e417dc232c",
       "source_url": "https://fastestvpn.com/buy-vpn-p",
-      "evidence_sha256": "aadc1994bc1daf5123feb783e9087ebb698a3453f21f33060a3a95e93a68de1f",
+      "evidence_sha256": "5b672cbb6f2758e80b10743634e72037a8bd477aa00642a1e3ac45b7c23b015f",
       "source_kind": "standard_public_page",
       "trend_eligible": false,
       "upfront_eligible": false,
@@ -2330,7 +2336,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -2377,14 +2383,14 @@
           "url": "https://fastestvpn.com/buy-vpn-p",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "aadc1994bc1daf5123feb783e9087ebb698a3453f21f33060a3a95e93a68de1f"
+          "content_sha256": "5b672cbb6f2758e80b10743634e72037a8bd477aa00642a1e3ac45b7c23b015f"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://fastestvpn.com/terms-of-service",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "95eb29ca11fd5be7048dc125fe728ed1420ee9ec03af79a09a8703a13188024f"
+          "content_sha256": "32f11d77ba8d5dff329e101b2f141f9ebee65801cd137cf98131b6155d4e348e"
         }
       ],
       "policy_sources": [],
@@ -2392,7 +2398,7 @@
       "checkout_observed_at": "2026-08-10T11:06:55Z",
       "checkout_evidence_sha256": "09c52bc9202d08dc9319f2a7beceb92f6dd42f767364afdf746eb67ed3360697",
       "source_url": "https://fastestvpn.com/buy-vpn-p",
-      "evidence_sha256": "aadc1994bc1daf5123feb783e9087ebb698a3453f21f33060a3a95e93a68de1f",
+      "evidence_sha256": "5b672cbb6f2758e80b10743634e72037a8bd477aa00642a1e3ac45b7c23b015f",
       "source_kind": "standard_public_page",
       "trend_eligible": false,
       "upfront_eligible": false,
@@ -2406,7 +2412,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -2472,7 +2478,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -2606,7 +2612,7 @@
       "billing_type": "free",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -2672,7 +2678,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -2806,7 +2812,7 @@
       "billing_type": "free",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -2872,7 +2878,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -2940,7 +2946,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -3008,7 +3014,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -3052,14 +3058,14 @@
           "url": "https://www.ipvanish.com/pricing/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "5795c06ce95e478ef2973e5f321b9a2e9ddb6e6a6f8b5073b63ac2758e56129b"
+          "content_sha256": "a12c0cd8e6c970cbef922b731b9c175a16095660742418b057cd795278ef95d5"
         },
         {
           "page_id": "checkout-plans",
           "url": "https://checkout.ipvanish.com/checkout/address-payment-method",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "3a81cd07b87a151d311bf829d40499e1cb067ed526477d896283a0994ff6bf52"
+          "content_sha256": "5390a1f7c570959e998b079934c38c1c150063f4aa294104d3fb1409f189e3df"
         }
       ],
       "policy_sources": [],
@@ -3067,7 +3073,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.ipvanish.com/pricing/",
-      "evidence_sha256": "5795c06ce95e478ef2973e5f321b9a2e9ddb6e6a6f8b5073b63ac2758e56129b",
+      "evidence_sha256": "a12c0cd8e6c970cbef922b731b9c175a16095660742418b057cd795278ef95d5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -3081,7 +3087,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -3125,14 +3131,14 @@
           "url": "https://www.ipvanish.com/pricing/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "5795c06ce95e478ef2973e5f321b9a2e9ddb6e6a6f8b5073b63ac2758e56129b"
+          "content_sha256": "a12c0cd8e6c970cbef922b731b9c175a16095660742418b057cd795278ef95d5"
         },
         {
           "page_id": "checkout-plans",
           "url": "https://checkout.ipvanish.com/checkout/address-payment-method",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "3a81cd07b87a151d311bf829d40499e1cb067ed526477d896283a0994ff6bf52"
+          "content_sha256": "5390a1f7c570959e998b079934c38c1c150063f4aa294104d3fb1409f189e3df"
         }
       ],
       "policy_sources": [],
@@ -3140,7 +3146,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.ipvanish.com/pricing/",
-      "evidence_sha256": "5795c06ce95e478ef2973e5f321b9a2e9ddb6e6a6f8b5073b63ac2758e56129b",
+      "evidence_sha256": "a12c0cd8e6c970cbef922b731b9c175a16095660742418b057cd795278ef95d5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -3154,7 +3160,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -3198,14 +3204,14 @@
           "url": "https://www.ipvanish.com/pricing/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "5795c06ce95e478ef2973e5f321b9a2e9ddb6e6a6f8b5073b63ac2758e56129b"
+          "content_sha256": "a12c0cd8e6c970cbef922b731b9c175a16095660742418b057cd795278ef95d5"
         },
         {
           "page_id": "checkout-plans",
           "url": "https://checkout.ipvanish.com/checkout/address-payment-method",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "3a81cd07b87a151d311bf829d40499e1cb067ed526477d896283a0994ff6bf52"
+          "content_sha256": "5390a1f7c570959e998b079934c38c1c150063f4aa294104d3fb1409f189e3df"
         }
       ],
       "policy_sources": [],
@@ -3213,7 +3219,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.ipvanish.com/pricing/",
-      "evidence_sha256": "5795c06ce95e478ef2973e5f321b9a2e9ddb6e6a6f8b5073b63ac2758e56129b",
+      "evidence_sha256": "a12c0cd8e6c970cbef922b731b9c175a16095660742418b057cd795278ef95d5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -3227,7 +3233,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -3271,14 +3277,14 @@
           "url": "https://www.ipvanish.com/pricing/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "5795c06ce95e478ef2973e5f321b9a2e9ddb6e6a6f8b5073b63ac2758e56129b"
+          "content_sha256": "a12c0cd8e6c970cbef922b731b9c175a16095660742418b057cd795278ef95d5"
         },
         {
           "page_id": "checkout-plans",
           "url": "https://checkout.ipvanish.com/checkout/address-payment-method",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "3a81cd07b87a151d311bf829d40499e1cb067ed526477d896283a0994ff6bf52"
+          "content_sha256": "5390a1f7c570959e998b079934c38c1c150063f4aa294104d3fb1409f189e3df"
         }
       ],
       "policy_sources": [],
@@ -3286,7 +3292,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.ipvanish.com/pricing/",
-      "evidence_sha256": "5795c06ce95e478ef2973e5f321b9a2e9ddb6e6a6f8b5073b63ac2758e56129b",
+      "evidence_sha256": "a12c0cd8e6c970cbef922b731b9c175a16095660742418b057cd795278ef95d5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -3300,7 +3306,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -3344,14 +3350,14 @@
           "url": "https://www.ipvanish.com/pricing/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "5795c06ce95e478ef2973e5f321b9a2e9ddb6e6a6f8b5073b63ac2758e56129b"
+          "content_sha256": "a12c0cd8e6c970cbef922b731b9c175a16095660742418b057cd795278ef95d5"
         },
         {
           "page_id": "checkout-plans",
           "url": "https://checkout.ipvanish.com/checkout/address-payment-method",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "3a81cd07b87a151d311bf829d40499e1cb067ed526477d896283a0994ff6bf52"
+          "content_sha256": "5390a1f7c570959e998b079934c38c1c150063f4aa294104d3fb1409f189e3df"
         }
       ],
       "policy_sources": [],
@@ -3359,7 +3365,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.ipvanish.com/pricing/",
-      "evidence_sha256": "5795c06ce95e478ef2973e5f321b9a2e9ddb6e6a6f8b5073b63ac2758e56129b",
+      "evidence_sha256": "a12c0cd8e6c970cbef922b731b9c175a16095660742418b057cd795278ef95d5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -3373,7 +3379,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -3417,14 +3423,14 @@
           "url": "https://www.ipvanish.com/pricing/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "5795c06ce95e478ef2973e5f321b9a2e9ddb6e6a6f8b5073b63ac2758e56129b"
+          "content_sha256": "a12c0cd8e6c970cbef922b731b9c175a16095660742418b057cd795278ef95d5"
         },
         {
           "page_id": "checkout-plans",
           "url": "https://checkout.ipvanish.com/checkout/address-payment-method",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "3a81cd07b87a151d311bf829d40499e1cb067ed526477d896283a0994ff6bf52"
+          "content_sha256": "5390a1f7c570959e998b079934c38c1c150063f4aa294104d3fb1409f189e3df"
         }
       ],
       "policy_sources": [],
@@ -3432,7 +3438,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.ipvanish.com/pricing/",
-      "evidence_sha256": "5795c06ce95e478ef2973e5f321b9a2e9ddb6e6a6f8b5073b63ac2758e56129b",
+      "evidence_sha256": "a12c0cd8e6c970cbef922b731b9c175a16095660742418b057cd795278ef95d5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -3446,7 +3452,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -3490,14 +3496,14 @@
           "url": "https://www.ipvanish.com/pricing/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "5795c06ce95e478ef2973e5f321b9a2e9ddb6e6a6f8b5073b63ac2758e56129b"
+          "content_sha256": "a12c0cd8e6c970cbef922b731b9c175a16095660742418b057cd795278ef95d5"
         },
         {
           "page_id": "checkout-plans",
           "url": "https://checkout.ipvanish.com/checkout/address-payment-method",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "3a81cd07b87a151d311bf829d40499e1cb067ed526477d896283a0994ff6bf52"
+          "content_sha256": "5390a1f7c570959e998b079934c38c1c150063f4aa294104d3fb1409f189e3df"
         }
       ],
       "policy_sources": [
@@ -3506,14 +3512,14 @@
           "url": "https://checkout.ipvanish.com/checkout/address-payment-method",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "3a81cd07b87a151d311bf829d40499e1cb067ed526477d896283a0994ff6bf52"
+          "content_sha256": "5390a1f7c570959e998b079934c38c1c150063f4aa294104d3fb1409f189e3df"
         }
       ],
-      "policy_observed_at": "2026-10-11T06:00:02Z",
+      "policy_observed_at": "2026-10-12T06:10:29Z",
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.ipvanish.com/pricing/",
-      "evidence_sha256": "5795c06ce95e478ef2973e5f321b9a2e9ddb6e6a6f8b5073b63ac2758e56129b",
+      "evidence_sha256": "a12c0cd8e6c970cbef922b731b9c175a16095660742418b057cd795278ef95d5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -3527,7 +3533,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -3571,14 +3577,14 @@
           "url": "https://www.ipvanish.com/pricing/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "5795c06ce95e478ef2973e5f321b9a2e9ddb6e6a6f8b5073b63ac2758e56129b"
+          "content_sha256": "a12c0cd8e6c970cbef922b731b9c175a16095660742418b057cd795278ef95d5"
         },
         {
           "page_id": "checkout-plans",
           "url": "https://checkout.ipvanish.com/checkout/address-payment-method",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "3a81cd07b87a151d311bf829d40499e1cb067ed526477d896283a0994ff6bf52"
+          "content_sha256": "5390a1f7c570959e998b079934c38c1c150063f4aa294104d3fb1409f189e3df"
         }
       ],
       "policy_sources": [],
@@ -3586,7 +3592,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.ipvanish.com/pricing/",
-      "evidence_sha256": "5795c06ce95e478ef2973e5f321b9a2e9ddb6e6a6f8b5073b63ac2758e56129b",
+      "evidence_sha256": "a12c0cd8e6c970cbef922b731b9c175a16095660742418b057cd795278ef95d5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -3600,7 +3606,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -3644,14 +3650,14 @@
           "url": "https://www.ipvanish.com/pricing/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "5795c06ce95e478ef2973e5f321b9a2e9ddb6e6a6f8b5073b63ac2758e56129b"
+          "content_sha256": "a12c0cd8e6c970cbef922b731b9c175a16095660742418b057cd795278ef95d5"
         },
         {
           "page_id": "checkout-plans",
           "url": "https://checkout.ipvanish.com/checkout/address-payment-method",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "3a81cd07b87a151d311bf829d40499e1cb067ed526477d896283a0994ff6bf52"
+          "content_sha256": "5390a1f7c570959e998b079934c38c1c150063f4aa294104d3fb1409f189e3df"
         }
       ],
       "policy_sources": [
@@ -3660,14 +3666,14 @@
           "url": "https://checkout.ipvanish.com/checkout/address-payment-method",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "3a81cd07b87a151d311bf829d40499e1cb067ed526477d896283a0994ff6bf52"
+          "content_sha256": "5390a1f7c570959e998b079934c38c1c150063f4aa294104d3fb1409f189e3df"
         }
       ],
-      "policy_observed_at": "2026-10-11T06:00:02Z",
+      "policy_observed_at": "2026-10-12T06:10:29Z",
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.ipvanish.com/pricing/",
-      "evidence_sha256": "5795c06ce95e478ef2973e5f321b9a2e9ddb6e6a6f8b5073b63ac2758e56129b",
+      "evidence_sha256": "a12c0cd8e6c970cbef922b731b9c175a16095660742418b057cd795278ef95d5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -3681,7 +3687,7 @@
       "billing_type": "prepaid_optional_auto_renewal",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -3765,7 +3771,7 @@
       "billing_type": "prepaid_optional_auto_renewal",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -3849,7 +3855,7 @@
       "billing_type": "prepaid_optional_auto_renewal",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -3933,7 +3939,7 @@
       "billing_type": "prepaid_optional_auto_renewal",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -4017,7 +4023,7 @@
       "billing_type": "prepaid_optional_auto_renewal",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -4101,7 +4107,7 @@
       "billing_type": "prepaid_optional_auto_renewal",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -4185,7 +4191,7 @@
       "billing_type": "prepaid_optional_auto_renewal",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -4269,7 +4275,7 @@
       "billing_type": "prepaid_optional_auto_renewal",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -4353,7 +4359,7 @@
       "billing_type": "prepaid_optional_auto_renewal",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -4437,7 +4443,7 @@
       "billing_type": "non_recurring_prepaid",
       "country_code": "US",
       "currency": "EUR",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -4483,14 +4489,14 @@
           "url": "https://mullvad.net/en/pricing",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "04e6b59be80ca6b2f6671e03e5b1a915ab18c27d2150ada21522923f2c5771d9"
+          "content_sha256": "21e0f419c480192f9ecfca9b358f1a91814e7296de8af569f3df13583f7612ff"
         },
         {
           "page_id": "service-terms",
           "url": "https://mullvad.net/en/help/terms-service",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "eb0bc5e9f3e385e8e749fa6d78f0eeb13178c342d8a60f9b733ccaac1bb5f05f"
+          "content_sha256": "8cfc3ea0f1d5fb315465181680cd17c0742212f0364c6e7c26cd7b66f1487461"
         }
       ],
       "policy_sources": [],
@@ -4498,7 +4504,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://mullvad.net/en/pricing",
-      "evidence_sha256": "04e6b59be80ca6b2f6671e03e5b1a915ab18c27d2150ada21522923f2c5771d9",
+      "evidence_sha256": "21e0f419c480192f9ecfca9b358f1a91814e7296de8af569f3df13583f7612ff",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -4512,7 +4518,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -4587,7 +4593,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -4662,7 +4668,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -4737,7 +4743,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -4812,7 +4818,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -4887,7 +4893,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -4962,7 +4968,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -5037,7 +5043,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -5112,7 +5118,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -5187,7 +5193,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -5231,7 +5237,7 @@
           "url": "https://nordvpn.com/pricing/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "077cf6f245175bfef110b97893f14ba356810abb8e7806c8d7ab5361ff4bf82d"
+          "content_sha256": "a02d144c034736c47e846b35d003adfaf26ae6f0e278187c2c5cec57775228e4"
         }
       ],
       "policy_sources": [],
@@ -5239,7 +5245,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://nordvpn.com/pricing/",
-      "evidence_sha256": "077cf6f245175bfef110b97893f14ba356810abb8e7806c8d7ab5361ff4bf82d",
+      "evidence_sha256": "a02d144c034736c47e846b35d003adfaf26ae6f0e278187c2c5cec57775228e4",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -5253,7 +5259,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -5297,7 +5303,7 @@
           "url": "https://nordvpn.com/pricing/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "077cf6f245175bfef110b97893f14ba356810abb8e7806c8d7ab5361ff4bf82d"
+          "content_sha256": "a02d144c034736c47e846b35d003adfaf26ae6f0e278187c2c5cec57775228e4"
         }
       ],
       "policy_sources": [],
@@ -5305,7 +5311,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://nordvpn.com/pricing/",
-      "evidence_sha256": "077cf6f245175bfef110b97893f14ba356810abb8e7806c8d7ab5361ff4bf82d",
+      "evidence_sha256": "a02d144c034736c47e846b35d003adfaf26ae6f0e278187c2c5cec57775228e4",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -5319,7 +5325,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -5363,7 +5369,7 @@
           "url": "https://nordvpn.com/pricing/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "077cf6f245175bfef110b97893f14ba356810abb8e7806c8d7ab5361ff4bf82d"
+          "content_sha256": "a02d144c034736c47e846b35d003adfaf26ae6f0e278187c2c5cec57775228e4"
         }
       ],
       "policy_sources": [],
@@ -5371,7 +5377,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://nordvpn.com/pricing/",
-      "evidence_sha256": "077cf6f245175bfef110b97893f14ba356810abb8e7806c8d7ab5361ff4bf82d",
+      "evidence_sha256": "a02d144c034736c47e846b35d003adfaf26ae6f0e278187c2c5cec57775228e4",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -5385,7 +5391,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -5429,7 +5435,7 @@
           "url": "https://nordvpn.com/pricing/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "077cf6f245175bfef110b97893f14ba356810abb8e7806c8d7ab5361ff4bf82d"
+          "content_sha256": "a02d144c034736c47e846b35d003adfaf26ae6f0e278187c2c5cec57775228e4"
         }
       ],
       "policy_sources": [],
@@ -5437,7 +5443,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://nordvpn.com/pricing/",
-      "evidence_sha256": "077cf6f245175bfef110b97893f14ba356810abb8e7806c8d7ab5361ff4bf82d",
+      "evidence_sha256": "a02d144c034736c47e846b35d003adfaf26ae6f0e278187c2c5cec57775228e4",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -5451,7 +5457,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -5495,7 +5501,7 @@
           "url": "https://nordvpn.com/pricing/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "077cf6f245175bfef110b97893f14ba356810abb8e7806c8d7ab5361ff4bf82d"
+          "content_sha256": "a02d144c034736c47e846b35d003adfaf26ae6f0e278187c2c5cec57775228e4"
         }
       ],
       "policy_sources": [],
@@ -5503,7 +5509,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://nordvpn.com/pricing/",
-      "evidence_sha256": "077cf6f245175bfef110b97893f14ba356810abb8e7806c8d7ab5361ff4bf82d",
+      "evidence_sha256": "a02d144c034736c47e846b35d003adfaf26ae6f0e278187c2c5cec57775228e4",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -5517,7 +5523,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -5561,7 +5567,7 @@
           "url": "https://nordvpn.com/pricing/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "077cf6f245175bfef110b97893f14ba356810abb8e7806c8d7ab5361ff4bf82d"
+          "content_sha256": "a02d144c034736c47e846b35d003adfaf26ae6f0e278187c2c5cec57775228e4"
         }
       ],
       "policy_sources": [],
@@ -5569,7 +5575,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://nordvpn.com/pricing/",
-      "evidence_sha256": "077cf6f245175bfef110b97893f14ba356810abb8e7806c8d7ab5361ff4bf82d",
+      "evidence_sha256": "a02d144c034736c47e846b35d003adfaf26ae6f0e278187c2c5cec57775228e4",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -5583,7 +5589,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -5627,7 +5633,7 @@
           "url": "https://nordvpn.com/pricing/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "077cf6f245175bfef110b97893f14ba356810abb8e7806c8d7ab5361ff4bf82d"
+          "content_sha256": "a02d144c034736c47e846b35d003adfaf26ae6f0e278187c2c5cec57775228e4"
         }
       ],
       "policy_sources": [],
@@ -5635,7 +5641,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://nordvpn.com/pricing/",
-      "evidence_sha256": "077cf6f245175bfef110b97893f14ba356810abb8e7806c8d7ab5361ff4bf82d",
+      "evidence_sha256": "a02d144c034736c47e846b35d003adfaf26ae6f0e278187c2c5cec57775228e4",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -5649,7 +5655,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -5693,7 +5699,7 @@
           "url": "https://nordvpn.com/pricing/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "077cf6f245175bfef110b97893f14ba356810abb8e7806c8d7ab5361ff4bf82d"
+          "content_sha256": "a02d144c034736c47e846b35d003adfaf26ae6f0e278187c2c5cec57775228e4"
         }
       ],
       "policy_sources": [],
@@ -5701,7 +5707,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://nordvpn.com/pricing/",
-      "evidence_sha256": "077cf6f245175bfef110b97893f14ba356810abb8e7806c8d7ab5361ff4bf82d",
+      "evidence_sha256": "a02d144c034736c47e846b35d003adfaf26ae6f0e278187c2c5cec57775228e4",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -5715,7 +5721,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -5759,7 +5765,7 @@
           "url": "https://nordvpn.com/pricing/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "077cf6f245175bfef110b97893f14ba356810abb8e7806c8d7ab5361ff4bf82d"
+          "content_sha256": "a02d144c034736c47e846b35d003adfaf26ae6f0e278187c2c5cec57775228e4"
         }
       ],
       "policy_sources": [],
@@ -5767,7 +5773,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://nordvpn.com/pricing/",
-      "evidence_sha256": "077cf6f245175bfef110b97893f14ba356810abb8e7806c8d7ab5361ff4bf82d",
+      "evidence_sha256": "a02d144c034736c47e846b35d003adfaf26ae6f0e278187c2c5cec57775228e4",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -5999,258 +6005,6 @@
       "series_id": "94c2c24779b84cc6fbd5"
     },
     {
-      "provider_id": "ovpn",
-      "provider_name": "OVPN",
-      "plan_id": "annual",
-      "plan_name": "12 months",
-      "billing_type": "recurring_subscription",
-      "country_code": "US",
-      "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
-      "extraction_corrected_at": null,
-      "extraction_correction": null,
-      "data_freshness_status": "current_capture",
-      "tax_treatment_claim": "taxes_may_apply",
-      "promotion_label": null,
-      "promotion_theme": null,
-      "review_status": "automated_unreviewed",
-      "advertised_monthly": 4.99,
-      "advertised_monthly_status": "machine_extracted",
-      "intro_total": 59.99,
-      "intro_total_status": "machine_extracted",
-      "paid_months": 12,
-      "paid_months_status": "machine_extracted",
-      "free_months": 0,
-      "free_months_status": "machine_extracted",
-      "service_months": 12,
-      "service_months_status": "derived",
-      "effective_intro_monthly": 4.9992,
-      "effective_intro_monthly_status": "derived",
-      "advertised_discount_pct": 71,
-      "advertised_discount_pct_status": "machine_extracted",
-      "reference_price_total": null,
-      "reference_price_total_status": "not_visible",
-      "renewal_total": null,
-      "renewal_total_status": "not_visible",
-      "renewal_period_months": 12,
-      "renewal_period_months_status": "machine_extracted",
-      "effective_renewal_monthly": null,
-      "effective_renewal_monthly_status": "not_visible",
-      "renewal_increase_pct": null,
-      "renewal_increase_pct_status": "not_visible",
-      "refund_days": 10,
-      "refund_days_status": "machine_extracted",
-      "freshness_status": "current",
-      "validation_status": "automated_unreviewed",
-      "review_flags": [
-        "auto_renewal_default_card_or_paypal",
-        "prepaid_in_advance",
-        "renewal_price_disclosed_only_before_renewal"
-      ],
-      "manual_review_required": true,
-      "sources": [
-        {
-          "page_id": "pricing",
-          "url": "https://www.ovpn.com/en/pricing",
-          "result": "ok",
-          "method": "automated_browser",
-          "content_sha256": "400f492e623aa24ff49e61e12d69f662fcb40b66561a13098ee03ac7a5bbf987"
-        },
-        {
-          "page_id": "subscription-terms",
-          "url": "https://www.ovpn.com/en/tos",
-          "result": "ok",
-          "method": "automated_direct",
-          "content_sha256": "147db195d5decaefa382de1296150a037ba0949ae61ef1999314adfda8d522f0"
-        },
-        {
-          "page_id": "advance-renewal",
-          "url": "https://support.ovpn.com/hc/en-us/articles/46236309872403-If-you-buy-more-than-one-month-is-that-a-one-time-payment",
-          "result": "ok",
-          "method": "automated_direct",
-          "content_sha256": "a9c3714bccf897daf8cb6847aba499d383cf36740d56dc87fa9b7a13d6d8e999"
-        }
-      ],
-      "policy_sources": [],
-      "policy_observed_at": null,
-      "checkout_observed_at": null,
-      "checkout_evidence_sha256": null,
-      "source_url": "https://www.ovpn.com/en/pricing",
-      "evidence_sha256": "400f492e623aa24ff49e61e12d69f662fcb40b66561a13098ee03ac7a5bbf987",
-      "source_kind": "standard_public_page",
-      "trend_eligible": true,
-      "upfront_eligible": true,
-      "series_id": "0b6d3a8686a567c75ab6"
-    },
-    {
-      "provider_id": "ovpn",
-      "provider_name": "OVPN",
-      "plan_id": "monthly",
-      "plan_name": "1 month",
-      "billing_type": "recurring_subscription",
-      "country_code": "US",
-      "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
-      "extraction_corrected_at": null,
-      "extraction_correction": null,
-      "data_freshness_status": "current_capture",
-      "tax_treatment_claim": "taxes_may_apply",
-      "promotion_label": null,
-      "promotion_theme": null,
-      "review_status": "automated_unreviewed",
-      "advertised_monthly": 12,
-      "advertised_monthly_status": "machine_extracted",
-      "intro_total": 12,
-      "intro_total_status": "derived",
-      "paid_months": 1,
-      "paid_months_status": "machine_extracted",
-      "free_months": 0,
-      "free_months_status": "machine_extracted",
-      "service_months": 1,
-      "service_months_status": "derived",
-      "effective_intro_monthly": 12,
-      "effective_intro_monthly_status": "derived",
-      "advertised_discount_pct": 0,
-      "advertised_discount_pct_status": "machine_extracted",
-      "reference_price_total": null,
-      "reference_price_total_status": "not_visible",
-      "renewal_total": null,
-      "renewal_total_status": "not_visible",
-      "renewal_period_months": 1,
-      "renewal_period_months_status": "machine_extracted",
-      "effective_renewal_monthly": null,
-      "effective_renewal_monthly_status": "not_visible",
-      "renewal_increase_pct": null,
-      "renewal_increase_pct_status": "not_visible",
-      "refund_days": 10,
-      "refund_days_status": "machine_extracted",
-      "freshness_status": "current",
-      "validation_status": "automated_unreviewed",
-      "review_flags": [
-        "auto_renewal_default_card_or_paypal",
-        "prepaid_in_advance",
-        "renewal_price_disclosed_only_before_renewal"
-      ],
-      "manual_review_required": true,
-      "sources": [
-        {
-          "page_id": "pricing",
-          "url": "https://www.ovpn.com/en/pricing",
-          "result": "ok",
-          "method": "automated_browser",
-          "content_sha256": "400f492e623aa24ff49e61e12d69f662fcb40b66561a13098ee03ac7a5bbf987"
-        },
-        {
-          "page_id": "subscription-terms",
-          "url": "https://www.ovpn.com/en/tos",
-          "result": "ok",
-          "method": "automated_direct",
-          "content_sha256": "147db195d5decaefa382de1296150a037ba0949ae61ef1999314adfda8d522f0"
-        },
-        {
-          "page_id": "advance-renewal",
-          "url": "https://support.ovpn.com/hc/en-us/articles/46236309872403-If-you-buy-more-than-one-month-is-that-a-one-time-payment",
-          "result": "ok",
-          "method": "automated_direct",
-          "content_sha256": "a9c3714bccf897daf8cb6847aba499d383cf36740d56dc87fa9b7a13d6d8e999"
-        }
-      ],
-      "policy_sources": [],
-      "policy_observed_at": null,
-      "checkout_observed_at": null,
-      "checkout_evidence_sha256": null,
-      "source_url": "https://www.ovpn.com/en/pricing",
-      "evidence_sha256": "400f492e623aa24ff49e61e12d69f662fcb40b66561a13098ee03ac7a5bbf987",
-      "source_kind": "standard_public_page",
-      "trend_eligible": true,
-      "upfront_eligible": true,
-      "series_id": "ee1d85e944ca2c90dac0"
-    },
-    {
-      "provider_id": "ovpn",
-      "provider_name": "OVPN",
-      "plan_id": "three-year",
-      "plan_name": "36 months",
-      "billing_type": "recurring_subscription",
-      "country_code": "US",
-      "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
-      "extraction_corrected_at": null,
-      "extraction_correction": null,
-      "data_freshness_status": "current_capture",
-      "tax_treatment_claim": "taxes_may_apply",
-      "promotion_label": null,
-      "promotion_theme": null,
-      "review_status": "automated_unreviewed",
-      "advertised_monthly": 4.22,
-      "advertised_monthly_status": "machine_extracted",
-      "intro_total": 151.92,
-      "intro_total_status": "machine_extracted",
-      "paid_months": 36,
-      "paid_months_status": "machine_extracted",
-      "free_months": 0,
-      "free_months_status": "machine_extracted",
-      "service_months": 36,
-      "service_months_status": "derived",
-      "effective_intro_monthly": 4.22,
-      "effective_intro_monthly_status": "derived",
-      "advertised_discount_pct": 75,
-      "advertised_discount_pct_status": "machine_extracted",
-      "reference_price_total": null,
-      "reference_price_total_status": "not_visible",
-      "renewal_total": null,
-      "renewal_total_status": "not_visible",
-      "renewal_period_months": 36,
-      "renewal_period_months_status": "machine_extracted",
-      "effective_renewal_monthly": null,
-      "effective_renewal_monthly_status": "not_visible",
-      "renewal_increase_pct": null,
-      "renewal_increase_pct_status": "not_visible",
-      "refund_days": 10,
-      "refund_days_status": "machine_extracted",
-      "freshness_status": "current",
-      "validation_status": "automated_unreviewed",
-      "review_flags": [
-        "auto_renewal_default_card_or_paypal",
-        "prepaid_in_advance",
-        "renewal_price_disclosed_only_before_renewal"
-      ],
-      "manual_review_required": true,
-      "sources": [
-        {
-          "page_id": "pricing",
-          "url": "https://www.ovpn.com/en/pricing",
-          "result": "ok",
-          "method": "automated_browser",
-          "content_sha256": "400f492e623aa24ff49e61e12d69f662fcb40b66561a13098ee03ac7a5bbf987"
-        },
-        {
-          "page_id": "subscription-terms",
-          "url": "https://www.ovpn.com/en/tos",
-          "result": "ok",
-          "method": "automated_direct",
-          "content_sha256": "147db195d5decaefa382de1296150a037ba0949ae61ef1999314adfda8d522f0"
-        },
-        {
-          "page_id": "advance-renewal",
-          "url": "https://support.ovpn.com/hc/en-us/articles/46236309872403-If-you-buy-more-than-one-month-is-that-a-one-time-payment",
-          "result": "ok",
-          "method": "automated_direct",
-          "content_sha256": "a9c3714bccf897daf8cb6847aba499d383cf36740d56dc87fa9b7a13d6d8e999"
-        }
-      ],
-      "policy_sources": [],
-      "policy_observed_at": null,
-      "checkout_observed_at": null,
-      "checkout_evidence_sha256": null,
-      "source_url": "https://www.ovpn.com/en/pricing",
-      "evidence_sha256": "400f492e623aa24ff49e61e12d69f662fcb40b66561a13098ee03ac7a5bbf987",
-      "source_kind": "standard_public_page",
-      "trend_eligible": true,
-      "upfront_eligible": true,
-      "series_id": "7b0c66caa2ffdc271461"
-    },
-    {
       "provider_id": "pia",
       "provider_name": "Private Internet Access",
       "plan_id": "annual",
@@ -6258,7 +6012,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -6302,15 +6056,15 @@
           "url": "https://www.privateinternetaccess.com/buy-vpn-online",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "17519f4cea9e3652aa64b2cd91bdecbd0bd6c35e5dec6eb41db270a2ce4a197f"
+          "content_sha256": "30e23a510edbde0ee1277ca7cec3c637181f76289979869acb20ce9ce334f07b"
         }
       ],
       "policy_sources": [],
       "policy_observed_at": null,
-      "checkout_observed_at": "2026-10-11T06:00:49Z",
+      "checkout_observed_at": "2026-10-12T06:11:14Z",
       "checkout_evidence_sha256": "480b527a68b36a4bdc78f6070998a5de667691ab550156f61850c0dee835a4e8",
       "source_url": "https://www.privateinternetaccess.com/buy-vpn-online",
-      "evidence_sha256": "17519f4cea9e3652aa64b2cd91bdecbd0bd6c35e5dec6eb41db270a2ce4a197f",
+      "evidence_sha256": "30e23a510edbde0ee1277ca7cec3c637181f76289979869acb20ce9ce334f07b",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -6324,7 +6078,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -6368,7 +6122,7 @@
           "url": "https://www.privateinternetaccess.com/buy-vpn-online",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "17519f4cea9e3652aa64b2cd91bdecbd0bd6c35e5dec6eb41db270a2ce4a197f"
+          "content_sha256": "30e23a510edbde0ee1277ca7cec3c637181f76289979869acb20ce9ce334f07b"
         }
       ],
       "policy_sources": [],
@@ -6376,7 +6130,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.privateinternetaccess.com/buy-vpn-online",
-      "evidence_sha256": "17519f4cea9e3652aa64b2cd91bdecbd0bd6c35e5dec6eb41db270a2ce4a197f",
+      "evidence_sha256": "30e23a510edbde0ee1277ca7cec3c637181f76289979869acb20ce9ce334f07b",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -6390,7 +6144,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -6434,15 +6188,15 @@
           "url": "https://www.privateinternetaccess.com/buy-vpn-online",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "17519f4cea9e3652aa64b2cd91bdecbd0bd6c35e5dec6eb41db270a2ce4a197f"
+          "content_sha256": "30e23a510edbde0ee1277ca7cec3c637181f76289979869acb20ce9ce334f07b"
         }
       ],
       "policy_sources": [],
       "policy_observed_at": null,
-      "checkout_observed_at": "2026-10-11T06:00:49Z",
+      "checkout_observed_at": "2026-10-12T06:11:14Z",
       "checkout_evidence_sha256": "0ba355cfdfb3632c105a44fc34d7eec956ccc1ef2618e23b96ac44f4b514aa04",
       "source_url": "https://www.privateinternetaccess.com/buy-vpn-online",
-      "evidence_sha256": "17519f4cea9e3652aa64b2cd91bdecbd0bd6c35e5dec6eb41db270a2ce4a197f",
+      "evidence_sha256": "30e23a510edbde0ee1277ca7cec3c637181f76289979869acb20ce9ce334f07b",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -6456,7 +6210,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -6529,7 +6283,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -6602,7 +6356,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -6675,7 +6429,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -6719,21 +6473,21 @@
           "url": "https://privatevpn.com/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "06caab606a6a884c110cdebea2e5af745bfb0c240623c9d02c56021b898356bc"
+          "content_sha256": "d57ecd6f397d6020d15808592b3c7583dcec776b0c757e3f348f9e63e0bd0695"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://privatevpn.com/terms-of-use",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "f61357ed5739eeb9dccfd97bcfa198c864cbd3adc135cba22ee25ec351a692d3"
+          "content_sha256": "10125dd7babf491c9aacb9e641854c7ab8f864794718c2dda5889eeed52f2528"
         },
         {
           "page_id": "refund-policy",
           "url": "https://privatevpn.com/money-back-guarantee",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "cf433f6cf8c435c77c125ff15e0b3d03d05e1fad5f90c0e53f5bc147523843ba"
+          "content_sha256": "0736c7d12ee7e96b28a3ab1106dc81283904f9fc5dcc3950ad27e459b99b2733"
         }
       ],
       "policy_sources": [],
@@ -6741,7 +6495,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://privatevpn.com/",
-      "evidence_sha256": "06caab606a6a884c110cdebea2e5af745bfb0c240623c9d02c56021b898356bc",
+      "evidence_sha256": "d57ecd6f397d6020d15808592b3c7583dcec776b0c757e3f348f9e63e0bd0695",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -6755,7 +6509,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -6799,21 +6553,21 @@
           "url": "https://privatevpn.com/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "06caab606a6a884c110cdebea2e5af745bfb0c240623c9d02c56021b898356bc"
+          "content_sha256": "d57ecd6f397d6020d15808592b3c7583dcec776b0c757e3f348f9e63e0bd0695"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://privatevpn.com/terms-of-use",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "f61357ed5739eeb9dccfd97bcfa198c864cbd3adc135cba22ee25ec351a692d3"
+          "content_sha256": "10125dd7babf491c9aacb9e641854c7ab8f864794718c2dda5889eeed52f2528"
         },
         {
           "page_id": "refund-policy",
           "url": "https://privatevpn.com/money-back-guarantee",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "cf433f6cf8c435c77c125ff15e0b3d03d05e1fad5f90c0e53f5bc147523843ba"
+          "content_sha256": "0736c7d12ee7e96b28a3ab1106dc81283904f9fc5dcc3950ad27e459b99b2733"
         }
       ],
       "policy_sources": [],
@@ -6821,7 +6575,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://privatevpn.com/",
-      "evidence_sha256": "06caab606a6a884c110cdebea2e5af745bfb0c240623c9d02c56021b898356bc",
+      "evidence_sha256": "d57ecd6f397d6020d15808592b3c7583dcec776b0c757e3f348f9e63e0bd0695",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -6835,7 +6589,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -6879,21 +6633,21 @@
           "url": "https://privatevpn.com/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "06caab606a6a884c110cdebea2e5af745bfb0c240623c9d02c56021b898356bc"
+          "content_sha256": "d57ecd6f397d6020d15808592b3c7583dcec776b0c757e3f348f9e63e0bd0695"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://privatevpn.com/terms-of-use",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "f61357ed5739eeb9dccfd97bcfa198c864cbd3adc135cba22ee25ec351a692d3"
+          "content_sha256": "10125dd7babf491c9aacb9e641854c7ab8f864794718c2dda5889eeed52f2528"
         },
         {
           "page_id": "refund-policy",
           "url": "https://privatevpn.com/money-back-guarantee",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "cf433f6cf8c435c77c125ff15e0b3d03d05e1fad5f90c0e53f5bc147523843ba"
+          "content_sha256": "0736c7d12ee7e96b28a3ab1106dc81283904f9fc5dcc3950ad27e459b99b2733"
         }
       ],
       "policy_sources": [],
@@ -6901,7 +6655,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://privatevpn.com/",
-      "evidence_sha256": "06caab606a6a884c110cdebea2e5af745bfb0c240623c9d02c56021b898356bc",
+      "evidence_sha256": "d57ecd6f397d6020d15808592b3c7583dcec776b0c757e3f348f9e63e0bd0695",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -6915,7 +6669,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -6959,7 +6713,7 @@
           "url": "https://protonvpn.com/pricing",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "82dafca1b24a55312ac9354a56c6fd5fa732ac34da6e931bf3e1787d466575b9"
+          "content_sha256": "98fdfd89b010fa87edc1f7262ddb36e68c187dd463a65caa6f999d639fdfcd84"
         }
       ],
       "policy_sources": [],
@@ -6967,7 +6721,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://protonvpn.com/pricing",
-      "evidence_sha256": "82dafca1b24a55312ac9354a56c6fd5fa732ac34da6e931bf3e1787d466575b9",
+      "evidence_sha256": "98fdfd89b010fa87edc1f7262ddb36e68c187dd463a65caa6f999d639fdfcd84",
       "source_kind": "standard_public_page",
       "trend_eligible": false,
       "upfront_eligible": false,
@@ -6981,7 +6735,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -7025,7 +6779,7 @@
           "url": "https://protonvpn.com/pricing",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "82dafca1b24a55312ac9354a56c6fd5fa732ac34da6e931bf3e1787d466575b9"
+          "content_sha256": "98fdfd89b010fa87edc1f7262ddb36e68c187dd463a65caa6f999d639fdfcd84"
         }
       ],
       "policy_sources": [],
@@ -7033,7 +6787,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://protonvpn.com/pricing",
-      "evidence_sha256": "82dafca1b24a55312ac9354a56c6fd5fa732ac34da6e931bf3e1787d466575b9",
+      "evidence_sha256": "98fdfd89b010fa87edc1f7262ddb36e68c187dd463a65caa6f999d639fdfcd84",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -7047,7 +6801,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -7091,7 +6845,7 @@
           "url": "https://protonvpn.com/l/special-partner-offer",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "cdde91bfc96d6973ef79d2b4bf0a12848230231ed6ab341021dc385b5311b4f3"
+          "content_sha256": "16a16e5145db551ea53c6cbbb3cf6134804e59eb8bfa700ac78abcb46294d603"
         }
       ],
       "policy_sources": [],
@@ -7099,7 +6853,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://protonvpn.com/l/special-partner-offer",
-      "evidence_sha256": "cdde91bfc96d6973ef79d2b4bf0a12848230231ed6ab341021dc385b5311b4f3",
+      "evidence_sha256": "16a16e5145db551ea53c6cbbb3cf6134804e59eb8bfa700ac78abcb46294d603",
       "source_kind": "partner_offer",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -7113,7 +6867,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -7157,7 +6911,7 @@
           "url": "https://protonvpn.com/l/special-partner-offer",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "cdde91bfc96d6973ef79d2b4bf0a12848230231ed6ab341021dc385b5311b4f3"
+          "content_sha256": "16a16e5145db551ea53c6cbbb3cf6134804e59eb8bfa700ac78abcb46294d603"
         }
       ],
       "policy_sources": [],
@@ -7165,7 +6919,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://protonvpn.com/l/special-partner-offer",
-      "evidence_sha256": "cdde91bfc96d6973ef79d2b4bf0a12848230231ed6ab341021dc385b5311b4f3",
+      "evidence_sha256": "16a16e5145db551ea53c6cbbb3cf6134804e59eb8bfa700ac78abcb46294d603",
       "source_kind": "partner_offer",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -7179,7 +6933,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -7223,7 +6977,7 @@
           "url": "https://protonvpn.com/l/special-partner-offer",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "cdde91bfc96d6973ef79d2b4bf0a12848230231ed6ab341021dc385b5311b4f3"
+          "content_sha256": "16a16e5145db551ea53c6cbbb3cf6134804e59eb8bfa700ac78abcb46294d603"
         }
       ],
       "policy_sources": [],
@@ -7231,7 +6985,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://protonvpn.com/l/special-partner-offer",
-      "evidence_sha256": "cdde91bfc96d6973ef79d2b4bf0a12848230231ed6ab341021dc385b5311b4f3",
+      "evidence_sha256": "16a16e5145db551ea53c6cbbb3cf6134804e59eb8bfa700ac78abcb46294d603",
       "source_kind": "partner_offer",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -7245,7 +6999,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -7289,7 +7043,7 @@
           "url": "https://www.purevpn.com/order",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "26de255cf33a847c76ecada32af66b08904c4e3968502a9d2025edafca75818d"
+          "content_sha256": "ea15ac8ef66d85899e96510a6e9d5e949898a44531d94e489c8892b8219ff0f5"
         }
       ],
       "policy_sources": [],
@@ -7297,7 +7051,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.purevpn.com/order",
-      "evidence_sha256": "26de255cf33a847c76ecada32af66b08904c4e3968502a9d2025edafca75818d",
+      "evidence_sha256": "ea15ac8ef66d85899e96510a6e9d5e949898a44531d94e489c8892b8219ff0f5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -7311,7 +7065,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -7355,7 +7109,7 @@
           "url": "https://www.purevpn.com/order",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "26de255cf33a847c76ecada32af66b08904c4e3968502a9d2025edafca75818d"
+          "content_sha256": "ea15ac8ef66d85899e96510a6e9d5e949898a44531d94e489c8892b8219ff0f5"
         }
       ],
       "policy_sources": [],
@@ -7363,7 +7117,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.purevpn.com/order",
-      "evidence_sha256": "26de255cf33a847c76ecada32af66b08904c4e3968502a9d2025edafca75818d",
+      "evidence_sha256": "ea15ac8ef66d85899e96510a6e9d5e949898a44531d94e489c8892b8219ff0f5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -7377,7 +7131,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -7421,7 +7175,7 @@
           "url": "https://www.purevpn.com/order",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "26de255cf33a847c76ecada32af66b08904c4e3968502a9d2025edafca75818d"
+          "content_sha256": "ea15ac8ef66d85899e96510a6e9d5e949898a44531d94e489c8892b8219ff0f5"
         }
       ],
       "policy_sources": [],
@@ -7429,7 +7183,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.purevpn.com/order",
-      "evidence_sha256": "26de255cf33a847c76ecada32af66b08904c4e3968502a9d2025edafca75818d",
+      "evidence_sha256": "ea15ac8ef66d85899e96510a6e9d5e949898a44531d94e489c8892b8219ff0f5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -7443,7 +7197,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -7487,7 +7241,7 @@
           "url": "https://www.purevpn.com/order",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "26de255cf33a847c76ecada32af66b08904c4e3968502a9d2025edafca75818d"
+          "content_sha256": "ea15ac8ef66d85899e96510a6e9d5e949898a44531d94e489c8892b8219ff0f5"
         }
       ],
       "policy_sources": [],
@@ -7495,7 +7249,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.purevpn.com/order",
-      "evidence_sha256": "26de255cf33a847c76ecada32af66b08904c4e3968502a9d2025edafca75818d",
+      "evidence_sha256": "ea15ac8ef66d85899e96510a6e9d5e949898a44531d94e489c8892b8219ff0f5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -7509,7 +7263,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -7553,7 +7307,7 @@
           "url": "https://www.purevpn.com/order",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "26de255cf33a847c76ecada32af66b08904c4e3968502a9d2025edafca75818d"
+          "content_sha256": "ea15ac8ef66d85899e96510a6e9d5e949898a44531d94e489c8892b8219ff0f5"
         }
       ],
       "policy_sources": [],
@@ -7561,7 +7315,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.purevpn.com/order",
-      "evidence_sha256": "26de255cf33a847c76ecada32af66b08904c4e3968502a9d2025edafca75818d",
+      "evidence_sha256": "ea15ac8ef66d85899e96510a6e9d5e949898a44531d94e489c8892b8219ff0f5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -7575,7 +7329,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -7619,7 +7373,7 @@
           "url": "https://www.purevpn.com/order",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "26de255cf33a847c76ecada32af66b08904c4e3968502a9d2025edafca75818d"
+          "content_sha256": "ea15ac8ef66d85899e96510a6e9d5e949898a44531d94e489c8892b8219ff0f5"
         }
       ],
       "policy_sources": [],
@@ -7627,7 +7381,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.purevpn.com/order",
-      "evidence_sha256": "26de255cf33a847c76ecada32af66b08904c4e3968502a9d2025edafca75818d",
+      "evidence_sha256": "ea15ac8ef66d85899e96510a6e9d5e949898a44531d94e489c8892b8219ff0f5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -7641,7 +7395,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -7685,7 +7439,7 @@
           "url": "https://www.purevpn.com/order",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "26de255cf33a847c76ecada32af66b08904c4e3968502a9d2025edafca75818d"
+          "content_sha256": "ea15ac8ef66d85899e96510a6e9d5e949898a44531d94e489c8892b8219ff0f5"
         }
       ],
       "policy_sources": [],
@@ -7693,7 +7447,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.purevpn.com/order",
-      "evidence_sha256": "26de255cf33a847c76ecada32af66b08904c4e3968502a9d2025edafca75818d",
+      "evidence_sha256": "ea15ac8ef66d85899e96510a6e9d5e949898a44531d94e489c8892b8219ff0f5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -7707,7 +7461,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -7751,7 +7505,7 @@
           "url": "https://www.purevpn.com/order",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "26de255cf33a847c76ecada32af66b08904c4e3968502a9d2025edafca75818d"
+          "content_sha256": "ea15ac8ef66d85899e96510a6e9d5e949898a44531d94e489c8892b8219ff0f5"
         }
       ],
       "policy_sources": [],
@@ -7759,7 +7513,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.purevpn.com/order",
-      "evidence_sha256": "26de255cf33a847c76ecada32af66b08904c4e3968502a9d2025edafca75818d",
+      "evidence_sha256": "ea15ac8ef66d85899e96510a6e9d5e949898a44531d94e489c8892b8219ff0f5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -7773,7 +7527,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -7817,7 +7571,7 @@
           "url": "https://www.purevpn.com/order",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "26de255cf33a847c76ecada32af66b08904c4e3968502a9d2025edafca75818d"
+          "content_sha256": "ea15ac8ef66d85899e96510a6e9d5e949898a44531d94e489c8892b8219ff0f5"
         }
       ],
       "policy_sources": [],
@@ -7825,7 +7579,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.purevpn.com/order",
-      "evidence_sha256": "26de255cf33a847c76ecada32af66b08904c4e3968502a9d2025edafca75818d",
+      "evidence_sha256": "ea15ac8ef66d85899e96510a6e9d5e949898a44531d94e489c8892b8219ff0f5",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -7839,7 +7593,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -7847,9 +7601,9 @@
       "promotion_label": null,
       "promotion_theme": null,
       "review_status": "automated_unreviewed",
-      "advertised_monthly": 18.95,
+      "advertised_monthly": 19.95,
       "advertised_monthly_status": "machine_extracted",
-      "intro_total": 18.95,
+      "intro_total": 19.95,
       "intro_total_status": "derived",
       "paid_months": 1,
       "paid_months_status": "machine_extracted",
@@ -7857,17 +7611,17 @@
       "free_months_status": "machine_extracted",
       "service_months": 1,
       "service_months_status": "derived",
-      "effective_intro_monthly": 18.95,
+      "effective_intro_monthly": 19.95,
       "effective_intro_monthly_status": "derived",
       "advertised_discount_pct": null,
       "advertised_discount_pct_status": "not_visible",
       "reference_price_total": null,
       "reference_price_total_status": "not_visible",
-      "renewal_total": 18.95,
+      "renewal_total": 19.95,
       "renewal_total_status": "machine_extracted",
       "renewal_period_months": 1,
       "renewal_period_months_status": "machine_extracted",
-      "effective_renewal_monthly": 18.95,
+      "effective_renewal_monthly": 19.95,
       "effective_renewal_monthly_status": "derived",
       "renewal_increase_pct": 0,
       "renewal_increase_pct_status": "derived",
@@ -7883,7 +7637,7 @@
           "url": "https://surfshark.com/pricing",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "ba6e3286ea0eed160efa2b25a3f14f90837826a8391717cb2b2f78c76df1cca6"
+          "content_sha256": "fd87371415f402efad72305203ed05b114c79f9335c61971f5da535c1fe84cde"
         }
       ],
       "policy_sources": [],
@@ -7905,7 +7659,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -7913,9 +7667,9 @@
       "promotion_label": null,
       "promotion_theme": null,
       "review_status": "automated_unreviewed",
-      "advertised_monthly": 21.85,
+      "advertised_monthly": 22.85,
       "advertised_monthly_status": "machine_extracted",
-      "intro_total": 21.85,
+      "intro_total": 22.85,
       "intro_total_status": "derived",
       "paid_months": 1,
       "paid_months_status": "machine_extracted",
@@ -7923,17 +7677,17 @@
       "free_months_status": "machine_extracted",
       "service_months": 1,
       "service_months_status": "derived",
-      "effective_intro_monthly": 21.85,
+      "effective_intro_monthly": 22.85,
       "effective_intro_monthly_status": "derived",
       "advertised_discount_pct": null,
       "advertised_discount_pct_status": "not_visible",
       "reference_price_total": null,
       "reference_price_total_status": "not_visible",
-      "renewal_total": 21.85,
+      "renewal_total": 22.85,
       "renewal_total_status": "machine_extracted",
       "renewal_period_months": 1,
       "renewal_period_months_status": "machine_extracted",
-      "effective_renewal_monthly": 21.85,
+      "effective_renewal_monthly": 22.85,
       "effective_renewal_monthly_status": "derived",
       "renewal_increase_pct": 0,
       "renewal_increase_pct_status": "derived",
@@ -7949,7 +7703,7 @@
           "url": "https://surfshark.com/pricing",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "ba6e3286ea0eed160efa2b25a3f14f90837826a8391717cb2b2f78c76df1cca6"
+          "content_sha256": "fd87371415f402efad72305203ed05b114c79f9335c61971f5da535c1fe84cde"
         }
       ],
       "policy_sources": [],
@@ -7971,7 +7725,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -8017,21 +7771,21 @@
           "url": "https://surfshark.com/pricing",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "be2c97b823d77533ec25b1f73a8cc50619ba8a49f877f074ed01986ccf092106"
+          "content_sha256": "18c7235f256eb94fb3de51f8f65c7c071eb5d7073c3ec749b5f27f85354affd6"
         },
         {
           "page_id": "pricing-monthly",
           "url": "https://surfshark.com/pricing",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "ba6e3286ea0eed160efa2b25a3f14f90837826a8391717cb2b2f78c76df1cca6"
+          "content_sha256": "fd87371415f402efad72305203ed05b114c79f9335c61971f5da535c1fe84cde"
         },
         {
           "page_id": "renewal-pricing",
           "url": "https://surfshark.com/terms-of-service/pricing",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "66e7c0590aa2c4bedaafbd44955721e087ea8efac65272a54cd3a66216347acd"
+          "content_sha256": "bd818e511be0c75cf533b785342ca7fa26b64ca7dfc18fd265dfc5578ed3550e"
         }
       ],
       "policy_sources": [],
@@ -8039,7 +7793,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://surfshark.com/pricing",
-      "evidence_sha256": "be2c97b823d77533ec25b1f73a8cc50619ba8a49f877f074ed01986ccf092106",
+      "evidence_sha256": "18c7235f256eb94fb3de51f8f65c7c071eb5d7073c3ec749b5f27f85354affd6",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -8053,7 +7807,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -8099,21 +7853,21 @@
           "url": "https://surfshark.com/pricing",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "be2c97b823d77533ec25b1f73a8cc50619ba8a49f877f074ed01986ccf092106"
+          "content_sha256": "18c7235f256eb94fb3de51f8f65c7c071eb5d7073c3ec749b5f27f85354affd6"
         },
         {
           "page_id": "pricing-monthly",
           "url": "https://surfshark.com/pricing",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "ba6e3286ea0eed160efa2b25a3f14f90837826a8391717cb2b2f78c76df1cca6"
+          "content_sha256": "fd87371415f402efad72305203ed05b114c79f9335c61971f5da535c1fe84cde"
         },
         {
           "page_id": "renewal-pricing",
           "url": "https://surfshark.com/terms-of-service/pricing",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "66e7c0590aa2c4bedaafbd44955721e087ea8efac65272a54cd3a66216347acd"
+          "content_sha256": "bd818e511be0c75cf533b785342ca7fa26b64ca7dfc18fd265dfc5578ed3550e"
         }
       ],
       "policy_sources": [],
@@ -8121,7 +7875,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://surfshark.com/pricing",
-      "evidence_sha256": "be2c97b823d77533ec25b1f73a8cc50619ba8a49f877f074ed01986ccf092106",
+      "evidence_sha256": "18c7235f256eb94fb3de51f8f65c7c071eb5d7073c3ec749b5f27f85354affd6",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -8135,7 +7889,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -8143,9 +7897,9 @@
       "promotion_label": null,
       "promotion_theme": null,
       "review_status": "automated_unreviewed",
-      "advertised_monthly": 16.45,
+      "advertised_monthly": 17.45,
       "advertised_monthly_status": "machine_extracted",
-      "intro_total": 16.45,
+      "intro_total": 17.45,
       "intro_total_status": "derived",
       "paid_months": 1,
       "paid_months_status": "machine_extracted",
@@ -8153,17 +7907,17 @@
       "free_months_status": "machine_extracted",
       "service_months": 1,
       "service_months_status": "derived",
-      "effective_intro_monthly": 16.45,
+      "effective_intro_monthly": 17.45,
       "effective_intro_monthly_status": "derived",
       "advertised_discount_pct": null,
       "advertised_discount_pct_status": "not_visible",
       "reference_price_total": null,
       "reference_price_total_status": "not_visible",
-      "renewal_total": 16.45,
+      "renewal_total": 17.45,
       "renewal_total_status": "machine_extracted",
       "renewal_period_months": 1,
       "renewal_period_months_status": "machine_extracted",
-      "effective_renewal_monthly": 16.45,
+      "effective_renewal_monthly": 17.45,
       "effective_renewal_monthly_status": "derived",
       "renewal_increase_pct": 0,
       "renewal_increase_pct_status": "derived",
@@ -8179,7 +7933,7 @@
           "url": "https://surfshark.com/pricing",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "ba6e3286ea0eed160efa2b25a3f14f90837826a8391717cb2b2f78c76df1cca6"
+          "content_sha256": "fd87371415f402efad72305203ed05b114c79f9335c61971f5da535c1fe84cde"
         }
       ],
       "policy_sources": [],
@@ -8201,7 +7955,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -8247,21 +8001,21 @@
           "url": "https://surfshark.com/pricing",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "be2c97b823d77533ec25b1f73a8cc50619ba8a49f877f074ed01986ccf092106"
+          "content_sha256": "18c7235f256eb94fb3de51f8f65c7c071eb5d7073c3ec749b5f27f85354affd6"
         },
         {
           "page_id": "pricing-monthly",
           "url": "https://surfshark.com/pricing",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "ba6e3286ea0eed160efa2b25a3f14f90837826a8391717cb2b2f78c76df1cca6"
+          "content_sha256": "fd87371415f402efad72305203ed05b114c79f9335c61971f5da535c1fe84cde"
         },
         {
           "page_id": "renewal-pricing",
           "url": "https://surfshark.com/terms-of-service/pricing",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "66e7c0590aa2c4bedaafbd44955721e087ea8efac65272a54cd3a66216347acd"
+          "content_sha256": "bd818e511be0c75cf533b785342ca7fa26b64ca7dfc18fd265dfc5578ed3550e"
         }
       ],
       "policy_sources": [],
@@ -8269,7 +8023,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://surfshark.com/pricing",
-      "evidence_sha256": "be2c97b823d77533ec25b1f73a8cc50619ba8a49f877f074ed01986ccf092106",
+      "evidence_sha256": "18c7235f256eb94fb3de51f8f65c7c071eb5d7073c3ec749b5f27f85354affd6",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -8283,7 +8037,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -8329,14 +8083,14 @@
           "url": "https://torguard.net/vpn-deal/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "c4a191a15008f2f4290a21f5b887662a2c286b9ece3d2dfdbbf358b6500d35dc"
+          "content_sha256": "b04435723192119773f548674fb6fcd706fd3afbdb024dd0655595bc041d95ab"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://torguard.net/terms.php",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "686c79cd77cd70dca5933c77ebf7f5d975c05f06f534b03c0f339831c7039ec6"
+          "content_sha256": "ddf9c541979e33462996c720e26b2b22375d1e4890844ae65db998f108b156bc"
         }
       ],
       "policy_sources": [],
@@ -8344,7 +8098,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://torguard.net/vpn-deal/",
-      "evidence_sha256": "c4a191a15008f2f4290a21f5b887662a2c286b9ece3d2dfdbbf358b6500d35dc",
+      "evidence_sha256": "b04435723192119773f548674fb6fcd706fd3afbdb024dd0655595bc041d95ab",
       "source_kind": "standard_public_page",
       "trend_eligible": false,
       "upfront_eligible": false,
@@ -8358,7 +8112,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -8402,14 +8156,14 @@
           "url": "https://torguard.net/vpn-deal/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "c4a191a15008f2f4290a21f5b887662a2c286b9ece3d2dfdbbf358b6500d35dc"
+          "content_sha256": "b04435723192119773f548674fb6fcd706fd3afbdb024dd0655595bc041d95ab"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://torguard.net/terms.php",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "686c79cd77cd70dca5933c77ebf7f5d975c05f06f534b03c0f339831c7039ec6"
+          "content_sha256": "ddf9c541979e33462996c720e26b2b22375d1e4890844ae65db998f108b156bc"
         }
       ],
       "policy_sources": [],
@@ -8417,7 +8171,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://torguard.net/vpn-deal/",
-      "evidence_sha256": "c4a191a15008f2f4290a21f5b887662a2c286b9ece3d2dfdbbf358b6500d35dc",
+      "evidence_sha256": "b04435723192119773f548674fb6fcd706fd3afbdb024dd0655595bc041d95ab",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -8431,7 +8185,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -8477,14 +8231,14 @@
           "url": "https://torguard.net/vpn-deal/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "c4a191a15008f2f4290a21f5b887662a2c286b9ece3d2dfdbbf358b6500d35dc"
+          "content_sha256": "b04435723192119773f548674fb6fcd706fd3afbdb024dd0655595bc041d95ab"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://torguard.net/terms.php",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "686c79cd77cd70dca5933c77ebf7f5d975c05f06f534b03c0f339831c7039ec6"
+          "content_sha256": "ddf9c541979e33462996c720e26b2b22375d1e4890844ae65db998f108b156bc"
         }
       ],
       "policy_sources": [],
@@ -8492,7 +8246,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://torguard.net/vpn-deal/",
-      "evidence_sha256": "c4a191a15008f2f4290a21f5b887662a2c286b9ece3d2dfdbbf358b6500d35dc",
+      "evidence_sha256": "b04435723192119773f548674fb6fcd706fd3afbdb024dd0655595bc041d95ab",
       "source_kind": "standard_public_page",
       "trend_eligible": false,
       "upfront_eligible": false,
@@ -8506,7 +8260,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -8550,14 +8304,14 @@
           "url": "https://torguard.net/vpn-deal/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "c4a191a15008f2f4290a21f5b887662a2c286b9ece3d2dfdbbf358b6500d35dc"
+          "content_sha256": "b04435723192119773f548674fb6fcd706fd3afbdb024dd0655595bc041d95ab"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://torguard.net/terms.php",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "686c79cd77cd70dca5933c77ebf7f5d975c05f06f534b03c0f339831c7039ec6"
+          "content_sha256": "ddf9c541979e33462996c720e26b2b22375d1e4890844ae65db998f108b156bc"
         }
       ],
       "policy_sources": [],
@@ -8565,7 +8319,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://torguard.net/vpn-deal/",
-      "evidence_sha256": "c4a191a15008f2f4290a21f5b887662a2c286b9ece3d2dfdbbf358b6500d35dc",
+      "evidence_sha256": "b04435723192119773f548674fb6fcd706fd3afbdb024dd0655595bc041d95ab",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -8579,7 +8333,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -8625,14 +8379,14 @@
           "url": "https://torguard.net/vpn-deal/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "c4a191a15008f2f4290a21f5b887662a2c286b9ece3d2dfdbbf358b6500d35dc"
+          "content_sha256": "b04435723192119773f548674fb6fcd706fd3afbdb024dd0655595bc041d95ab"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://torguard.net/terms.php",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "686c79cd77cd70dca5933c77ebf7f5d975c05f06f534b03c0f339831c7039ec6"
+          "content_sha256": "ddf9c541979e33462996c720e26b2b22375d1e4890844ae65db998f108b156bc"
         }
       ],
       "policy_sources": [],
@@ -8640,7 +8394,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://torguard.net/vpn-deal/",
-      "evidence_sha256": "c4a191a15008f2f4290a21f5b887662a2c286b9ece3d2dfdbbf358b6500d35dc",
+      "evidence_sha256": "b04435723192119773f548674fb6fcd706fd3afbdb024dd0655595bc041d95ab",
       "source_kind": "standard_public_page",
       "trend_eligible": false,
       "upfront_eligible": false,
@@ -8654,7 +8408,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -8698,14 +8452,14 @@
           "url": "https://torguard.net/vpn-deal/",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "c4a191a15008f2f4290a21f5b887662a2c286b9ece3d2dfdbbf358b6500d35dc"
+          "content_sha256": "b04435723192119773f548674fb6fcd706fd3afbdb024dd0655595bc041d95ab"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://torguard.net/terms.php",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "686c79cd77cd70dca5933c77ebf7f5d975c05f06f534b03c0f339831c7039ec6"
+          "content_sha256": "ddf9c541979e33462996c720e26b2b22375d1e4890844ae65db998f108b156bc"
         }
       ],
       "policy_sources": [],
@@ -8713,7 +8467,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://torguard.net/vpn-deal/",
-      "evidence_sha256": "c4a191a15008f2f4290a21f5b887662a2c286b9ece3d2dfdbbf358b6500d35dc",
+      "evidence_sha256": "b04435723192119773f548674fb6fcd706fd3afbdb024dd0655595bc041d95ab",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -8727,7 +8481,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -8778,21 +8532,21 @@
           "url": "https://www.tunnelbear.com/account/checkout",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "af6f54bd17bebcb298828fdcb0d39e6e9e7179e69860b98d464aee5038c979b2"
+          "content_sha256": "1202654e3f5495f256dca49197b130f043fc03f64d348393a69c44f0fce7d62a"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://www.tunnelbear.com/tos",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "6be42962f44c57434504d48cde18fe847c8b98523529032d0e83d6d14c928a02"
+          "content_sha256": "01314c122ea503cb8df98522fe4ef234f1ce032de3fe38a12b6fa1ab8c14cd80"
         },
         {
           "page_id": "autorenew-policy",
           "url": "https://www.tunnelbear.com/autorenew-policy",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "f43f082efc0c44b0bba0f66e5932b23ed5f23ccc6a930987b820cf718f63ec40"
+          "content_sha256": "7406e6acf4ced4a2b8d5e4090c6b3677ad07675059c5a6596facad0f53e3bd0e"
         },
         {
           "page_id": "cancellation-policy",
@@ -8821,7 +8575,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -8872,21 +8626,21 @@
           "url": "https://www.tunnelbear.com/account/checkout",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "af6f54bd17bebcb298828fdcb0d39e6e9e7179e69860b98d464aee5038c979b2"
+          "content_sha256": "1202654e3f5495f256dca49197b130f043fc03f64d348393a69c44f0fce7d62a"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://www.tunnelbear.com/tos",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "6be42962f44c57434504d48cde18fe847c8b98523529032d0e83d6d14c928a02"
+          "content_sha256": "01314c122ea503cb8df98522fe4ef234f1ce032de3fe38a12b6fa1ab8c14cd80"
         },
         {
           "page_id": "autorenew-policy",
           "url": "https://www.tunnelbear.com/autorenew-policy",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "f43f082efc0c44b0bba0f66e5932b23ed5f23ccc6a930987b820cf718f63ec40"
+          "content_sha256": "7406e6acf4ced4a2b8d5e4090c6b3677ad07675059c5a6596facad0f53e3bd0e"
         },
         {
           "page_id": "cancellation-policy",
@@ -8915,7 +8669,7 @@
       "billing_type": "non_recurring_prepaid",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -8968,21 +8722,21 @@
           "url": "https://www.tunnelbear.com/account/checkout",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "af6f54bd17bebcb298828fdcb0d39e6e9e7179e69860b98d464aee5038c979b2"
+          "content_sha256": "1202654e3f5495f256dca49197b130f043fc03f64d348393a69c44f0fce7d62a"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://www.tunnelbear.com/tos",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "6be42962f44c57434504d48cde18fe847c8b98523529032d0e83d6d14c928a02"
+          "content_sha256": "01314c122ea503cb8df98522fe4ef234f1ce032de3fe38a12b6fa1ab8c14cd80"
         },
         {
           "page_id": "autorenew-policy",
           "url": "https://www.tunnelbear.com/autorenew-policy",
           "result": "ok",
           "method": "automated_browser",
-          "content_sha256": "f43f082efc0c44b0bba0f66e5932b23ed5f23ccc6a930987b820cf718f63ec40"
+          "content_sha256": "7406e6acf4ced4a2b8d5e4090c6b3677ad07675059c5a6596facad0f53e3bd0e"
         },
         {
           "page_id": "cancellation-policy",
@@ -9011,7 +8765,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -9055,21 +8809,21 @@
           "url": "https://www.vpnunlimited.com/order/pickup",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "4fbea20ced7f7c2be34a3dd445c53c33d6884fb1be14e77dbc81bde337620ad5"
+          "content_sha256": "c11fc65ae359db803f90616bfff95e901cb6471fb1bebac079d342702f639559"
         },
         {
           "page_id": "account-payment",
           "url": "https://www.vpnunlimited.com/help/faq/account-and-payment-questions",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "2f7281c4a25618f1a2e09483e68e5250753cd6b105b2d949c81b78815c50b12e"
+          "content_sha256": "e32a9725b64fc2a000a29255acaf1778ccf76d8e5100d9172100c574b28d4457"
         },
         {
           "page_id": "payment-methods",
           "url": "https://www.vpnunlimited.com/help/specials/vpn-payment-methods",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "41f5660db5da717745aeea88c8dd0bb79c57dd24ebf3f33cdf63fcc9435ca62c"
+          "content_sha256": "0019c509250f1f30768feec58f725cfb2eec182aec37cc1d1e3ff548aee80648"
         }
       ],
       "policy_sources": [],
@@ -9077,7 +8831,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.vpnunlimited.com/order/pickup",
-      "evidence_sha256": "4fbea20ced7f7c2be34a3dd445c53c33d6884fb1be14e77dbc81bde337620ad5",
+      "evidence_sha256": "c11fc65ae359db803f90616bfff95e901cb6471fb1bebac079d342702f639559",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -9091,7 +8845,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -9135,21 +8889,21 @@
           "url": "https://www.vpnunlimited.com/order/pickup",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "4fbea20ced7f7c2be34a3dd445c53c33d6884fb1be14e77dbc81bde337620ad5"
+          "content_sha256": "c11fc65ae359db803f90616bfff95e901cb6471fb1bebac079d342702f639559"
         },
         {
           "page_id": "account-payment",
           "url": "https://www.vpnunlimited.com/help/faq/account-and-payment-questions",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "2f7281c4a25618f1a2e09483e68e5250753cd6b105b2d949c81b78815c50b12e"
+          "content_sha256": "e32a9725b64fc2a000a29255acaf1778ccf76d8e5100d9172100c574b28d4457"
         },
         {
           "page_id": "payment-methods",
           "url": "https://www.vpnunlimited.com/help/specials/vpn-payment-methods",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "41f5660db5da717745aeea88c8dd0bb79c57dd24ebf3f33cdf63fcc9435ca62c"
+          "content_sha256": "0019c509250f1f30768feec58f725cfb2eec182aec37cc1d1e3ff548aee80648"
         }
       ],
       "policy_sources": [],
@@ -9157,7 +8911,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.vpnunlimited.com/order/pickup",
-      "evidence_sha256": "4fbea20ced7f7c2be34a3dd445c53c33d6884fb1be14e77dbc81bde337620ad5",
+      "evidence_sha256": "c11fc65ae359db803f90616bfff95e901cb6471fb1bebac079d342702f639559",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -9171,7 +8925,7 @@
       "billing_type": "non_recurring_prepaid",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -9215,21 +8969,21 @@
           "url": "https://www.vpnunlimited.com/order/pickup",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "4fbea20ced7f7c2be34a3dd445c53c33d6884fb1be14e77dbc81bde337620ad5"
+          "content_sha256": "c11fc65ae359db803f90616bfff95e901cb6471fb1bebac079d342702f639559"
         },
         {
           "page_id": "account-payment",
           "url": "https://www.vpnunlimited.com/help/faq/account-and-payment-questions",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "2f7281c4a25618f1a2e09483e68e5250753cd6b105b2d949c81b78815c50b12e"
+          "content_sha256": "e32a9725b64fc2a000a29255acaf1778ccf76d8e5100d9172100c574b28d4457"
         },
         {
           "page_id": "payment-methods",
           "url": "https://www.vpnunlimited.com/help/specials/vpn-payment-methods",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "41f5660db5da717745aeea88c8dd0bb79c57dd24ebf3f33cdf63fcc9435ca62c"
+          "content_sha256": "0019c509250f1f30768feec58f725cfb2eec182aec37cc1d1e3ff548aee80648"
         }
       ],
       "policy_sources": [],
@@ -9237,209 +8991,11 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.vpnunlimited.com/order/pickup",
-      "evidence_sha256": "4fbea20ced7f7c2be34a3dd445c53c33d6884fb1be14e77dbc81bde337620ad5",
+      "evidence_sha256": "c11fc65ae359db803f90616bfff95e901cb6471fb1bebac079d342702f639559",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
       "series_id": "9424d689efcc6d0f95ee"
-    },
-    {
-      "provider_id": "vyprvpn",
-      "provider_name": "VyprVPN",
-      "plan_id": "annual",
-      "plan_name": "1 year",
-      "billing_type": "recurring_subscription",
-      "country_code": "US",
-      "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
-      "extraction_corrected_at": null,
-      "extraction_correction": null,
-      "data_freshness_status": "current_capture",
-      "tax_treatment_claim": "taxes_may_apply",
-      "promotion_label": null,
-      "promotion_theme": null,
-      "review_status": "automated_unreviewed",
-      "advertised_monthly": 4,
-      "advertised_monthly_status": "machine_extracted",
-      "intro_total": 48,
-      "intro_total_status": "derived",
-      "paid_months": 12,
-      "paid_months_status": "machine_extracted",
-      "free_months": 0,
-      "free_months_status": "machine_extracted",
-      "service_months": 12,
-      "service_months_status": "derived",
-      "effective_intro_monthly": 4,
-      "effective_intro_monthly_status": "derived",
-      "advertised_discount_pct": null,
-      "advertised_discount_pct_status": "not_visible",
-      "reference_price_total": null,
-      "reference_price_total_status": "not_visible",
-      "renewal_total": 48,
-      "renewal_total_status": "machine_extracted",
-      "renewal_period_months": 12,
-      "renewal_period_months_status": "machine_extracted",
-      "effective_renewal_monthly": 4,
-      "effective_renewal_monthly_status": "derived",
-      "renewal_increase_pct": 0,
-      "renewal_increase_pct_status": "derived",
-      "refund_days": 30,
-      "refund_days_status": "machine_extracted",
-      "freshness_status": "current",
-      "validation_status": "automated_unreviewed",
-      "review_flags": [],
-      "manual_review_required": true,
-      "sources": [
-        {
-          "page_id": "pricing",
-          "url": "https://www.vyprvpn.com/pricing",
-          "result": "ok",
-          "method": "automated_browser",
-          "content_sha256": "9b24dceb0ec765268f8695d3a1fafab90c4698a1c459fb1e3647789a2b33d3d2"
-        }
-      ],
-      "policy_sources": [],
-      "policy_observed_at": null,
-      "checkout_observed_at": null,
-      "checkout_evidence_sha256": null,
-      "source_url": "https://www.vyprvpn.com/pricing",
-      "evidence_sha256": "9b24dceb0ec765268f8695d3a1fafab90c4698a1c459fb1e3647789a2b33d3d2",
-      "source_kind": "standard_public_page",
-      "trend_eligible": true,
-      "upfront_eligible": true,
-      "series_id": "c182438415c144036604"
-    },
-    {
-      "provider_id": "vyprvpn",
-      "provider_name": "VyprVPN",
-      "plan_id": "monthly",
-      "plan_name": "Monthly",
-      "billing_type": "recurring_subscription",
-      "country_code": "US",
-      "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
-      "extraction_corrected_at": null,
-      "extraction_correction": null,
-      "data_freshness_status": "current_capture",
-      "tax_treatment_claim": "taxes_may_apply",
-      "promotion_label": null,
-      "promotion_theme": null,
-      "review_status": "automated_unreviewed",
-      "advertised_monthly": 5,
-      "advertised_monthly_status": "machine_extracted",
-      "intro_total": 5,
-      "intro_total_status": "derived",
-      "paid_months": 1,
-      "paid_months_status": "machine_extracted",
-      "free_months": 0,
-      "free_months_status": "machine_extracted",
-      "service_months": 1,
-      "service_months_status": "derived",
-      "effective_intro_monthly": 5,
-      "effective_intro_monthly_status": "derived",
-      "advertised_discount_pct": null,
-      "advertised_discount_pct_status": "not_visible",
-      "reference_price_total": null,
-      "reference_price_total_status": "not_visible",
-      "renewal_total": 5,
-      "renewal_total_status": "machine_extracted",
-      "renewal_period_months": 1,
-      "renewal_period_months_status": "machine_extracted",
-      "effective_renewal_monthly": 5,
-      "effective_renewal_monthly_status": "derived",
-      "renewal_increase_pct": 0,
-      "renewal_increase_pct_status": "derived",
-      "refund_days": 30,
-      "refund_days_status": "machine_extracted",
-      "freshness_status": "current",
-      "validation_status": "automated_unreviewed",
-      "review_flags": [],
-      "manual_review_required": true,
-      "sources": [
-        {
-          "page_id": "pricing",
-          "url": "https://www.vyprvpn.com/pricing",
-          "result": "ok",
-          "method": "automated_browser",
-          "content_sha256": "9b24dceb0ec765268f8695d3a1fafab90c4698a1c459fb1e3647789a2b33d3d2"
-        }
-      ],
-      "policy_sources": [],
-      "policy_observed_at": null,
-      "checkout_observed_at": null,
-      "checkout_evidence_sha256": null,
-      "source_url": "https://www.vyprvpn.com/pricing",
-      "evidence_sha256": "9b24dceb0ec765268f8695d3a1fafab90c4698a1c459fb1e3647789a2b33d3d2",
-      "source_kind": "standard_public_page",
-      "trend_eligible": true,
-      "upfront_eligible": true,
-      "series_id": "392143cceb5709782dc5"
-    },
-    {
-      "provider_id": "vyprvpn",
-      "provider_name": "VyprVPN",
-      "plan_id": "two-year",
-      "plan_name": "2 years",
-      "billing_type": "recurring_subscription",
-      "country_code": "US",
-      "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
-      "extraction_corrected_at": null,
-      "extraction_correction": null,
-      "data_freshness_status": "current_capture",
-      "tax_treatment_claim": "taxes_may_apply",
-      "promotion_label": null,
-      "promotion_theme": null,
-      "review_status": "automated_unreviewed",
-      "advertised_monthly": 3,
-      "advertised_monthly_status": "machine_extracted",
-      "intro_total": 72,
-      "intro_total_status": "derived",
-      "paid_months": 24,
-      "paid_months_status": "machine_extracted",
-      "free_months": 0,
-      "free_months_status": "machine_extracted",
-      "service_months": 24,
-      "service_months_status": "derived",
-      "effective_intro_monthly": 3,
-      "effective_intro_monthly_status": "derived",
-      "advertised_discount_pct": null,
-      "advertised_discount_pct_status": "not_visible",
-      "reference_price_total": null,
-      "reference_price_total_status": "not_visible",
-      "renewal_total": 72,
-      "renewal_total_status": "machine_extracted",
-      "renewal_period_months": 24,
-      "renewal_period_months_status": "machine_extracted",
-      "effective_renewal_monthly": 3,
-      "effective_renewal_monthly_status": "derived",
-      "renewal_increase_pct": 0,
-      "renewal_increase_pct_status": "derived",
-      "refund_days": 30,
-      "refund_days_status": "machine_extracted",
-      "freshness_status": "current",
-      "validation_status": "automated_unreviewed",
-      "review_flags": [],
-      "manual_review_required": true,
-      "sources": [
-        {
-          "page_id": "pricing",
-          "url": "https://www.vyprvpn.com/pricing",
-          "result": "ok",
-          "method": "automated_browser",
-          "content_sha256": "9b24dceb0ec765268f8695d3a1fafab90c4698a1c459fb1e3647789a2b33d3d2"
-        }
-      ],
-      "policy_sources": [],
-      "policy_observed_at": null,
-      "checkout_observed_at": null,
-      "checkout_evidence_sha256": null,
-      "source_url": "https://www.vyprvpn.com/pricing",
-      "evidence_sha256": "9b24dceb0ec765268f8695d3a1fafab90c4698a1c459fb1e3647789a2b33d3d2",
-      "source_kind": "standard_public_page",
-      "trend_eligible": true,
-      "upfront_eligible": true,
-      "series_id": "48f56017f7f5ead06c79"
     },
     {
       "provider_id": "windscribe",
@@ -9449,7 +9005,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -9493,7 +9049,7 @@
           "url": "https://windscribe.com/upgrade",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "7fa586c33956eab9cceaa4cdfbb6adfa597adb4f59296311b3c0c51a3b25fb64"
+          "content_sha256": "f5f78fc19b7c48fdd5bfd157bb5ad24f0f4d133cb52b5d8ea88ebb32a556b77d"
         }
       ],
       "policy_sources": [],
@@ -9501,7 +9057,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://windscribe.com/upgrade",
-      "evidence_sha256": "7fa586c33956eab9cceaa4cdfbb6adfa597adb4f59296311b3c0c51a3b25fb64",
+      "evidence_sha256": "f5f78fc19b7c48fdd5bfd157bb5ad24f0f4d133cb52b5d8ea88ebb32a556b77d",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -9515,7 +9071,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -9559,7 +9115,7 @@
           "url": "https://windscribe.com/upgrade",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "7fa586c33956eab9cceaa4cdfbb6adfa597adb4f59296311b3c0c51a3b25fb64"
+          "content_sha256": "f5f78fc19b7c48fdd5bfd157bb5ad24f0f4d133cb52b5d8ea88ebb32a556b77d"
         }
       ],
       "policy_sources": [],
@@ -9567,7 +9123,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://windscribe.com/upgrade",
-      "evidence_sha256": "7fa586c33956eab9cceaa4cdfbb6adfa597adb4f59296311b3c0c51a3b25fb64",
+      "evidence_sha256": "f5f78fc19b7c48fdd5bfd157bb5ad24f0f4d133cb52b5d8ea88ebb32a556b77d",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -9581,7 +9137,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -9625,21 +9181,21 @@
           "url": "https://xvpn.io/pricing",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "b4ba2e1db5cc6e11b4511a4e9bc2310e9a94e5569a6e81db9f62485c4fb7fd1e"
+          "content_sha256": "30058e305ca01cd527ef0f4c90087b6de7868e10b9bc1dcd681970d1e87dde33"
         },
         {
           "page_id": "renewal-pricing",
           "url": "https://xvpn.io/terms-service/pricing",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "5b00824c5b750a4dc22fa9718670265b8f10ba07c21c814c5642886c37c45d41"
+          "content_sha256": "d27be1c906acf4bc92301978c1d182a0374daf628574d601c1a44cc06b247b3f"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://xvpn.io/terms-service",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "3be6a352dce57e8835d444912835af9f63dce9bf35a7b6add13584ee5a307458"
+          "content_sha256": "61085860884f0cf34958d955e95b99e209f029bdcf3df5371335383774c2ec6e"
         }
       ],
       "policy_sources": [],
@@ -9647,7 +9203,7 @@
       "checkout_observed_at": "2026-08-10T11:06:55Z",
       "checkout_evidence_sha256": "b8024b4cedf26a80c6094b87b06e7e4960fba27ea04d5cc6804f931ac66e0374",
       "source_url": "https://xvpn.io/pricing",
-      "evidence_sha256": "b4ba2e1db5cc6e11b4511a4e9bc2310e9a94e5569a6e81db9f62485c4fb7fd1e",
+      "evidence_sha256": "30058e305ca01cd527ef0f4c90087b6de7868e10b9bc1dcd681970d1e87dde33",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -9661,7 +9217,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -9705,21 +9261,21 @@
           "url": "https://xvpn.io/pricing",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "b4ba2e1db5cc6e11b4511a4e9bc2310e9a94e5569a6e81db9f62485c4fb7fd1e"
+          "content_sha256": "30058e305ca01cd527ef0f4c90087b6de7868e10b9bc1dcd681970d1e87dde33"
         },
         {
           "page_id": "renewal-pricing",
           "url": "https://xvpn.io/terms-service/pricing",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "5b00824c5b750a4dc22fa9718670265b8f10ba07c21c814c5642886c37c45d41"
+          "content_sha256": "d27be1c906acf4bc92301978c1d182a0374daf628574d601c1a44cc06b247b3f"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://xvpn.io/terms-service",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "3be6a352dce57e8835d444912835af9f63dce9bf35a7b6add13584ee5a307458"
+          "content_sha256": "61085860884f0cf34958d955e95b99e209f029bdcf3df5371335383774c2ec6e"
         }
       ],
       "policy_sources": [],
@@ -9727,7 +9283,7 @@
       "checkout_observed_at": "2026-08-10T11:06:55Z",
       "checkout_evidence_sha256": "5596219f6e652a7767052519f070d512d14b17fbadb633e47186f2bec51f63ac",
       "source_url": "https://xvpn.io/pricing",
-      "evidence_sha256": "b4ba2e1db5cc6e11b4511a4e9bc2310e9a94e5569a6e81db9f62485c4fb7fd1e",
+      "evidence_sha256": "30058e305ca01cd527ef0f4c90087b6de7868e10b9bc1dcd681970d1e87dde33",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
@@ -9741,7 +9297,7 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-10-11T06:00:02Z",
+      "captured_at": "2026-10-12T06:10:29Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
       "data_freshness_status": "current_capture",
@@ -9785,21 +9341,21 @@
           "url": "https://xvpn.io/pricing",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "b4ba2e1db5cc6e11b4511a4e9bc2310e9a94e5569a6e81db9f62485c4fb7fd1e"
+          "content_sha256": "30058e305ca01cd527ef0f4c90087b6de7868e10b9bc1dcd681970d1e87dde33"
         },
         {
           "page_id": "renewal-pricing",
           "url": "https://xvpn.io/terms-service/pricing",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "5b00824c5b750a4dc22fa9718670265b8f10ba07c21c814c5642886c37c45d41"
+          "content_sha256": "d27be1c906acf4bc92301978c1d182a0374daf628574d601c1a44cc06b247b3f"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://xvpn.io/terms-service",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "3be6a352dce57e8835d444912835af9f63dce9bf35a7b6add13584ee5a307458"
+          "content_sha256": "61085860884f0cf34958d955e95b99e209f029bdcf3df5371335383774c2ec6e"
         }
       ],
       "policy_sources": [],
@@ -9807,7 +9363,7 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://xvpn.io/pricing",
-      "evidence_sha256": "b4ba2e1db5cc6e11b4511a4e9bc2310e9a94e5569a6e81db9f62485c4fb7fd1e",
+      "evidence_sha256": "30058e305ca01cd527ef0f4c90087b6de7868e10b9bc1dcd681970d1e87dde33",
       "source_kind": "standard_public_page",
       "trend_eligible": true,
       "upfront_eligible": true,
