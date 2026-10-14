@@ -1,19 +1,27 @@
 {
   "schema_version": "1.0.0",
   "feed_type": "dovpn_price_drops",
-  "source_feed_generated_at": "2026-10-13T09:37:37Z",
+  "source_feed_generated_at": "2026-10-14T05:06:21Z",
   "market": {
     "country_code": "US",
     "currency": "USD"
   },
   "drops": [
     {
+      "provider_id": "cyberghost",
+      "plan_id": "two-year-plus-two-free",
+      "detected_at": "2026-10-14T05:05:32Z",
+      "previous_upfront_total": 56.94,
+      "current_upfront_total": 51.74,
+      "current_observed_at": "2026-10-14T05:05:32Z"
+    },
+    {
       "provider_id": "ipvanish",
       "plan_id": "essential-two-year",
       "detected_at": "2026-09-24T05:03:07Z",
       "previous_upfront_total": 59.76,
       "current_upfront_total": 57.36,
-      "current_observed_at": "2026-10-13T09:36:51Z"
+      "current_observed_at": "2026-10-14T05:05:32Z"
     },
     {
       "provider_id": "pia",
@@ -21,7 +29,7 @@
       "detected_at": "2026-10-13T09:28:14Z",
       "previous_upfront_total": 79.0,
       "current_upfront_total": 73.71,
-      "current_observed_at": "2026-10-13T09:36:51Z"
+      "current_observed_at": "2026-10-14T05:05:32Z"
     }
   ]
 }
