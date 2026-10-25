@@ -16,6 +16,8 @@ New records must come from the current capture and be no older than 48 hours at 
 
 `paid_months + free_months = service_months`. The monthly equivalent is a comparison unit; `upfront_total` is the initial payment. Renewal amount, interval and status remain separate. A missing renewal amount is unknown, not zero. Non-recurring prepaid coverage ends after its included period; the catalog makes no promise of another purchase at the same price.
 
+An optional `renewal_disclosure` preserves a provider-advertised monthly renewal rate and when it starts, with its source URL, observation time and evidence hash. This does not establish a renewal billing interval or total charge. Cost projections continue to treat an undisclosed renewal schedule as unknown.
+
 Refund ambiguity is represented by a null amount and explicit status. Specific payment-method exclusions are retained where supported. Tax presentation is recorded, but a displayed price may exclude tax that depends on checkout details. Confirm final terms with the provider before purchase.
 
 ## Publication boundary

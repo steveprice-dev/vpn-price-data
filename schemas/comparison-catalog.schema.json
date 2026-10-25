@@ -249,6 +249,46 @@
         "materially_changed_at": {
           "type": "string",
           "format": "date-time"
+        },
+        "renewal_disclosure": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "monthly_equivalent",
+            "starts_after_months",
+            "auto_renewal_can_be_disabled",
+            "source_url",
+            "observed_at",
+            "evidence_sha256"
+          ],
+          "properties": {
+            "monthly_equivalent": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 10000
+            },
+            "starts_after_months": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 120
+            },
+            "auto_renewal_can_be_disabled": {
+              "type": "boolean"
+            },
+            "source_url": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https://[^?#]+$"
+            },
+            "observed_at": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "evidence_sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          }
         }
       }
     }
