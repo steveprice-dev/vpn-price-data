@@ -57,5 +57,9 @@ provider's advertised reference-price percentage. A drop qualifies when the
 upfront total falls by at least $2 and 3%, remains current, and was first
 observed within the previous 30 UTC calendar dates. Any price rise, source or
 plan switch ends that episode. A carried-forward record cannot be featured.
+A further reduction of at least $2 and 3% compared with the preceding accepted
+price starts a new episode, using that preceding price as its baseline and the
+new observation as its detection date. Smaller reductions do not extend the
+existing episode's 30-day window, nor do unchanged observations.
 The feed's `source_feed_generated_at` must match the operational feed used by a
 website, and checkout remains the final price authority.
