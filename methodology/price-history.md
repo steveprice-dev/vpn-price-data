@@ -13,6 +13,12 @@ eligibility checks arithmetic, source and freshness; it is not human verificatio
 No automated extraction is relabeled as manually verified research. Raw
 captures, checkout URLs, private paths and private notes remain private.
 
+When a complete current plan menu is successfully captured and reconciled, offers
+that are no longer advertised may leave the current catalogue. Their original
+observations remain in historical snapshots; the private collector retains an
+explicit retirement audit. An incomplete capture or parser failure still carries
+previous evidence forward as stale rather than treating a missing plan as retired.
+
 ## Unit, files and coverage
 
 A row is one provider's offer in one published snapshot. `snapshot_at` is the
