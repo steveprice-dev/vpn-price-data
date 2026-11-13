@@ -141,8 +141,8 @@
       "provider_id": "mysteriumvpn",
       "provider_name": "Mysterium VPN",
       "record_count": 9,
-      "fresh_record_count": 6,
-      "trend_eligible_record_count": 6,
+      "fresh_record_count": 9,
+      "trend_eligible_record_count": 9,
       "status": "current",
       "issue": null,
       "capture_results": {}
@@ -291,8 +291,8 @@
       "provider_id": "x-vpn",
       "provider_name": "X-VPN",
       "record_count": 3,
-      "fresh_record_count": 1,
-      "trend_eligible_record_count": 1,
+      "fresh_record_count": 3,
+      "trend_eligible_record_count": 3,
       "status": "current",
       "issue": null,
       "capture_results": {}
@@ -4579,14 +4579,14 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-11-12T07:26:13Z",
+      "captured_at": "2026-11-13T06:58:55Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
-      "data_freshness_status": "carried_forward",
+      "data_freshness_status": "current_capture",
       "tax_treatment_claim": "vat_may_apply",
       "promotion_label": null,
       "promotion_theme": null,
-      "review_status": "automated_stale_carry_forward",
+      "review_status": "automated_unreviewed",
       "advertised_monthly": 2.99,
       "advertised_monthly_status": "machine_extracted",
       "intro_total": 71.76,
@@ -4613,10 +4613,9 @@
       "renewal_increase_pct_status": "derived",
       "refund_days": 30,
       "refund_days_status": "machine_extracted",
-      "freshness_status": "carried_forward",
+      "freshness_status": "current",
       "validation_status": "automated_unreviewed",
       "review_flags": [
-        "current_capture_missing_carried_forward",
         "renewal_price_may_change_with_notice"
       ],
       "manual_review_required": true,
@@ -4626,7 +4625,7 @@
           "url": "https://www.mysteriumvpn.com/vpn-pricing",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "3c89ea60fe1516b582d86361cc69b9583854376aeb703c7d5e166cda80dd82b4"
+          "content_sha256": "ba0efa0ada2d61de0b1d7ea7396fc8e9880161319ef040b7d38b5bee18d9c9bb"
         }
       ],
       "policy_sources": [],
@@ -4634,10 +4633,10 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.mysteriumvpn.com/vpn-pricing",
-      "evidence_sha256": "3c89ea60fe1516b582d86361cc69b9583854376aeb703c7d5e166cda80dd82b4",
+      "evidence_sha256": "ba0efa0ada2d61de0b1d7ea7396fc8e9880161319ef040b7d38b5bee18d9c9bb",
       "source_kind": "standard_public_page",
-      "trend_eligible": false,
-      "upfront_eligible": false,
+      "trend_eligible": true,
+      "upfront_eligible": true,
       "series_id": "36ec23f148734beee42e"
     },
     {
@@ -4784,14 +4783,14 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-11-12T07:26:13Z",
+      "captured_at": "2026-11-13T06:58:55Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
-      "data_freshness_status": "carried_forward",
+      "data_freshness_status": "current_capture",
       "tax_treatment_claim": "vat_may_apply",
       "promotion_label": null,
       "promotion_theme": null,
-      "review_status": "automated_stale_carry_forward",
+      "review_status": "automated_unreviewed",
       "advertised_monthly": 2.29,
       "advertised_monthly_status": "machine_extracted",
       "intro_total": 54.96,
@@ -4818,10 +4817,9 @@
       "renewal_increase_pct_status": "derived",
       "refund_days": 30,
       "refund_days_status": "machine_extracted",
-      "freshness_status": "carried_forward",
+      "freshness_status": "current",
       "validation_status": "automated_unreviewed",
       "review_flags": [
-        "current_capture_missing_carried_forward",
         "renewal_price_may_change_with_notice"
       ],
       "manual_review_required": true,
@@ -4831,7 +4829,7 @@
           "url": "https://www.mysteriumvpn.com/vpn-pricing",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "3c89ea60fe1516b582d86361cc69b9583854376aeb703c7d5e166cda80dd82b4"
+          "content_sha256": "ba0efa0ada2d61de0b1d7ea7396fc8e9880161319ef040b7d38b5bee18d9c9bb"
         }
       ],
       "policy_sources": [],
@@ -4839,10 +4837,10 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.mysteriumvpn.com/vpn-pricing",
-      "evidence_sha256": "3c89ea60fe1516b582d86361cc69b9583854376aeb703c7d5e166cda80dd82b4",
+      "evidence_sha256": "ba0efa0ada2d61de0b1d7ea7396fc8e9880161319ef040b7d38b5bee18d9c9bb",
       "source_kind": "standard_public_page",
-      "trend_eligible": false,
-      "upfront_eligible": false,
+      "trend_eligible": true,
+      "upfront_eligible": true,
       "series_id": "02841b503d4ba46ebbee"
     },
     {
@@ -4989,14 +4987,14 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-11-12T07:26:13Z",
+      "captured_at": "2026-11-13T06:58:55Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
-      "data_freshness_status": "carried_forward",
+      "data_freshness_status": "current_capture",
       "tax_treatment_claim": "vat_may_apply",
       "promotion_label": null,
       "promotion_theme": null,
-      "review_status": "automated_stale_carry_forward",
+      "review_status": "automated_unreviewed",
       "advertised_monthly": 3.89,
       "advertised_monthly_status": "machine_extracted",
       "intro_total": 93.36,
@@ -5023,10 +5021,9 @@
       "renewal_increase_pct_status": "derived",
       "refund_days": 30,
       "refund_days_status": "machine_extracted",
-      "freshness_status": "carried_forward",
+      "freshness_status": "current",
       "validation_status": "automated_unreviewed",
       "review_flags": [
-        "current_capture_missing_carried_forward",
         "renewal_price_may_change_with_notice"
       ],
       "manual_review_required": true,
@@ -5036,7 +5033,7 @@
           "url": "https://www.mysteriumvpn.com/vpn-pricing",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "3c89ea60fe1516b582d86361cc69b9583854376aeb703c7d5e166cda80dd82b4"
+          "content_sha256": "ba0efa0ada2d61de0b1d7ea7396fc8e9880161319ef040b7d38b5bee18d9c9bb"
         }
       ],
       "policy_sources": [],
@@ -5044,10 +5041,10 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://www.mysteriumvpn.com/vpn-pricing",
-      "evidence_sha256": "3c89ea60fe1516b582d86361cc69b9583854376aeb703c7d5e166cda80dd82b4",
+      "evidence_sha256": "ba0efa0ada2d61de0b1d7ea7396fc8e9880161319ef040b7d38b5bee18d9c9bb",
       "source_kind": "standard_public_page",
-      "trend_eligible": false,
-      "upfront_eligible": false,
+      "trend_eligible": true,
+      "upfront_eligible": true,
       "series_id": "85bf204c27df3f17f3be"
     },
     {
@@ -9884,14 +9881,14 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-11-12T07:26:13Z",
+      "captured_at": "2026-11-13T06:58:55Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
-      "data_freshness_status": "carried_forward",
+      "data_freshness_status": "current_capture",
       "tax_treatment_claim": "excluded",
       "promotion_label": null,
       "promotion_theme": null,
-      "review_status": "automated_stale_carry_forward",
+      "review_status": "automated_unreviewed",
       "advertised_monthly": 3.9992,
       "advertised_monthly_status": "derived",
       "intro_total": 47.99,
@@ -9908,21 +9905,19 @@
       "advertised_discount_pct_status": "not_visible",
       "reference_price_total": null,
       "reference_price_total_status": "not_visible",
-      "renewal_total": null,
-      "renewal_total_status": "not_visible",
+      "renewal_total": 71.99,
+      "renewal_total_status": "machine_extracted",
       "renewal_period_months": 12,
       "renewal_period_months_status": "machine_extracted",
-      "effective_renewal_monthly": null,
-      "effective_renewal_monthly_status": "not_visible",
-      "renewal_increase_pct": null,
-      "renewal_increase_pct_status": "not_visible",
+      "effective_renewal_monthly": 5.9992,
+      "effective_renewal_monthly_status": "derived_from_checkout",
+      "renewal_increase_pct": 50.01,
+      "renewal_increase_pct_status": "derived_from_checkout",
       "refund_days": 30,
       "refund_days_status": "machine_extracted",
-      "freshness_status": "carried_forward",
+      "freshness_status": "current",
       "validation_status": "automated_unreviewed",
-      "review_flags": [
-        "current_capture_missing_carried_forward"
-      ],
+      "review_flags": [],
       "manual_review_required": true,
       "sources": [
         {
@@ -9930,21 +9925,21 @@
           "url": "https://xvpn.io/pricing",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "19ec98bcfd18ed8435fe0a2695b94f95de9273365b2e62e25cd5e9fbe7f23fd5"
+          "content_sha256": "3f1725101846f14ed566727c1a6d958a5a786e1c4def9a3789c73961494a28ed"
         },
         {
           "page_id": "renewal-pricing",
           "url": "https://xvpn.io/terms-service/pricing",
           "result": "content_missing",
           "method": "automated_browser",
-          "content_sha256": "25d11f8c04110fe8b2671b58455cf3d089fc6c06eb1bbcb6279af5fa650f894d"
+          "content_sha256": "c933836d1d94958cf0bbf0d808a05fb7bd31237741145132badc1a97ff7f1c9f"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://xvpn.io/terms-service",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "3de601aed9bc34913c681f14f987efee98339cdc9d95e92101da001c9655cdd7"
+          "content_sha256": "7785e5bab35f103b67492bd7ed4668c9e1604c4685fd62f8a24629eb06e9e07a"
         }
       ],
       "policy_sources": [],
@@ -9952,10 +9947,10 @@
       "checkout_observed_at": "2026-08-10T11:06:55Z",
       "checkout_evidence_sha256": "b8024b4cedf26a80c6094b87b06e7e4960fba27ea04d5cc6804f931ac66e0374",
       "source_url": "https://xvpn.io/pricing",
-      "evidence_sha256": "19ec98bcfd18ed8435fe0a2695b94f95de9273365b2e62e25cd5e9fbe7f23fd5",
+      "evidence_sha256": "3f1725101846f14ed566727c1a6d958a5a786e1c4def9a3789c73961494a28ed",
       "source_kind": "standard_public_page",
-      "trend_eligible": false,
-      "upfront_eligible": false,
+      "trend_eligible": true,
+      "upfront_eligible": true,
       "series_id": "c78ccba34ad1451215bc"
     },
     {
@@ -10046,14 +10041,14 @@
       "billing_type": "recurring_subscription",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-11-12T07:26:13Z",
+      "captured_at": "2026-11-13T06:58:55Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
-      "data_freshness_status": "carried_forward",
+      "data_freshness_status": "current_capture",
       "tax_treatment_claim": "excluded",
       "promotion_label": null,
       "promotion_theme": null,
-      "review_status": "automated_stale_carry_forward",
+      "review_status": "automated_unreviewed",
       "advertised_monthly": 2.9163,
       "advertised_monthly_status": "derived",
       "intro_total": 69.99,
@@ -10070,21 +10065,19 @@
       "advertised_discount_pct_status": "not_visible",
       "reference_price_total": null,
       "reference_price_total_status": "not_visible",
-      "renewal_total": null,
-      "renewal_total_status": "not_visible",
+      "renewal_total": 71.99,
+      "renewal_total_status": "machine_extracted",
       "renewal_period_months": 12,
       "renewal_period_months_status": "machine_extracted",
-      "effective_renewal_monthly": null,
-      "effective_renewal_monthly_status": "not_visible",
-      "renewal_increase_pct": null,
-      "renewal_increase_pct_status": "not_visible",
+      "effective_renewal_monthly": 5.9992,
+      "effective_renewal_monthly_status": "derived",
+      "renewal_increase_pct": 105.7151,
+      "renewal_increase_pct_status": "derived",
       "refund_days": 30,
       "refund_days_status": "machine_extracted",
-      "freshness_status": "carried_forward",
+      "freshness_status": "current",
       "validation_status": "automated_unreviewed",
-      "review_flags": [
-        "current_capture_missing_carried_forward"
-      ],
+      "review_flags": [],
       "manual_review_required": true,
       "sources": [
         {
@@ -10092,21 +10085,21 @@
           "url": "https://xvpn.io/pricing",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "19ec98bcfd18ed8435fe0a2695b94f95de9273365b2e62e25cd5e9fbe7f23fd5"
+          "content_sha256": "3f1725101846f14ed566727c1a6d958a5a786e1c4def9a3789c73961494a28ed"
         },
         {
           "page_id": "renewal-pricing",
           "url": "https://xvpn.io/terms-service/pricing",
           "result": "content_missing",
           "method": "automated_browser",
-          "content_sha256": "25d11f8c04110fe8b2671b58455cf3d089fc6c06eb1bbcb6279af5fa650f894d"
+          "content_sha256": "c933836d1d94958cf0bbf0d808a05fb7bd31237741145132badc1a97ff7f1c9f"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://xvpn.io/terms-service",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "3de601aed9bc34913c681f14f987efee98339cdc9d95e92101da001c9655cdd7"
+          "content_sha256": "7785e5bab35f103b67492bd7ed4668c9e1604c4685fd62f8a24629eb06e9e07a"
         }
       ],
       "policy_sources": [],
@@ -10114,10 +10107,10 @@
       "checkout_observed_at": null,
       "checkout_evidence_sha256": null,
       "source_url": "https://xvpn.io/pricing",
-      "evidence_sha256": "19ec98bcfd18ed8435fe0a2695b94f95de9273365b2e62e25cd5e9fbe7f23fd5",
+      "evidence_sha256": "3f1725101846f14ed566727c1a6d958a5a786e1c4def9a3789c73961494a28ed",
       "source_kind": "standard_public_page",
-      "trend_eligible": false,
-      "upfront_eligible": false,
+      "trend_eligible": true,
+      "upfront_eligible": true,
       "series_id": "d18bdade1baa3b4fa5c3"
     }
   ]
