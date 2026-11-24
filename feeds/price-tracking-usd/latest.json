@@ -81,7 +81,7 @@
       "provider_id": "fastestvpn",
       "provider_name": "FastestVPN",
       "record_count": 3,
-      "fresh_record_count": 2,
+      "fresh_record_count": 3,
       "trend_eligible_record_count": 0,
       "status": "current",
       "issue": null,
@@ -1472,14 +1472,14 @@
       "billing_type": "lifetime",
       "country_code": "US",
       "currency": "USD",
-      "captured_at": "2026-11-23T07:55:33Z",
+      "captured_at": "2026-11-24T10:07:23Z",
       "extraction_corrected_at": null,
       "extraction_correction": null,
-      "data_freshness_status": "carried_forward",
+      "data_freshness_status": "current_capture",
       "tax_treatment_claim": "sales_tax_may_apply",
       "promotion_label": null,
       "promotion_theme": null,
-      "review_status": "automated_stale_carry_forward",
+      "review_status": "automated_unreviewed",
       "advertised_monthly": null,
       "advertised_monthly_status": "not_applicable",
       "intro_total": 40,
@@ -1494,8 +1494,8 @@
       "effective_intro_monthly_status": "not_applicable",
       "advertised_discount_pct": 93,
       "advertised_discount_pct_status": "machine_extracted",
-      "reference_price_total": 40,
-      "reference_price_total_status": "machine_extracted",
+      "reference_price_total": null,
+      "reference_price_total_status": "not_visible",
       "renewal_total": null,
       "renewal_total_status": "not_applicable",
       "renewal_period_months": null,
@@ -1506,10 +1506,9 @@
       "renewal_increase_pct_status": "not_applicable",
       "refund_days": 31,
       "refund_days_status": "machine_extracted",
-      "freshness_status": "carried_forward",
+      "freshness_status": "current",
       "validation_status": "automated_unreviewed",
       "review_flags": [
-        "current_capture_missing_carried_forward",
         "lifetime_definition_requires_review"
       ],
       "manual_review_required": true,
@@ -1519,14 +1518,14 @@
           "url": "https://fastestvpn.com/buy-vpn-p",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "375a47a425eb0c0a718305ea76479dfe6f5ae6bfe6b459a276add208f07749ef"
+          "content_sha256": "58a11ed922e5e2bc8d973d33bcb85ba90d50c38a80a266b6423cf83d0a835ae7"
         },
         {
           "page_id": "subscription-terms",
           "url": "https://fastestvpn.com/terms-of-service",
           "result": "ok",
           "method": "automated_direct",
-          "content_sha256": "8619d489b42d84db48a67576bad98cfabf505377996a234f58f8bb7bf777f3d1"
+          "content_sha256": "0906fae8f1518320bd849e280f685b09bca00f96c2b0a767b77ac504aefce6d5"
         }
       ],
       "policy_sources": [],
@@ -1534,7 +1533,7 @@
       "checkout_observed_at": "2026-08-10T11:06:55Z",
       "checkout_evidence_sha256": "f133fd1ec099f66178521437bb1b306d2b65d973a266c3865dda0d20e0fe97f6",
       "source_url": "https://fastestvpn.com/buy-vpn-p",
-      "evidence_sha256": "375a47a425eb0c0a718305ea76479dfe6f5ae6bfe6b459a276add208f07749ef",
+      "evidence_sha256": "58a11ed922e5e2bc8d973d33bcb85ba90d50c38a80a266b6423cf83d0a835ae7",
       "source_kind": "standard_public_page",
       "trend_eligible": false,
       "series_id": "1b696d283c5aa5fe0f44"
