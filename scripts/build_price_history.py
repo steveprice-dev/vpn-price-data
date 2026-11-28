@@ -6,7 +6,7 @@ Never upgrades automated observations to manually reviewed research.
 from __future__ import annotations
 import argparse, calendar, csv, hashlib, io, json
 from collections import Counter
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,18 +19,29 @@ def rendered(data):
 def series_id(row):
     return hashlib.sha256(json.dumps([row.get(k) for k in ('provider_id', *CONTEXT)], separators=(',', ':')).encode()).hexdigest()[:20]
 
-def build(month, root=ROOT, revision=2):
+def release_id(month, revision, through):
+    cutoff = f'-through-{through[-2:]}' if through else ''
+    return f'price-history-{month}{cutoff}-v{revision}'
+
+def build(month, root=ROOT, revision=2, through=None, frozen_sources=None):
     year, number = map(int, month.split('-'))
-    end = f'{month}-{calendar.monthrange(year, number)[1]:02d}'
+    month_end = f'{month}-{calendar.monthrange(year, number)[1]:02d}'
+    if through and (revision != 3 or date.fromisoformat(through).isoformat() != through
+                    or not f'{month}-01' <= through < month_end):
+        raise ValueError('An interim release needs a cutoff within the month, before month-end')
+    end = through or month_end
     feed_name = 'price-tracking' if revision == 1 else 'price-tracking-usd' if revision == 2 else 'price-tracking-native'
     paths = sorted((root / f'feeds/{feed_name}/snapshots').glob('*.json'))
     rows, sources, coverages = [], [], []
     for path in paths:
+        relative = path.relative_to(root).as_posix()
+        if frozen_sources is not None and relative not in frozen_sources:
+            continue
         feed = json.loads(path.read_text())
         if feed['generated_at'][:10] > end:
             continue
         digest = hashlib.sha256(path.read_bytes()).hexdigest()
-        sources.append({'path': path.relative_to(root).as_posix(), 'sha256': digest})
+        sources.append({'path': relative, 'sha256': digest})
         coverages.append((feed['generated_at'], feed['providers']))
         for record in feed['records']:
             if revision == 2 and record['currency'] != 'USD': raise ValueError('Non-USD row in USD research feed')
@@ -42,7 +53,7 @@ def build(month, root=ROOT, revision=2):
             rows.append(row)
     selected = [r for r in rows if r['snapshot_date'].startswith(month)]
     if not selected or max(r['snapshot_date'] for r in selected) != end:
-        raise ValueError(f'{month}: no month-end snapshot; release cannot be frozen')
+        raise ValueError(f'{month}: no {"cutoff" if through else "month-end"} snapshot; release cannot be frozen')
     identity = lambda r: (r['provider_id'], r['plan_id'], r['country_code'], r['currency'])
     events, previous = [], {}
     for row in rows:
@@ -69,19 +80,20 @@ def build(month, root=ROOT, revision=2):
     days = sorted({r['snapshot_date'] for r in selected})
     counts = Counter(r['freshness_status'] for r in selected)
     coverage = max(coverages, key=lambda item:item[0])[1]
-    summary = {'month': month, 'period_start': f'{month}-01', 'period_end': end, 'first_snapshot_at': first_stamp, 'last_snapshot_at': last_stamp, 'days_with_snapshots': len(days), 'calendar_days': calendar.monthrange(year, number)[1], 'missing_snapshot_days': [f'{month}-{day:02d}' for day in range(1, calendar.monthrange(year, number)[1] + 1) if f'{month}-{day:02d}' not in days], 'snapshot_count': len({r['snapshot_path'] for r in selected}), 'provider_count': len(coverage), 'plan_count':len(last), 'eligible_plan_count':sum(r['trend_eligible'] for r in last), 'fresh_record_count': counts['current'], 'fallback_record_count': counts['carried_forward'], 'comparable_plan_count': sum(p['endpoint_comparable'] for p in plans), 'endpoint_decrease_count': sum(p['endpoint_change_pct'] is not None and p['endpoint_change_pct'] < 0 for p in plans), 'endpoint_increase_count': sum(p['endpoint_change_pct'] is not None and p['endpoint_change_pct'] > 0 for p in plans), 'endpoint_unchanged_count': sum(p['endpoint_change_pct'] == 0 for p in plans), 'price_change_count': sum(e['type'] == 'price_change' for e in month_events), 'source_change_count': sum(e['type'] == 'source_change' for e in month_events), 'events': month_events, 'providers': coverage, 'plans':plans}
-    scope = {}
+    period_days = int(end[-2:])
+    summary = {'month': month, 'period_start': f'{month}-01', 'period_end': end, 'first_snapshot_at': first_stamp, 'last_snapshot_at': last_stamp, 'days_with_snapshots': len(days), 'calendar_days': period_days, 'missing_snapshot_days': [f'{month}-{day:02d}' for day in range(1, period_days + 1) if f'{month}-{day:02d}' not in days], 'snapshot_count': len({r['snapshot_path'] for r in selected}), 'provider_count': len(coverage), 'plan_count':len(last), 'eligible_plan_count':sum(r['trend_eligible'] for r in last), 'fresh_record_count': counts['current'], 'fallback_record_count': counts['carried_forward'], 'comparable_plan_count': sum(p['endpoint_comparable'] for p in plans), 'endpoint_decrease_count': sum(p['endpoint_change_pct'] is not None and p['endpoint_change_pct'] < 0 for p in plans), 'endpoint_increase_count': sum(p['endpoint_change_pct'] is not None and p['endpoint_change_pct'] > 0 for p in plans), 'endpoint_unchanged_count': sum(p['endpoint_change_pct'] == 0 for p in plans), 'price_change_count': sum(e['type'] == 'price_change' for e in month_events), 'source_change_count': sum(e['type'] == 'source_change' for e in month_events), 'events': month_events, 'providers': coverage, 'plans':plans}
+    scope = {'publication_stage': 'interim'} if through else {}
     if revision != 1:
         scope['currency_scope'] = 'USD' if revision == 2 else 'USD_EUR'
         legacy_id = f'price-history-{month}-v{1 if revision == 2 else 2}'
-        if (root/'data/price-history/releases'/legacy_id/'data.json').exists():
+        if not through and (root/'data/price-history/releases'/legacy_id/'data.json').exists():
             scope['supersedes'] = legacy_id
     if revision >= 3:
         summary['currency_summaries'] = {}
         for currency in sorted({p['currency'] for p in plans}):
             own = [p for p in plans if p['currency'] == currency]
             summary['currency_summaries'][currency] = {'plan_count': len(own), 'comparable_plan_count': sum(p['endpoint_comparable'] for p in own), 'endpoint_decrease_count': sum(p['endpoint_change_pct'] is not None and p['endpoint_change_pct'] < 0 for p in own), 'endpoint_increase_count': sum(p['endpoint_change_pct'] is not None and p['endpoint_change_pct'] > 0 for p in own), 'endpoint_unchanged_count': sum(p['endpoint_change_pct'] == 0 for p in own)}
-    return {**scope, 'schema_version':'1.0.0', 'dataset_type':'all_provider_provisional_price_history', 'validation_state':'automated_unreviewed', 'manual_review_required':True, 'release_id':f'price-history-{month}-v{revision}', 'license':'https://creativecommons.org/licenses/by/4.0/', 'creator':{'name':'Steve Price','orcid':'https://orcid.org/0009-0009-6603-6878'}, 'markets':sorted({(r['country_code'] or 'unverified')+'/'+r['currency'] for r in rows}), 'history_start':min(r['snapshot_date'] for r in rows), 'history_end':end, 'methodology_url':'https://github.com/steveprice-dev/vpn-price-data/blob/main/methodology/price-history.md', 'limitations':[('All 29 tracked providers; all extracted plans, including records with missing or ambiguous values.' if revision == 1 else 'All 29 tracked providers remain in coverage; only extracted USD plans are included. EUR and GBP test observations are excluded without conversion.' if revision == 2 else 'USD offers plus native EUR offers from AirVPN, AzireVPN and Mullvad; no test-market observations or currency conversions.'), 'Automated unreviewed extraction, not manually verified research or a representative market index.', 'Trend eligibility is an arithmetic/source/freshness gate, not manual confirmation of source accuracy.', 'Fallback rows repeat earlier observations and are excluded from trends.', 'Source, plan, duration, billing type, market, currency or extraction method changes break a series.', 'Discount labels and inferred reference totals do not establish historical savings or provider intent.', 'Derived renewal terms may depend on policy interpretation. No claim about an actual future invoice.', 'No imputation or currency conversion; tax and regional availability can differ.'], 'source_snapshots':sources, 'summary':summary, 'events':events, 'records':rows}
+    return {**scope, 'schema_version':'1.0.0', 'dataset_type':'all_provider_provisional_price_history', 'validation_state':'automated_unreviewed', 'manual_review_required':True, 'release_id':release_id(month, revision, through), 'license':'https://creativecommons.org/licenses/by/4.0/', 'creator':{'name':'Steve Price','orcid':'https://orcid.org/0009-0009-6603-6878'}, 'markets':sorted({(r['country_code'] or 'unverified')+'/'+r['currency'] for r in rows}), 'history_start':min(r['snapshot_date'] for r in rows), 'history_end':end, 'methodology_url':'https://github.com/steveprice-dev/vpn-price-data/blob/main/methodology/price-history.md', 'limitations':[('All 29 tracked providers; all extracted plans, including records with missing or ambiguous values.' if revision == 1 else 'All 29 tracked providers remain in coverage; only extracted USD plans are included. EUR and GBP test observations are excluded without conversion.' if revision == 2 else 'USD offers plus native EUR offers from AirVPN, AzireVPN and Mullvad; no test-market observations or currency conversions.'), 'Automated unreviewed extraction, not manually verified research or a representative market index.', 'Trend eligibility is an arithmetic/source/freshness gate, not manual confirmation of source accuracy.', 'Fallback rows repeat earlier observations and are excluded from trends.', 'Source, plan, duration, billing type, market, currency or extraction method changes break a series.', 'Discount labels and inferred reference totals do not establish historical savings or provider intent.', 'Derived renewal terms may depend on policy interpretation. No claim about an actual future invoice.', 'No imputation or currency conversion; tax and regional availability can differ.'], 'source_snapshots':sources, 'summary':summary, 'events':events, 'records':rows}
 
 def csv_text(data):
     output = io.StringIO(newline='')
@@ -91,9 +103,13 @@ def csv_text(data):
     writer.writerows({k:r.get(k) for k in columns} for r in data['records'])
     return output.getvalue()
 
-def write_month(month, check=False, revision=2):
-    data = build(month, revision=revision)
-    directory = ROOT / 'data/price-history/releases' / data['release_id']
+def write_month(month, check=False, revision=2, through=None):
+    directory = ROOT / 'data/price-history/releases' / release_id(month, revision, through)
+    frozen_sources = None
+    if through and (directory / 'data.json').is_file():
+        frozen = json.loads((directory / 'data.json').read_text())
+        frozen_sources = {item['path'] for item in frozen['source_snapshots']}
+    data = build(month, revision=revision, through=through, frozen_sources=frozen_sources)
     files = {'data.json': rendered(data), 'data.csv': csv_text(data), 'summary.json': rendered(data['summary'])}
     files['SHA256SUMS'] = ''.join(f'{hashlib.sha256(value.encode()).hexdigest()}  {name}\n' for name,value in files.items())
     if check:
@@ -112,14 +128,15 @@ def write_month(month, check=False, revision=2):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--month')
+    parser.add_argument('--through', help='Freeze an interim release through this UTC date (YYYY-MM-DD)')
     parser.add_argument('--check', action='store_true')
     parser.add_argument('--as-of', default=datetime.now(timezone.utc).strftime('%Y-%m-%d'))
     args = parser.parse_args()
+    if args.through and not args.month:
+        parser.error('--through requires --month')
     months = [args.month] if args.month else sorted({json.loads(p.read_text())['generated_at'][:7] for p in (ROOT/'feeds/price-tracking-native/snapshots').glob('*.json') if '2026-09' <= json.loads(p.read_text())['generated_at'][:7] < args.as_of[:7]})
-    releases = []
     for month in months:
-        data = write_month(month, args.check, revision=3)
-        releases.append({'id': data['release_id'], 'month': month, 'period_end': data['history_end'], 'path': f"data/price-history/releases/{data['release_id']}", 'sha256': hashlib.sha256(rendered(data).encode()).hexdigest(), 'provider_count': data['summary']['provider_count']})
+        write_month(month, args.check, revision=3, through=args.through)
     # Verify legacy files against their unchanged source archives.
     if args.check:
         for revision in (1, 2):
@@ -130,11 +147,16 @@ def main():
     for path in sorted((ROOT/'data/price-history/releases').glob('*/data.json')):
         data = json.loads(path.read_text())
         if data['release_id'].endswith('-v1'): continue
+        if args.check and data.get('publication_stage') == 'interim':
+            write_month(data['summary']['month'], True, revision=3, through=data['history_end'])
         entries.append({'id':data['release_id'], 'month':data['summary']['month'], 'period_end':data['history_end'], 'path':path.parent.relative_to(ROOT).as_posix(), 'sha256':hashlib.sha256(path.read_bytes()).hexdigest(), 'provider_count':data['summary']['provider_count']})
     current = {}
+    def priority(entry):
+        return entry['period_end'], int(entry['id'].rsplit('-v', 1)[1])
+
     for entry in entries:
         previous = current.get(entry['month'])
-        if previous is None or int(entry['id'].rsplit('-v',1)[1]) > int(previous['id'].rsplit('-v',1)[1]): current[entry['month']] = entry
+        if previous is None or priority(entry) > priority(previous): current[entry['month']] = entry
     entries = [current[month] for month in sorted(current)]
     index = rendered({'schema_version':'1.0.0', 'dataset_type':'all_provider_provisional_price_history', 'releases':entries})
     index_path = ROOT/'data/price-history/index.json'
@@ -142,7 +164,7 @@ def main():
         if index_path.read_text() != index: raise ValueError('price-history index is stale')
     else:
         index_path.write_text(index)
-    print(f'Validated {len(releases)} completed monthly release(s).')
+    print(f'Validated {len(entries)} indexed price-history release(s).')
 
 if __name__ == '__main__':
     main()

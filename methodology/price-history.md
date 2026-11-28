@@ -31,7 +31,9 @@ price findings. Do not count repeated fallback rows as additional captures.
 empty; JSON nulls are explicit. All times and reporting boundaries are UTC.
 
 Completed months are frozen from the retained snapshot history through the last
-calendar day; a release requires a month-end snapshot. Earlier history begins
+calendar day. Interim editions are frozen through a named UTC cutoff with a
+snapshot on that date. Their calendar-day counts cover the reporting period.
+Earlier history begins
 August 11, 2026. August is partial and has no standalone monthly comparison.
 The September release includes 30 days; individual providers may have missing
 fresh observations. A snapshot day is not necessarily a fresh capture for every tracked provider.
@@ -88,6 +90,11 @@ coverage. No page advances its coverage date merely because it rebuilt.
 A frozen release is append-only. Conflicting regeneration fails instead of
 rewriting history. Corrections require a new revision identifier, a ledger
 entry explaining old/new values and evidence, and a new checksum and citation.
+To publish an interim edition, run
+`python scripts/build_price_history.py --month YYYY-MM --through YYYY-MM-DD`.
+Its dated identifier and pinned snapshot list preserve the exact edition for
+citation. The monthly index points to the edition with the latest cutoff,
+then the highest revision for that cutoff.
 New monthly report pages are generated from the accepted release; editorial
 news stories require a separate evidence-based write-up.
 

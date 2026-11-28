@@ -1,4 +1,4 @@
-import importlib.util, pathlib, tempfile, unittest
+import importlib.util, json, pathlib, tempfile, unittest
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 spec=importlib.util.spec_from_file_location('history',ROOT/'scripts/build_price_history.py');mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod)
 class MonthlyHistory(unittest.TestCase):
@@ -44,3 +44,35 @@ class NativeCurrencyRevision(unittest.TestCase):
   for currency in ('USD','EUR'):
    self.assertTrue(all(e['currency']==currency for e in data['events'] if e['currency']==currency))
  def test_native_release_is_reproducible(self):mod.write_month('2026-09',check=True,revision=3)
+
+
+class InterimRelease(unittest.TestCase):
+    def test_dated_release_excludes_later_snapshots_and_pins_inputs(self):
+        month = '2026-09'
+        through = '2026-09-02'
+        archived = ROOT / 'feeds/price-tracking-native/snapshots'
+        with tempfile.TemporaryDirectory() as directory:
+            root = pathlib.Path(directory)
+            snapshots = root / archived.relative_to(ROOT)
+            snapshots.mkdir(parents=True)
+            for day in (1, 2, 3):
+                source = next(archived.glob(f'{month}-{day:02d}T*.json'))
+                (snapshots / source.name).write_bytes(source.read_bytes())
+
+            interim = mod.build(month, root, revision=3, through=through)
+            self.assertEqual(interim['release_id'], 'price-history-2026-09-through-02-v3')
+            self.assertEqual(interim['publication_stage'], 'interim')
+            self.assertEqual(interim['summary']['calendar_days'], 2)
+            self.assertEqual(interim['summary']['missing_snapshot_days'], [])
+            self.assertEqual(max(row['snapshot_date'] for row in interim['records']), through)
+            with self.assertRaisesRegex(ValueError, 'no month-end snapshot'):
+                mod.build(month, root, revision=3)
+
+            late = json.loads(next(snapshots.glob(f'{through}T*.json')).read_text())
+            late['generated_at'] = f'{through}T23:59:59Z'
+            (snapshots / f'{through}T235959Z.json').write_text(json.dumps(late))
+            pinned = {source['path'] for source in interim['source_snapshots']}
+            self.assertEqual(
+                mod.build(month, root, revision=3, through=through, frozen_sources=pinned),
+                interim,
+            )
